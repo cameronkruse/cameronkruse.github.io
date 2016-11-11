@@ -1,6 +1,3 @@
-var image = new Image();
-image.src = "https://upload.wikimedia.org/wikipedia/commons/0/07/Aiguille_du_Dru_3.jpg";
-
 !function (t) {
 	function e(r) {
 		if (i[r])
@@ -3840,7 +3837,7 @@ image.src = "https://upload.wikimedia.org/wikipedia/commons/0/07/Aiguille_du_Dru
 												}),
 											t.mapBuffer = (0, h.default)(1, 1), t.mapBufferCtx = t.mapBuffer.getContext("2d", {
 														alpha : !1
-													}), t.updateMapBufferSize(), t.mapBufferCtx.context.createPattern(image, "repeat"), t.mapBufferCtx.fillRect(0, 0, t.mapBufferSize.x, t.mapBufferSize.y), t.mapBufferOffset = {
+													}), t.updateMapBufferSize(), t.mapBufferCtx.fillStyle = "white", t.mapBufferCtx.fillRect(0, 0, t.mapBufferSize.x, t.mapBufferSize.y), t.mapBufferOffset = {
 													x : 0,
 													y : 0
 												}, t.mapBufferScale = t.mapScale, t.ready = !0, document.addEventListener("scroll", t.onScroll.bind(t)), t.onScroll()
