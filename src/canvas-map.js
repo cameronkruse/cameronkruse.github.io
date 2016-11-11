@@ -766,7 +766,7 @@ const CanvasMap=(props)=>{
 
       // Clear canvas
       // this.ctx.clearRect(0,0,this.canvas.width*dpi,this.canvas.height*dpi)
-      this.ctx.fillStyle='#ff6c0a'
+      this.ctx.fillStyle='#fff'
       this.ctx.fillRect(0,0,this.canvas.width*dpi,this.canvas.height*dpi)
 
       drawMap()
