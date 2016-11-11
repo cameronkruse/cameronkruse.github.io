@@ -3784,8 +3784,7 @@
 							},
 							this.canvas = (0, h.default)(e, i), this.canvas.style.position = "absolute", this.canvas.style.top = 0, this.canvas.style.left = 0, this.ctx = this.canvas.getContext("2d", {
 										alpha : !1
-										//below color is bright red
-									}), this.ctx.fillStyle = "#ff0000", this.ctx.fillRect(0, 0, this.state.width, this.state.height), this.container.appendChild(this.canvas), this.calculateSections(), Array.from(this.props.textContainer.querySelectorAll("img")).forEach(function (e) {
+									}), this.ctx.fillStyle = "#fff", this.ctx.fillRect(0, 0, this.state.width, this.state.height), this.container.appendChild(this.canvas), this.calculateSections(), Array.from(this.props.textContainer.querySelectorAll("img")).forEach(function (e) {
 									e.addEventListener("load", function (e) {
 										t.calculateSections(),
 										t.renderMap()
@@ -3831,7 +3830,6 @@
 													s = (0, h.default)(t.mapWidth * n, t.mapHeight * n), a = s.getContext("2d", {
 																alpha : !1
 															});
-													//The below 'fillstyle' is the background canvas that the map is drawn on color is orange
 														return a.fillStyle = "#ff940a", a.fillRect(0, 0, t.mapWidth * n, t.mapHeight * n), a.drawImage(e, 0, 0, t.mapWidth * n, t.mapHeight * n), {
 															map : s,
 															scale : n
@@ -3839,8 +3837,7 @@
 												}),
 											t.mapBuffer = (0, h.default)(1, 1), t.mapBufferCtx = t.mapBuffer.getContext("2d", {
 														alpha : !1
-														//color below is green
-													}), t.updateMapBufferSize(), t.mapBufferCtx.fillStyle = "#7bff00", t.mapBufferCtx.fillRect(0, 0, t.mapBufferSize.x, t.mapBufferSize.y), t.mapBufferOffset = {
+													}), t.updateMapBufferSize(), t.mapBufferCtx.fillStyle = "white", t.mapBufferCtx.fillRect(0, 0, t.mapBufferSize.x, t.mapBufferSize.y), t.mapBufferOffset = {
 													x : 0,
 													y : 0
 												}, t.mapBufferScale = t.mapScale, t.ready = !0, document.addEventListener("scroll", t.onScroll.bind(t)), t.onScroll()
@@ -3977,8 +3974,7 @@
 								return this.getZoomAtPercent(this.state.pos)
 							},
 							drawMapBuffer : function (t, e, i) {
-								//color below is bright blue
-								t.fillStyle = "#00ddff",
+								t.fillStyle = "white",
 								t.fillRect(0, 0, this.mapBufferSize.x, this.mapBufferSize.y);
 								for (var r = 0; i > this.map[r].scale && r < this.map.length - 1; )
 									r++;
@@ -4253,8 +4249,7 @@
 									I = function t(e, i) {
 										return "object" == ("undefined" == typeof e ? "undefined" : s(e)) ? t(e.x, e.y) : [(e - E.x) * F, (i - E.y) * F]
 									};
-									//below color is pink
-									this.ctx.fillStyle = "##ff00fa",
+									this.ctx.fillStyle = "#fff",
 									this.ctx.fillRect(0, 0, this.canvas.width * N, this.canvas.height * N),
 									x(),
 									n(),
