@@ -63,7 +63,6 @@ a:focus {
 	z-index: -1;
 	top: 0;
 	left: 0;
-	background: #dd7383 url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Matterhorn_Riffelsee_2005-06-11.jpg") no-repeat right top;
 }
 
 
@@ -304,6 +303,7 @@ a:focus {
 	position: relative;
 	z-index: 1000;
 	padding: 5em 3em;
+	background: #dd7383 url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Matterhorn_Riffelsee_2005-06-11.jpg") no-repeat right top;
 }
 
 .text section {
