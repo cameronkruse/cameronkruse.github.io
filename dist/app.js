@@ -3784,7 +3784,7 @@
 							},
 							this.canvas = (0, h.default)(e, i), this.canvas.style.position = "absolute", this.canvas.style.top = 0, this.canvas.style.left = 0, this.ctx = this.canvas.getContext("2d", {
 										alpha : !1
-									}), this.ctx.fillStyle = "#fff", this.ctx.fillRect(0, 0, this.state.width, this.state.height), this.container.appendChild(this.canvas), this.calculateSections(), Array.from(this.props.textContainer.querySelectorAll("img")).forEach(function (e) {
+									}), this.ctx.fillStyle = "#ff940a", this.ctx.fillRect(0, 0, this.state.width, this.state.height), this.container.appendChild(this.canvas), this.calculateSections(), Array.from(this.props.textContainer.querySelectorAll("img")).forEach(function (e) {
 									e.addEventListener("load", function (e) {
 										t.calculateSections(),
 										t.renderMap()
