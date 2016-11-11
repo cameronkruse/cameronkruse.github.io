@@ -382,7 +382,7 @@ const CanvasMap=(props)=>{
       return this.getZoomAtPercent(this.state.pos)
     },
     drawMapBuffer(ctx,pos,zoom){
-      ctx.fillStyle='white'
+      ctx.fillStyle="rgba(0, 0, 0, 0.2)"
       ctx.fillRect(0,0,this.mapBufferSize.x,this.mapBufferSize.y)
       let mapIndex=0
       while(zoom>this.map[mapIndex].scale && mapIndex<this.map.length-1){
