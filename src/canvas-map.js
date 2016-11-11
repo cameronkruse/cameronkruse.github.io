@@ -162,7 +162,7 @@ const CanvasMap=(props)=>{
       this.canvas.style.top=0
       this.canvas.style.left=0
       this.ctx=this.canvas.getContext('2d',{alpha:false})
-      this.ctx.fillStyle='#ff6c0a'
+      this.ctx.fillStyle='#fff'
       this.ctx.fillRect(0,0,this.state.width,this.state.height)
       this.container.appendChild(this.canvas)
 
