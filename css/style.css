@@ -63,6 +63,7 @@ a:focus {
 	z-index: -1;
 	top: 0;
 	left: 0;
+	background: #dd7383 url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Matterhorn_Riffelsee_2005-06-11.jpg") no-repeat right top;
 }
 
 
@@ -157,7 +158,7 @@ a:focus {
 	padding: 3em;
 	text-align: center;
 	color: #fff;
-	background: #00FFFF url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Matterhorn_Riffelsee_2005-06-11.jpg") no-repeat right top;;
+	background: #181922;
 }
 
 .intro blockquote {
