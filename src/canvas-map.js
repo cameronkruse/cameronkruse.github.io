@@ -122,7 +122,7 @@ const CanvasMap=(props)=>{
         trailColor:null,
         trailWidth:null,
         trailDash:[2,4],
-        trailVisitedColor:'#8a41c6',
+        trailVisitedColor:'#8EC641',
         trailVisitedWidth:4,
 
         pointColor:null,
