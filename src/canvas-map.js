@@ -785,7 +785,7 @@ const CanvasMap=(props)=>{
         gradient.addColorStop(0,'rgba(185, 217, 151, 1)')
         gradient.addColorStop(1,"rgba(185, 217, 151, 0)")
       }else{
-        gradient.addColorStop(0,'rgba(255, 255, 255, 0.85)')
+        gradient.addColorStop(0,'rgba(255, 255, 255, 0.50)')
         gradient.addColorStop(1,"rgba(255, 255, 255, 0)")
       }
       this.ctx.fillStyle=gradient
