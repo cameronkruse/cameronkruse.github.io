@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: Responsive Full Width Grid</title>
-		<meta name="description" content="Blueprint: Responsive Full Width Grid Layout" />
-		<meta name="keywords" content="100% grid, layout, columns, images, thumbnails, responsive, full width grid, image grid, css, jquery" />
-		<meta name="author" content="Cameron Kruse" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<header class="clearfix">
-				<span>National Geographic Young Explorer </span>
-				<!--add these titles when I figure out how to make them disappear | Fulbright | 23andMe | Storyteller-->
-				<h1>Cameron Kruse</h1>
-				<!--<h2> A globally focused innovator, I lead projects and create products that tell stories and solve problems.</h2>-->
-				<nav>
-					<a href="http://tympanus.net/Blueprints/SlidePushMenus/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
-					<a href="http://tympanus.net/codrops/?p=14727" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
-				</nav>
-			</header>	
-			<ul class="cbp-rfgrid">
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-				<!--<li><a href="#"><img src="images/cat.jpg" /><div><h3>Felis catus</h3></div></a></li>-->
-			</ul>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>The Highest Road | National Geographic</title>
+	<meta name="description" content="A Virtual Reality experience along the highest altitude roads in the world" />
+	<meta name="keywords" content="svg map, animated, path, journey, story, canvas, images, plane, web design, highestroad" />
+	<meta name="author" content="Cameron Kruse - National Geographic Young Explorer" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="main">
+		<header class="codrops-header">
+
+			<h1 class="header-title"><span class="header-title__main">The Highest Road</span> <span class="header-title__part">A National Geographic Young Explorer Expedition</span></span></h1>
+		</header>
+		<div class="intro">
+			<blockquote><em>Deep in the Indian Himalayas lies the highest road in the world reaching over 18,000 feet above sea level. Every winter this road is destroyed by avalanches, rockslides and flooding; every spring it is rebuilt. Below, is a proof of concept media experience of our time in this region documenting how this road is reconstructed and exploring the role it plays in the development of Ladakh.</em><span>- The Highest Road Expedition Team</span></blockquote>
 		</div>
-	</body>
+		<div class="container"></div>
+		<div class="text">
+			<section class="js-section" data-zoom-middle="1.5" data-stay="true">
+				<h2><span class="title-up">The Expedition Begins</span><span class="title-down">Srinagar, Jammu and Kashmir</span></h2>
+				<p class="text-intro"> Be sure to pan around the videos below to explore the world around you.</p>
+				<figure>
+				<script type="text/javascript" src="//upload.omnivirt.com/scripts/embed.js"></script>
+				      <iframe id="ado-5483" src="about:blank" frameborder="0" width="720" 
+				height="360" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1">
+				<a href='https://www.thehighestroad.com'>A National Geographic Expedition</a></iframe>
+				      <script type="text/javascript">document.getElementById("ado-5483").setAttribute("src", "//www.vroptimal-3dx-assets.com/content/5483?player=true&referer=" + encodeURIComponent(window.location.href))</script>
+					<figcaption> An introduction to our expedition.</figcaption>
+				</figure>
+			</section>
+			<section class="js-section" data-zoom-start="1" data-stay="true">
+				<h2><span class="title-up"></span><span class="title-down">Kargil</span></h2>
+
+				<figure>
+					<img class="js-image" data-pos="0.6" src="img/highestroadjourney/HighestRoad-20.jpg" />
+					<figcaption>Reconstructing these roads requires a lot of rock. Much of the construction work is done by immigrants, like Manu above, who come from low lying areas in India.</figcaption>
+				</figure>
+				<p></p>
+			</section>
+			<section class="js-section" data-zoom-start="2" data-stay="true">
+				<h2><span class="title-up">Thoughts on the changing times from Tsering Wangmo</span><span class="title-down">Leh, Ladakh</span></h2>
+				<figure>
+					<script type="text/javascript" src="//upload.omnivirt.com/scripts/embed.js"></script>
+					      <iframe id="ado-4629" src="about:blank" frameborder="0" width="720" 
+					height="360" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1">
+					<a href='https://www.thehighestroad.com/'> A National Geographic Expedition</a></iframe>
+					      <script type="text/javascript">document.getElementById("ado-4629").setAttribute("src", "//www.vroptimal-3dx-assets.com/content/4629?player=true&referer=" + encodeURIComponent(window.location.href))</script>
+					<figcaption>We lived with Tsering between our stints out on the road.</figcaption>
+				</figure>
+			</section>
+			<section class="js-section" data-zoom-start="1.5" data-stay="true">
+				<h2><span class="title-up"> Everyone pitches in to clear the Snow and Ice</span><span class="title-down">Taglang La 17,480 ft.</span></h2>
+				<figure>
+					<img class="js-image" data-pos="1.5" src="img/highestroadjourney/HighestRoad-18.jpg" />
+					<figcaption>Local women clearing snow and ice from a high mountain pass.</figcaption>
+				</figure>
+				<p>An interesting aspect of the rebuilding process was the diversity in the workers we met. There were men and women from all over India and Nepal of all religions and backgrounds. Although they were in a region known for intolerance, the worker communties were welcoming and extremely tolerant of each other.</p>
+
+					<blockquote><em>"You have to do, what you have to do, to feed yourself and your family. For us, that is road building."</em><span> &mdash; Sayed</span></blockquote>
+
+				<p>When we prodded workers about why they came, or how they got along so well, we consistently heard the sentiment, "majboori." Translated to english this means, "you have to do, what you have to do, to feed yourself and your family."</p>
+			</section>
+
+			<section class="js-section" data-zoom-middle="1.2">
+				<h2><span class="title-up">Section 7</span><span class="title-down" data-stay="true">Title 7</span></h2>
+			</section>
+
+			<section class="js-section" data-zoom-start="2.0" >
+				<h2><span class="title-up">A trip up one of the highest mountain passes in the world</span><span class="title-down">Khardung La 17,582 ft.</span></h2>
+				<figure>
+					<script type="text/javascript" src="//upload.omnivirt.com/scripts/embed.js"></script>
+					      <iframe id="ado-4618" src="about:blank" frameborder="0" width="640" 
+					height="360" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1">
+					<a href='https://www.thehighestroad.com.com/'></a></iframe>
+					      <script type="text/javascript">document.getElementById("ado-4618").setAttribute("src", "//www.vroptimal-3dx-assets.com/content/4618?player=true&referer=" + encodeURIComponent(window.location.href))</script>
+					<figcaption>Be sure to pan around to get a look at the surrounding mountains</figcaption>
+				</figure>
+			</section>
+
+
+			<section class="js-section" data-zoom-middle="1.2" >
+				<h2><span class="title-up">Maps designed with Mapbox</span><span class="title-down">Title 8</span></h2>
+			</section>
+			<section class="js-section" data-zoom-middle="0.8" data-pos="1.8">
+				<h2><span class="title-up">Section 9</span><span class="title-down">Title 9</span></h2>
+			</section>
+			<section class="js-section" data-zoom-start="0.8" data-pos="1.2">
+				<h2><span class="title-up">Section 10</span><span class="title-down">Title 10</span></h2>
+			</section>
+		</div>
+	</div>
+	<!-- /main -->
+	<script src="../dist/app.js"></script>
+</body>
+
 </html>
