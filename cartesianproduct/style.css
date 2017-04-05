@@ -967,7 +967,7 @@ img{
 	overflow: hidden;
 }
 .single-item>img{
-	width: 100%;
+	width: 290px;
     display: block;
     height: 290px;
     -webkit-transition: all 0.5s ease 0s;
@@ -1018,13 +1018,13 @@ img{
 .portfolio-social-icon a {
 	color: #fff;
 	display: inline-block;
-	font-size: 14px;
-	height: 40px;
+	font-size: 80px;
+	height: 90px;
 	line-height: 15px;
-	margin: 0 8px;
-	padding: 12px;
+	margin: 08px;
+	padding: 4px;
 	text-align: center;
-	width: 40px;
+	width: 90px;
 	transform: scale(0.5);
 	-webkit-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
