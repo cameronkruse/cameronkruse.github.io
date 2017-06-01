@@ -30,7 +30,7 @@
 			s = r(n);
 			(0, s.default)({
 					textContainer : document.querySelector(".text"),
-					mapSrc : "highestroad/vr/img/map.svg",
+					mapSrc : "../img/map.svg",
 					trailVisitedColor : "#b3703e",
 					fontPresentColor : "#b3703e"
 				}).appendTo(".container")
