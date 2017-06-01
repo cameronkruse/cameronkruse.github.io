@@ -30,7 +30,7 @@
 			s = r(n);
 			(0, s.default)({
 					textContainer : document.querySelector(".text"),
-					mapSrc : "../img/map.svg",
+					mapSrc : "../src/map.svg",
 					trailVisitedColor : "#b3703e",
 					fontPresentColor : "#b3703e"
 				}).appendTo(".container")
