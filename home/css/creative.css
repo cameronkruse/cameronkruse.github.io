@@ -305,23 +305,23 @@ header.masthead {
   background-color: #00718d; }
   .btn-primary:focus, .btn-primary.focus {
     color: white;
-    border-color: #a4270d;
-    background-color: #eb3812; }
+    border-color: #002934;
+    background-color: #003e4d; }
   .btn-primary:hover {
     color: white;
-    border-color: #e13612;
-    background-color: #eb3812; }
+    border-color: #003e4d;
+    background-color: #003e4d; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
     border-color: #e13612;
-    background-color: #eb3812; }
+    background-color: #003e4d; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: white;
-      border-color: #a4270d;
+      border-color: #002934;
       background-color: #c93110; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
