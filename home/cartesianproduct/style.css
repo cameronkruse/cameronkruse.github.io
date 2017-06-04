@@ -446,10 +446,12 @@ img{
 	display: inline;
 	width: 100%;
 	margin-top: 50px;
+	white-space: nowrap;
 }
 .wc-table{
 	display: inline-block;
 	text-align: center;
+	
 }
 .wc-table li {
 	float: left;
