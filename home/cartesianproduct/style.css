@@ -1491,7 +1491,7 @@ img{
 	background-image: url("assets/images/contact-bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 750px 100%;
+	background-size: 100% 100%;
 	display: inline;
 	float: left;
 	padding: 70px 0;
