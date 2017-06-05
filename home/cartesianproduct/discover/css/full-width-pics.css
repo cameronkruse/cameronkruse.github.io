@@ -25,6 +25,7 @@ body {
 .image-bg-fixed-height {
 	background: url('../../assets/images/fishingheader.jpg') no-repeat center center scroll;
     height: 450px;
+	width: 100%;
 }
 
 .img-center {
