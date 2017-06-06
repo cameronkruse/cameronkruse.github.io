@@ -4,117 +4,124 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Discover - Cartesian Product</title>
+    <title>The Big Picture - Start Bootstrap Template</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/full-width-pics.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
 
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#00d999; link-color:#00d999" role="navigation">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" style="background-color: #00d999;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Cartesian Product</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Home</a>
+            <a class="navbar-brand" href="..">Cartesian Product</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="..">Home</a>
                     </li>
-                    <li>
-                        <a href="#">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about">About</a>
                     </li>
-                    <li>
-                        <a href="#">Visualize</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../describe">Visualize</a>
                     </li>
-                    <li >
-                        <a href="#">Discover</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../discover">Discover</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Predict <span class="sr-only">(current)</span></a>
                     </li>
-                    <li>
-                        <a href="#">Predict</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../download">Download</a>
                     </li>
-                    <li>
-                        <a href="#">Download</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../collect">Upload</a>
                     </li>
-                    <li>
-                        <a href="#">Upload</a>
-                    </li>
-                    
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Full Width Image Header with Logo -->
-    <!-- Image backgrounds are set within the full-width-pics.css file. -->
-    <header class="image-bg-fluid-height">
-    </header>
-
-    <!-- Content Section -->
+    <!-- Page Content -->
     <section>
-        <div class="container">
+        <div class="container" style="margin-top:50px">
             <div class="row">
-                <div class="col-lg-12">
-                  <h1 class="section-heading">Discover</h1>
-                  <p class="lead section-lead">How we go from visualizing data to predictions</p>
-                  <p class="section-paragraph">Visuallizing data is a necessary step in the data science cycle, but at the end of the day, there are questions that need to be answered through our cutting edge discovery process, we use things like principle component analysis and other statistical methods to tease out answers to the big questions. If you are interested in our Predictions, visit the "Predict" page. If you want to know more about our methods, scroll down! </p>
+                <div class="col-lg-6">
+                  <h1 class="mt-5">DISCOVER - how we get from data to predictions</h1>
+                    <p>Visuallizing data is a necessary step in the data science cycle, but at the end of the day, there are questions that need to be answered through our cutting edge discovery process, we use things like principle component analysis and other statistical methods to tease out answers to the big questions. If you are interested in our Predictions, visit the "Predict" page. If you want to know more about our methods, scroll down!</p>
+                   
+                    <p>&nbsp;</p>
                 </div>
             </div>
         </div>
     </section>
+	<div class="row">
+            
+            <div class=class="container-fluid" style="padding:50px;">
+              <h3>Dimensionality Reduction with Principal Component Analysis</h3>
+              <p>We used township level census data and Principal Component Analysis (PCA) to create a standardized *development index for comparing townships relative to one another. PCA is a statistical tool used for identifying patterns in data and reducing the dimensions of datasets (number of columns) to a manageable set of features with minimal information loss. Using PCA, we were able to explain 90% of the variance across 73 census features with only 3 enriched features, which is convenient for a 3D data viz. <a href="http://sebastianraschka.com/Articles/2014\_pca\_step\_by\_step.html">For more information on the algorithm, visit this site.</a> Try rotating and hovering over this viz using your mouse/track pad.</p>
+   
+              <div class="container-fluid" style="padding:20px;">
+    <a href="https://plot.ly/~jachian22/170/?share_key=UzUOPVkAvidSVYMFCUBApz" target="_blank" title="township-pca-space" style="display: block; text-align: center;"><img src="https://plot.ly/~jachian22/170.png?share_key=UzUOPVkAvidSVYMFCUBApz" alt="township-pca-space" style="max-width: 100%;width: 800px;"  width="800" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="jachian22:170" sharekey-plotly="UzUOPVkAvidSVYMFCUBApz" src="https://plot.ly/embed.js" async></script>
+</div>
+              
+</div>
+<div class=class="container-fluid" style="padding:50px;">
+              <h3>The colors shown in the above plot correspond with state colors as mapped below.</h3>
+              <figure>
+                      <a href="discovery.html"><iframe width="100%" height="520" frameborder="0" src="https://amarinusha.carto.com/viz/8873bafa-4999-11e7-a4fd-0e3ebc282e83/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></a>
+                    </figure>
+              
+</div>
 
-    <iframe width="800" height="900"frameborder="0" scrolling="no" seamless=seamless src="//plot.ly/~jachian22/170.embed"></iframe>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                  <p>Copyright &copy; Cartesian Product 2017</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<div class=class="container-fluid" style="padding:50px;">
+              <p>We derived and subsequently applied PCA to 73 census features from the raw township census data that quantify the following township characteristics:
+Building Material (e.g. hut, bamboo, wood, brick)
+Building Ownership Status (e.g. owner, renter, government) Communication Assets (e.g. mobile phones, radio, television, landlines) Transportation Assets (e.g. cars, boats, motorcycles, bicycles, carts) Light Sources (hydro, generators, battery, candles, kerosene, electricity) Household Size (1-9)
+Literacy Rate
+Population
+Urban Coverage
+The degree to which each feature correlates with each principal component can be expressed with Pearson's Correlation Coefficient. Below we visualize the correlation coefficients for each variable, revealing the underlying dichotomy and profiles of urban and rural townships.
+Here’s another good map for exploring sub township level data. Check out the other maps on our Visualize page to discover more.
+</p>
+<figure>
+                      <a href="discovery.html"><iframe width="100%" height="520" frameborder="0" src="https://amarinusha.carto.com/viz/c1911712-1783-11e7-87a9-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></a>
+                    </figure>
+              
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
+
+        <hr>
 
 </html>
