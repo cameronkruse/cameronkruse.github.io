@@ -36,6 +36,10 @@
         }
     }
     </style>
+    <!-- Mapbox Header-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+
 
 </head>
 
@@ -71,7 +75,15 @@
     </nav>
 
     <div class="container-fluid" style="padding:2px; style= margin-top:10px; margin-bottom:10px; height:95%;">
-        	<iframe style="position:absolute;" width="100%" height="100%" seamless align="left" src="https://amarinusha.carto.com/viz/d12aad0a-49ab-11e7-bd41-0e3ebc282e83/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+          <div id='map' style='width: 100%; height: 100%;'></div>
+          <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+          var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v9'
+          });
+          </script>
     </div>
 
 
