@@ -43,6 +43,11 @@
                       //once the viewer is ready, show the iframe
                         let $apiFrame = document.getElementById("api-frame");
                         $apiFrame.classList.remove("hidden"); // Remove hidden class
+                        api.lookat(
+                          [ 0, 13, 10], // eye position
+                          [0, 10, 0],   // target to lookat
+                          4.3           // duration of the animation in seconds
+                      );
                     } );
                 },
                 error: function onError(callback){
@@ -50,6 +55,7 @@
                 }
             } );
         };
+
   </script>
 
   <button onclick="loadmodel()">Click me to load model and show iframe.</button>
