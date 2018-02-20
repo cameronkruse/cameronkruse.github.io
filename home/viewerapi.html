@@ -73,17 +73,18 @@
 
     client.init( urlid, {
         // Annotations method
-        // success: function onSuccess( api ){ },
-        // error: function onError() { },
-        // camera: 0,
-        // blending: 1,
-        // // autospin: 4,
-        // annotation_cycle: 4,
-        // transparent: 0
+        success: function onSuccess( api ){ },
+        error: function onError() { },
+        camera: 0,
+        blending: 1,
+        // autospin: 4,
+        annotation_cycle: 10,
+        annotations_visible: 1,
+        transparent: 0
 
         // Hardcode views 
-        success: success,
-        error: error
+        // success: success,
+        // error: error
     } );
     </script>
 </body>
