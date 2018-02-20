@@ -40,8 +40,8 @@
 
         var cameraList = [ {
             eye: [ 120, 0, 100 ]
-        // }, {
-        //     eye: [ 1, 1, 0 ]
+         }, {
+            eye: [ -120, 0, 100 ]
         // }, {
         //     eye: [ 0, 2, 0 ]
         // }, {
@@ -61,7 +61,7 @@
         var loop = function () {
             currentCamera++;
             // api.lookat( cameraList[ currentCamera % 8 ].eye, target, 4 );
-            api.lookat( cameraList[0].eye, target, 4 );
+            api.lookat( cameraList[currentCamera % 2].eye, target, 4 );
             // api.lookat( cameraList[0].eye, target1, 4 );
             // api.lookat( cameraList[0].eye, target2, 4 );
             setTimeout( loop, 1000 );
