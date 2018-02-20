@@ -68,8 +68,19 @@
     };
 
     client.init( urlid, {
-        success: success,
-        error: error
+        client.init( urlid, {
+            success: function onSuccess( api ){ },
+            error: function onError() { },
+            camera: 0,
+            blending: 1,
+            autospin: 4,
+            annotation_cycle: 4,
+            transparent: 0
+        } );
+        
+        // success: success,
+        // error: error
+
         // success: function onSuccess( api ){
         //     api.start();
         //     api.addEventListener( 'viewerready', function() {
