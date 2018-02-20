@@ -62,19 +62,21 @@
     };
 
     client.init( urlid, {
-        success: function onSuccess( api ){
-            api.start();
-            api.addEventListener( 'viewerready', function() {
+        success: success,
+        error: error
+        // success: function onSuccess( api ){
+        //     api.start();
+        //     api.addEventListener( 'viewerready', function() {
 
-                // API is ready to use
-                // Insert your code here
-                console.log( 'Viewer is ready' );
+        //         // API is ready to use
+        //         // Insert your code here
+        //         console.log( 'Viewer is ready' );
 
-            } );
-        },
-        error: function onError() {
-            console.log( 'Viewer error' );
-        }
+        //     } );
+        // },
+        // error: function onError() {
+        //     console.log( 'Viewer error' );
+        // }
     } );
     </script>
 </body>
