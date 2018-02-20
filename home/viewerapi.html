@@ -56,7 +56,9 @@
         var loop = function () {
             currentCamera++;
             api.lookat( cameraList[ currentCamera % 8 ].eye, target, 4 );
+            setTimeout( loop, 1000 );
             api.lookat( cameraList[ currentCamera % 8 ].eye, target1, 4 );
+            setTimeout( loop, 1000 );
             api.lookat( cameraList[ currentCamera % 8 ].eye, target2, 4 );
             setTimeout( loop, 1000 );
         }
