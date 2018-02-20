@@ -30,36 +30,35 @@
     var success = function ( api ) {
 
         var target = [ 0.0, 0.0, 1.0 ];
-        var target1 = [2.0, 2.0, 2.0 ];
+        var target1 = [5.0, 6.0, 7.0 ];
         var target2 = [1.0, 1.0, -1.0 ];
 
         var cameraList = [ {
             eye: [ 2, 0, 0 ]
-        }, {
-            eye: [ 1, 1, 0 ]
-        }, {
-            eye: [ 0, 2, 0 ]
-        }, {
-            eye: [ -1, 1, 0 ]
-        }, {
-            eye: [ -2, 0, 0 ]
-        }, {
-            eye: [ -1, -1, 0 ]
-        }, {
-            eye: [ 0, -2, 0 ]
-        }, {
-            eye: [ 1, -1, 0 ]
+        // }, {
+        //     eye: [ 1, 1, 0 ]
+        // }, {
+        //     eye: [ 0, 2, 0 ]
+        // }, {
+        //     eye: [ -1, 1, 0 ]
+        // }, {
+        //     eye: [ -2, 0, 0 ]
+        // }, {
+        //     eye: [ -1, -1, 0 ]
+        // }, {
+        //     eye: [ 0, -2, 0 ]
+        // }, {
+        //     eye: [ 1, -1, 0 ]
         } ];
 
         var currentCamera = 5;
 
         var loop = function () {
             currentCamera++;
-            api.lookat( cameraList[ currentCamera % 8 ].eye, target, 4 );
-            setTimeout( loop, 1000 );
-            api.lookat( cameraList[ currentCamera % 8 ].eye, target1, 4 );
-            setTimeout( loop, 1000 );
-            api.lookat( cameraList[ currentCamera % 8 ].eye, target2, 4 );
+            // api.lookat( cameraList[ currentCamera % 8 ].eye, target, 4 );
+            api.lookat( cameraList[0].eye, target, 4 );
+            api.lookat( cameraList[0].eye, target1, 4 );
+            api.lookat( cameraList[0].eye, target2, 4 );
             setTimeout( loop, 1000 );
         }
 
@@ -68,30 +67,18 @@
     };
 
     client.init( urlid, {
-            success: function onSuccess( api ){ },
-            error: function onError() { },
-            camera: 0,
-            blending: 1,
-            // autospin: 4,
-            annotation_cycle: 4,
-            transparent: 0
+        // Annotations method
+        // success: function onSuccess( api ){ },
+        // error: function onError() { },
+        // camera: 0,
+        // blending: 1,
+        // // autospin: 4,
+        // annotation_cycle: 4,
+        // transparent: 0
 
-        // success: success,
-        // error: error
-
-        // success: function onSuccess( api ){
-        //     api.start();
-        //     api.addEventListener( 'viewerready', function() {
-
-        //         // API is ready to use
-        //         // Insert your code here
-        //         console.log( 'Viewer is ready' );
-
-        //     } );
-        // },
-        // error: function onError() {
-        //     console.log( 'Viewer error' );
-        // }
+        // Hardcode views 
+        success: success,
+        error: error
     } );
     </script>
 </body>
