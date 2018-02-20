@@ -31,22 +31,23 @@
 
         var target = [ 0.0, 0.0, 1.0 ];
         var target1 = [2.0, 2.0, 2.0 ];
+        var target2 = [1.0, 1.0, -1.0 ];
 
         var cameraList = [ {
             eye: [ 2, 0, 0 ]
         }, {
-        //     eye: [ 1, 1, 0 ]
-        // }, {
-        //     eye: [ 0, 2, 0 ]
-        // }, {
-        //     eye: [ -1, 1, 0 ]
-        // }, {
-        //     eye: [ -2, 0, 0 ]
-        // }, {
-        //     eye: [ -1, -1, 0 ]
-        // }, {
-        //     eye: [ 0, -2, 0 ]
-        // }, {
+            eye: [ 1, 1, 0 ]
+        }, {
+            eye: [ 0, 2, 0 ]
+        }, {
+            eye: [ -1, 1, 0 ]
+        }, {
+            eye: [ -2, 0, 0 ]
+        }, {
+            eye: [ -1, -1, 0 ]
+        }, {
+            eye: [ 0, -2, 0 ]
+        }, {
             eye: [ 1, -1, 0 ]
         } ];
 
@@ -56,7 +57,8 @@
             currentCamera++;
             api.lookat( cameraList[ currentCamera % 8 ].eye, target, 4 );
             api.lookat( cameraList[ currentCamera % 8 ].eye, target1, 4 );
-            setTimeout( loop, 5000 );
+            api.lookat( cameraList[ currentCamera % 8 ].eye, target2, 4 );
+            setTimeout( loop, 1000 );
         }
 
         api.start( loop );
