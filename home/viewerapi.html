@@ -10,12 +10,11 @@
 
 <body>
     <!-- Insert an empty iframe -->
-    <iframe src="" id="api-frame" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe src="" id="api-frame" height="100%" width="100%" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
     <!-- Initialize the viewer -->
     <script type="text/javascript">
-    // var iframe = document.getElementById( 'api-frame' );
-    var iframe = $( '#api-frame' )[ 0 ];
+    var iframe = document.getElementById( 'api-frame' );
     var urlid = '7w7pAfrCfjovwykkEeRFLGw5SXS';
 
     // By default, the latest version of the viewer API will be used.
