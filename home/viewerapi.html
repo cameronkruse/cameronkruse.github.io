@@ -1,5 +1,3 @@
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/df196415819945b0862335676db0758e/embed?autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/df196415819945b0862335676db0758e?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Container Large 3DS</a> by <a href="https://sketchfab.com/kchin31?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">kchin31</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -22,52 +20,9 @@
     // By default, the latest version of the viewer API will be used.
     var client = new Sketchfab( iframe );
 
-    // Alternatively, you can request a specific version.
-    // var client = new Sketchfab( '1.0.0', iframe );
-
     var error = function () {
         console.error( 'Error api Sketchfab !' );
     };
-
-    //Notes!
-    //eye: the position fo the camera formated in [x,y,z]
-    //target: the position to look at [x,y,z]
-    //Useful links: https://sketchfab.com/developers/viewer
-    //https://sketchfab.com/developers/viewer/customanimation
-
-    // var success = function ( api ) {
-
-    //     var target = [ 0.0, 0.0, 1.0 ];
-
-    //     var cameraList = [ {
-    //         eye: [ 0, 0, 0 ]
-    //      }, {
-    //         eye: [ -120, 0, 0 ]
-    //     }, {
-    //         eye: [ 0, 2, 0 ]
-    //     }, {
-    //         eye: [ -1, 1, 0 ]
-    //     }, {
-    //         eye: [ -2, 0, 0 ]
-    //     }, {
-    //         eye: [ -1, -1, 0 ]
-    //     }, {
-    //         eye: [ 0, -2, 0 ]
-    //     }, {
-    //         eye: [ 1, -1, 0 ]
-    //     } ];
-
-    //     var currentCamera = 5;
-
-    //     var loop = function () {
-    //         currentCamera++;
-    //         api.lookat( cameraList[ currentCamera % 8 ].eye, target, 4 );
-    //         setTimeout( loop, 1000 );
-    //     }
-
-    //     api.start( loop );
-
-    // };
 
     client.init( urlid, {
         cardboard: 1,
@@ -80,10 +35,6 @@
         annotation_cycle: 10,
         annotations_visible: 0,
         transparent: 0
-
-        // Hardcode views 
-        // success: success,
-        // error: error
     } );
     </script>
 </body>
