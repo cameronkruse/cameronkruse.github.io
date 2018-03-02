@@ -22,6 +22,7 @@
 
     var error = function () {
         console.error( 'Error api Sketchfab !' );
+        //potentially reroute errror here
     };
 
     client.init( urlid, {
@@ -32,10 +33,15 @@
         camera: 0,
         blending: 1,
         // autospin: 4,
-        annotation_cycle: 10,
-        annotations_visible: 0,
-        transparent: 0
+        annotation_cycle: 10, //ammount of time (maybe in seconds) you spend on each frame
+        autostart: 1, //experimental
+        annotations_visible: 0, // whether you see annotations (0 = no numbers no words)
+        transparent: 0, //unknown
+        preload: 1
     } );
     </script>
 </body>
 </html>
+
+
+<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/d4d8ea4d0ba34b2cb590f0d2ec37237e/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/d4d8ea4d0ba34b2cb590f0d2ec37237e?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">ship v5</a> by <a href="https://sketchfab.com/kchin31?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">kchin31</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>
