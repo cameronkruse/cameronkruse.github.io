@@ -224,8 +224,13 @@ var chapters = {
     }
 };
 
+var height = features.scrollHeight;
+console.log(height);
+
 // On every scroll event, check which element is on screen
 window.onscroll = function() {
+    var  scrollHeight = features.scrollTop;
+    console.log(scrollHeight);
     var chapterNames = Object.keys(chapters);
     for (var i = 0; i < chapterNames.length; i++) {
         var chapterName = chapterNames[i];
@@ -234,7 +239,10 @@ window.onscroll = function() {
             break;
         }
     }
+
 };
+
+
 
 var activeChapterName = 'baker';
 function setActiveChapter(chapterName) {
@@ -244,8 +252,6 @@ function setActiveChapter(chapterName) {
 
     document.getElementById(chapterName).setAttribute('class', 'active');
     document.getElementById(activeChapterName).setAttribute('class', '');
-    var  intElemScrollTop = body.scrollTop;
-    console.log(intElemScrollTop);
 
     activeChapterName = chapterName;
 }
