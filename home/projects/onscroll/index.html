@@ -49,7 +49,7 @@ Copy the data in the overview_polyline within quotations -->
       <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
       <style>
           body { margin:0; padding:0; }
-          #map { position:absolute; top:0; bottom:0; width:100%; }
+          #map { position:absolute; top:54; bottom:0; width:100%; }
       </style>
 
 </head>
@@ -101,17 +101,17 @@ Copy the data in the overview_polyline within quotations -->
     <style>
 #map {
     position: fixed;
-    width:70%;
+    width:50%;
 }
 #features {
-    width: 33%;
-    margin-left: 67%;
+    width: 50%;
+    margin-left: 50%;
     font-family: sans-serif;
     overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 1.9);
+    background-color: rgba(255, 255, 255, 1.0);
 }
 section {
-    padding:  25px 50px;
+    padding: 80px 25px 50px;
     line-height: 25px;
     border-bottom: 1px solid #ddd;
     opacity: 0.25;
@@ -122,10 +122,10 @@ section.active {
 }
 section:last-child {
     border-bottom: none;
-    margin-bottom: 200px;
+    margin-bottom: 400px;
 }
 </style>
-
+<div id='spacer'></div>
 <div id='map'></div>
 
   <div id='features'>
@@ -192,6 +192,7 @@ map.on('load', function() {
             break;
         }
     }
+
 
     // add geojson line
     // map.addLayer({
@@ -320,7 +321,7 @@ var chapters = {
 };
 
 var height = features.scrollHeight;
-console.log(height);
+console.log('this is the height: 'height);
 
 // On every scroll event, check which element is on screen
 window.onscroll = function() {
@@ -334,8 +335,11 @@ window.onscroll = function() {
             break;
         }
     }
-
-};
+      var container = document.getElementById ("features");
+      var message = "The width of the contents with padding: " + container.scrollWidth + "px.\n";
+      message += "The height of the contents with padding: " + container.scrollHeight + "px.\n";
+      console.log(message);
+}
 
 
 
