@@ -277,7 +277,7 @@ var chapters = {
 };
 
 var height = features.scrollHeight;
-console.log('this is the height: 'height);
+console.log(height);
 
 // On every scroll event, check which element is on screen
 window.onscroll = function() {
@@ -291,10 +291,11 @@ window.onscroll = function() {
             break;
         }
     }
-      var container = document.getElementById ("features");
-      var message = "The width of the contents with padding: " + container.scrollWidth + "px.\n";
-      message += "The height of the contents with padding: " + container.scrollHeight + "px.\n";
-      console.log(message);
+    // var container = document.getElementById ("features");
+    // var message = "The width of the contents with padding: " + container.scrollWidth + "px.\n";
+    // message += "The height of the contents with padding: " + container.scrollHeight + "px.\n";
+    // console.log(message);
+    // console.log( $('features').position().top )
 }
 
 
@@ -318,6 +319,9 @@ function isElementOnScreen(id) {
 }
 
 </script>
+
+<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
 
 </body>
 
