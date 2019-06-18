@@ -95,17 +95,17 @@
 
             // The 'building' layer in the mapbox-streets vector source contains building-height
             // data from OpenStreetMap.
-            map.on('load', function() {
-                // Insert the layer beneath any symbol layer.
-                var layers = map.getStyle().layers;
-
-                var labelLayerId;
-                for (var i = 0; i < layers.length; i++) {
-                    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-                        labelLayerId = layers[i].id;
-                        break;
-                    }
-                }
+            // map.on('load', function() {
+            //     // Insert the layer beneath any symbol layer.
+            //     var layers = map.getStyle().layers;
+            //
+            //     var labelLayerId;
+            //     for (var i = 0; i < layers.length; i++) {
+            //         if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+            //             labelLayerId = layers[i].id;
+            //             break;
+            //         }
+            //     }
 
             //     map.addLayer({
             //         'id': '3d-buildings',
