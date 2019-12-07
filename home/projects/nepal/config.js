@@ -1,7 +1,7 @@
 var config = {
     style: 'mapbox://styles/highestroad/ck3ozjhyd0myt1cqz0imxcppq',
     accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q',
-    showMarkers: true,
+    showMarkers: false,
     theme: 'dark',
     alignment: 'left',
     title: 'Where To Run When The Glaciers Run Dry',
@@ -15,7 +15,7 @@ var config = {
             image: './path/to/image/source.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
-                center: [29.06679, 83.99787],
+                center: [83.99787, 29.06679],
                 zoom: 12.57,
                 pitch: 98.20,
                 bearing: 60
@@ -39,7 +39,7 @@ var config = {
             image: './path/to/image/source.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
-                center: [29.041815, 84.014188],
+                center: [84.014188, 29.041815],
                 zoom: 17.6,
                 pitch: 0,
                 bearing: 0
@@ -63,7 +63,7 @@ var config = {
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [29.066805, 83.955668],
+                center: [83.955668, 29.066805],
                 zoom: 18.25,
                 pitch: 0,
                 bearing: 0
