@@ -12,7 +12,7 @@ var config = {
         {
             id: 'chapter1',
             title: 'Mustang',
-            image: './images/ckrusenepal-1.jpg',
+            image: './images/ckrusenepal-109.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [83.99787, 29.06679],
@@ -36,7 +36,7 @@ var config = {
         {
             id: 'chapter2',
             title: 'Dhey',
-            image: './path/to/image/source.png',
+            image: './images/ckrusenepal-95.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [84.014188, 29.041815],
@@ -60,7 +60,7 @@ var config = {
         {
             id: 'chapter3',
             title: 'Chambaleh',
-            image: './path/to/image/source.png',
+            image: './images/ckrusenepal-1.jpg',
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [83.955668, 29.066805],
