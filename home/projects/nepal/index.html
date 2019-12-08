@@ -10,7 +10,7 @@
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-black">
         <h1 class="display-3">Where to Run When The Glaciers Run Dry</h1>
-        <p class="lead mb-0">Climate refugees high in the Himalyas negotiate with our changing planet</p>
+        <p class="lead mb-0">Climate refugees high in the Himalayas negotiate with our changing planet</p>
       </div>
     </div>
   </div>
@@ -23,6 +23,7 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script src="/bower_components/play-on-scroll/scripts/play-on-scroll.js"></script>
     <link href='./css/bootstrap.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <link href='./css/storytelling.css' rel='stylesheet' />
@@ -208,6 +209,16 @@ map.on("load", function() {
 window.addEventListener('resize', scroller.resize);
 
 </script>
+
+<!-- trying to implement scroll video below from https://github.com/develodesign/play-on-scroll-->
+<script src="./js/test.js"></script>
+<video width="600">
+	<source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+	<source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+	Your browser does not support HTML5 video.
+</video>
+
+
 
 </body>
 </html>
