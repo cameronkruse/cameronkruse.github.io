@@ -6,7 +6,7 @@ var config = {
     alignment: 'left',
     title: 'Where To Run When The Glaciers Run Dry',
     subtitle: 'Climate refugees high in the Himalyas negotiating with our changing planet',
-    byline: 'By Cameron Kruse',
+    byline: 'By Cameron Kruse, Tashi Bista, and Corey Robinson',
     footer: 'Source: A National Geographic Project',
     chapters: [
         {
