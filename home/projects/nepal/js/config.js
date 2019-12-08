@@ -5,7 +5,7 @@ var config = {
     theme: 'dark',
     alignment: 'left',
     title: 'Where To Run When The Glaciers Run Dry',
-    subtitle: 'Climate refugees high in the Himalyas negotiating with our changing planet',
+    subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
     byline: 'By Cameron Kruse, Tashi Bista, and Corey Robinson',
     footer: 'Source: A National Geographic Project',
     chapters: [
