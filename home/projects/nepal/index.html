@@ -23,7 +23,6 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    <script src="/bower_components/play-on-scroll/scripts/play-on-scroll.js"></script>
     <link href='./css/bootstrap.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <link href='./css/storytelling.css' rel='stylesheet' />
@@ -33,10 +32,9 @@
     <!-- deleted style block and moved it to css/storytelling.css now referenced above -->
 </head>
 
-<!-- I think this is instructions on how to override font family: https://stackoverflow.com/questions/51239071/how-to-override-bootstrap-font-family -->
+<!-- I think these are instructions on how to override font family: https://stackoverflow.com/questions/51239071/how-to-override-bootstrap-font-family -->
 
 <body>
-
 <div id="map"></div>
 <div id="story"></div>
 <script src="./js/config.js"></script>
@@ -209,14 +207,6 @@ map.on("load", function() {
 window.addEventListener('resize', scroller.resize);
 
 </script>
-
-<!-- trying to implement scroll video below from https://github.com/develodesign/play-on-scroll-->
-<script src="./js/test.js"></script>
-<video width="600">
-	<source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-	<source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-	Your browser does not support HTML5 video.
-</video>
 
 
 

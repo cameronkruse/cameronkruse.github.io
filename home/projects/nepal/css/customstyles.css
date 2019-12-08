@@ -48,6 +48,6 @@ header .overlay {
 }
 
 @font-face {
-  font-family: myFirstFont;
+  font-family: customTitleFont;
   src: url(sansation_light.woff);
 }
