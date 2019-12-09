@@ -96,6 +96,37 @@ var config = {
             ]
         },
         {
+            id: 'sticky1',
+            title: 'Water fed Mill',
+            image: './images/ckrusenepal-62.jpg',
+            stickyimage: './images/ckrusenepal-31.jpg',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            location: {
+                center: [83.99449, 29.04885],
+                zoom: 12.94,
+                pitch: -162,
+                bearing: 9
+            },
+            sticky: [
+                // {
+                //     layer: 'tracks1',
+                //     opacity: 1
+                // }
+            ],
+            onChapterEnter: [
+                {
+                    layer: 'tracks1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'tracks1',
+                    opacity: 0
+                }
+            ]
+        },
+        {
             id: 'chapter5',
             title: 'Glaciers',
             image: './images/ckrusenepal-105.jpg',

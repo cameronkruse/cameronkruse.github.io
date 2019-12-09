@@ -112,6 +112,11 @@ config.chapters.forEach((record, idx) => {
         image.src = record.image;
         chapter.appendChild(image);
     }
+    if (record.stickyimage) {
+        var stickyimage = new Image();
+        stickyimage.src = record.stickyimage;
+        chapter.appendChild(stickyimage);
+    }
 
     if (record.description) {
         var story = document.createElement('p');
@@ -189,6 +194,9 @@ map.on("load", function() {
         map.flyTo(chapter.location);
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
+        }
+        if (chapter.sticky.length > 0) {
+            chapter.sticky.forEach(setLayerOpacity);
         }
         if (chapter.onChapterEnter.length > 0) {
             chapter.onChapterEnter.forEach(setLayerOpacity);
