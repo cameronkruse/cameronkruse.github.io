@@ -27,6 +27,8 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <link href='./css/storytelling.css' rel='stylesheet' />
     <link href='./css/customstyles.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lkv7lpc.css">
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <!-- deleted style block and moved it to css/storytelling.css now referenced above -->
@@ -195,8 +197,9 @@ map.on("load", function() {
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
+// looks for whether chapter element is sticky and applies wider div. probably should go and add more
         if (chapter.sticky.length > 0) {
-            chapter.sticky.forEach(setLayerOpacity);
+            response.element.classList.add('sticky');
         }
         if (chapter.onChapterEnter.length > 0) {
             chapter.onChapterEnter.forEach(setLayerOpacity);

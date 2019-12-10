@@ -108,10 +108,10 @@ var config = {
                 bearing: 9
             },
             sticky: [
-                // {
-                //     layer: 'tracks1',
-                //     opacity: 1
-                // }
+                {
+                    layer: 'tracks1',
+                    opacity: 1
+                }
             ],
             onChapterEnter: [
                 {
