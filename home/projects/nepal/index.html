@@ -36,8 +36,12 @@
 
 <body>
 <div id="map"></div>
+<!-- don't want this here created in script below -->
+<!-- <div id="stickyBlocks"></div> -->
 <div id="story"></div>
 <script src="./js/config.js"></script>
+
+<!-- main script starts here -->
 <script>
 var layerTypes = {
     'fill': ['fill-opacity'],
@@ -70,6 +74,17 @@ var story = document.getElementById('story');
 var features = document.createElement('div');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
+// trying to add stickyvideo
+
+var stickyBlocks = document.createElement('div');
+stickyBlocks.classList.add('videoMap');
+
+// trying to add sticky video
+if (config.videoMap) {
+    var videoMap = document.createElement('videoMap');
+    videoMap.src = config.'./videos/chtrimmedsmall.mov';
+    stickyBlocks.appendChild(videoMap);
+}
 
 var header = document.createElement('div');
 
@@ -91,11 +106,17 @@ if (config.byline) {
     header.appendChild(bylineText);
 }
 
+
 if (header.innerText.length > 0) {
     header.classList.add(config.theme);
     header.setAttribute('id', 'header');
     story.appendChild(header);
 }
+
+
+
+
+
 
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
@@ -134,8 +155,9 @@ config.chapters.forEach((record, idx) => {
     container.appendChild(chapter);
     features.appendChild(container);
 });
-
+// this is where i need to add my stickyblocks
 story.appendChild(features);
+story.appendChild(stickyBlocks);
 
 var footer = document.createElement('div');
 

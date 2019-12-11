@@ -13,6 +13,14 @@ a, a:hover, a:visited {
     position: fixed;
     z-index: -5;
 }
+#videoMap {
+    top:0;
+    height: 10vh;
+    width:10vw;
+    position: fixed;
+    z-index: -4;
+    color: #0071bc;
+}
 #header {
     margin: 3vh auto;
     width: 90vw;
