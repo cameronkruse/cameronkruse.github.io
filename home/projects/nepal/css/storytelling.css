@@ -1,7 +1,13 @@
+
+
 body {
     margin:0;
     padding:0;
-    font-family: serif;
+    /* font-family: mrs-eaves-roman-small-caps, sans-serif; */
+    /* font-family: mrs-eaves, serif; */
+    font-family: 'Alatsi', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+
 }
 a, a:hover, a:visited {
     color: #0071bc;
@@ -76,6 +82,20 @@ a, a:hover, a:visited {
     font-size: 13px;
 }
 
+.step.sticky div {
+  /* padding is in height width  order*/
+  margin: 3vh auto;
+  width: 90vw;
+  padding: 2vh;
+  text-align: center;
+  }
+
+/* .step figure.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+} */
+
 .step img {
     width: 100%;
 }
@@ -85,4 +105,9 @@ a, a:hover, a:visited {
         width: 90vw;
         margin: 0 auto;
     }
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+       url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
 }
