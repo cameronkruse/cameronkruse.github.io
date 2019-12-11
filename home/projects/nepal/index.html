@@ -38,8 +38,6 @@
 
 <body>
 <div id="map"></div>
-<!-- don't want this here created in script below -->
-<!-- <div id="stickyBlocks"></div> -->
 <div id="story"></div>
 <script src="./js/config.js"></script>
 
@@ -76,17 +74,7 @@ var story = document.getElementById('story');
 var features = document.createElement('div');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
-// trying to add stickyvideo
 
-var stickyBlocks = document.createElement('div');
-stickyBlocks.classList.add('videoMap');
-
-// trying to add sticky video
-if (config.videoMap) {
-    var videoMap = document.createElement('videoMap');
-    videoMap.src = config.'./videos/chtrimmedsmall.mov';
-    stickyBlocks.appendChild(videoMap);
-}
 
 var header = document.createElement('div');
 
@@ -114,10 +102,6 @@ if (header.innerText.length > 0) {
     header.setAttribute('id', 'header');
     story.appendChild(header);
 }
-
-
-
-
 
 
 config.chapters.forEach((record, idx) => {
@@ -157,9 +141,65 @@ config.chapters.forEach((record, idx) => {
     container.appendChild(chapter);
     features.appendChild(container);
 });
-// this is where i need to add my stickyblocks
+
+// below is a custom element I bring in called stickyblocks
+
+var videoMap = document.createElement('div');
+
+if (config.title) {
+    var videoMapText = document.createElement('h1');
+    videoMapText.innerText = config.videoMap;
+    videoMap.appendChild(videoMapText);
+}
+
+if (videoMap.innerText.length > 0) {
+    videoMap.classList.add(config.theme);
+    videoMap.setAttribute('id', 'videoMap');
+    story.appendChild(videoMap);
+}
+
+// normal stuff below
+
+config.stickyChapters.forEach((record, idz) => {
+    var container = document.createElement('div');
+    var stickyChapter = document.createElement('div');
+
+
+    if (record.title) {
+        var title = document.createElement('h3');
+        title.innerText = record.title;
+        stickyChapter.appendChild(title);
+    }
+
+    if (record.image) {
+        var image = new Image();
+        image.src = record.image;
+        stickyChapter.appendChild(image);
+    }
+    if (record.stickyimage) {
+        var stickyimage = new Image();
+        stickyimage.src = record.stickyimage;
+        stickyChapter.appendChild(stickyimage);
+    }
+
+    if (record.description) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description;
+        stickyChapter.appendChild(story);
+    }
+
+    container.setAttribute('id', record.id);
+    container.classList.add('step');
+    if (idz === 0) {
+        container.classList.add('active');
+    }
+
+    stickyChapter.classList.add(config.theme);
+    container.appendChild(stickyChapter);
+    features.appendChild(container);
+});
+
 story.appendChild(features);
-story.appendChild(stickyBlocks);
 
 var footer = document.createElement('div');
 
@@ -221,7 +261,8 @@ map.on("load", function() {
         }
 // looks for whether chapter element is sticky and applies wider div. probably should go and add more
         if (chapter.sticky.length > 0) {
-            response.element.classList.add('sticky');
+            videoMap.classList.add('visible');
+
         }
         if (chapter.onChapterEnter.length > 0) {
             chapter.onChapterEnter.forEach(setLayerOpacity);

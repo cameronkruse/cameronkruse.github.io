@@ -20,13 +20,16 @@ a, a:hover, a:visited {
     z-index: -5;
 }
 #videoMap {
-    top:0;
-    height: 10vh;
-    width:10vw;
-    position: fixed;
-    z-index: -4;
-    color: #0071bc;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  z-index: -4;
+  color: #0071bc;
 }
+.visible{
+    opacity: 0;
+}
+
 #header {
     margin: 3vh auto;
     width: 90vw;
