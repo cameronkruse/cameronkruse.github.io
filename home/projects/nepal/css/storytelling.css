@@ -22,7 +22,7 @@ a, a:hover, a:visited {
 #videoMap {
   position: -webkit-sticky;
   position: sticky;
-  top: 100px;
+  top: -1px;
   z-index: -4;
   color: #0071bc;
 }
