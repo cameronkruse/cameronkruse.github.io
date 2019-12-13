@@ -33,7 +33,6 @@
     <script src="https://unpkg.com/scrollama"></script>
     <!-- deleted style block and moved it to css/storytelling.css now referenced above -->
 </head>
-
 <!-- I think these are instructions on how to override font family: https://stackoverflow.com/questions/51239071/how-to-override-bootstrap-font-family -->
 
 <body>
@@ -119,11 +118,6 @@ config.chapters.forEach((record, idx) => {
         image.src = record.image;
         chapter.appendChild(image);
     }
-    if (record.stickyimage) {
-        var stickyimage = new Image();
-        stickyimage.src = record.stickyimage;
-        chapter.appendChild(stickyimage);
-    }
 
     if (record.description) {
         var story = document.createElement('p');
@@ -144,60 +138,37 @@ config.chapters.forEach((record, idx) => {
 
 // below is a custom element I bring in called stickyblocks
 
-var videoMap = document.createElement('div');
-
+var stickyElement = document.createElement('div');
+// if (config.title) {
+//     console.log("stickypicblock");
+//     var stickyImage = new Image();
+//     stickyImage.src = './images/ckrusenepal-95.jpg';
+//     stickyElement.appendChild(stickyImage);
+// }
 if (config.title) {
-    var videoMapText = document.createElement('h1');
-    videoMapText.innerText = config.videoMap;
-    videoMap.appendChild(videoMapText);
+    var titleText = document.createElement('h1');
+    titleText.innerText = config.title;
+    stickyElement.appendChild(titleText);
 }
 
-if (videoMap.innerText.length > 0) {
-    videoMap.classList.add(config.theme);
-    videoMap.setAttribute('id', 'videoMap');
-    story.appendChild(videoMap);
+if (stickyElement.innerText.length > 0) {
+    stickyElement.classList.add(config.theme);
+    stickyElement.setAttribute('id', 'videoMap');
+    story.appendChild(stickyElement);
 }
+// if (config.title) {
+//     var videoMapText = document.createElement('h1');
+//     videoMapText.innerText = config.videoMap;
+//     videoMap.appendChild(videoMapText);
+// }
+//
+// if (videoMap.innerText.length > 0) {
+//     videoMap.classList.add(config.theme);
+//     videoMap.setAttribute('id', 'videoMap');
+//     story.appendChild(videoMap);
+// }
 
 // normal stuff below
-
-config.stickyChapters.forEach((record, idz) => {
-    var container = document.createElement('div');
-    var stickyChapter = document.createElement('div');
-
-
-    if (record.title) {
-        var title = document.createElement('h3');
-        title.innerText = record.title;
-        stickyChapter.appendChild(title);
-    }
-
-    if (record.image) {
-        var image = new Image();
-        image.src = record.image;
-        stickyChapter.appendChild(image);
-    }
-    if (record.stickyimage) {
-        var stickyimage = new Image();
-        stickyimage.src = record.stickyimage;
-        stickyChapter.appendChild(stickyimage);
-    }
-
-    if (record.description) {
-        var story = document.createElement('p');
-        story.innerHTML = record.description;
-        stickyChapter.appendChild(story);
-    }
-
-    container.setAttribute('id', record.id);
-    container.classList.add('step');
-    if (idz === 0) {
-        container.classList.add('active');
-    }
-
-    stickyChapter.classList.add(config.theme);
-    container.appendChild(stickyChapter);
-    features.appendChild(container);
-});
 
 story.appendChild(features);
 
@@ -259,11 +230,17 @@ map.on("load", function() {
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
-// looks for whether chapter element is sticky and applies wider div. probably should go and add more
-        if (chapter.sticky.length > 0) {
+// looking if this is a chapter where we want to show sticky
+        if (chapter.showSticky) {
             videoMap.classList.add('visible');
-
+            console.log("showsticky block true")
         }
+
+        if (chapter.hideSticky) {
+            videoMap.classList.remove('visible');
+            console.log("hidesticky block true")
+        }
+
         if (chapter.onChapterEnter.length > 0) {
             chapter.onChapterEnter.forEach(setLayerOpacity);
         }
@@ -271,6 +248,7 @@ map.on("load", function() {
     .onStepExit(response => {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.remove('active');
+
         if (chapter.onChapterExit.length > 0) {
             chapter.onChapterExit.forEach(setLayerOpacity);
         }
