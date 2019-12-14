@@ -1,15 +1,13 @@
 var config = {
     style: 'mapbox://styles/highestroad/ck3ozjhyd0myt1cqz0imxcppq',
     accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q',
-    showMarkers: true,
+    showMarkers: false,
     theme: 'dark',
     alignment: 'left',
     title: 'Where To Run When The Glaciers Run Dry',
     subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
     byline: 'By Cameron Kruse, Tashi Bista, and Corey Robinson',
     footer: 'Source: A National Geographic Project',
-    videoMap: 'this is a videoMap text',
-    something: 'the words here',
     chapters: [
         {
             id: 'chapter1',
@@ -64,7 +62,7 @@ var config = {
             title: 'Line should appear beneath showsticky true',
             image: './images/ckrusenepal-95.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            showSticky: true,
+            photoBlock: true,
             location: {
                 center: [84.014188, 29.041815],
                 zoom: 17.6,
@@ -156,7 +154,7 @@ var config = {
             title: 'Glaciers',
             image: './images/ckrusenepal-105.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            hideSticky: true,
+            photoBlock: false,
             location: {
                 center: [84.09096, 28.91339],
                 zoom: 13.03,

@@ -33,7 +33,6 @@
     <script src="https://unpkg.com/scrollama"></script>
     <!-- deleted style block and moved it to css/storytelling.css now referenced above -->
 </head>
-<!-- I think these are instructions on how to override font family: https://stackoverflow.com/questions/51239071/how-to-override-bootstrap-font-family -->
 
 <body>
 <div id="map"></div>
@@ -78,6 +77,7 @@ features.setAttribute('id', 'features');
 var header = document.createElement('div');
 
 if (config.title) {
+
     var titleText = document.createElement('h1');
     titleText.innerText = config.title;
     header.appendChild(titleText);
@@ -136,15 +136,11 @@ config.chapters.forEach((record, idx) => {
     features.appendChild(container);
 });
 
-// below is a custom element I bring in called stickyblocks
+// below is a custom element I bring in called stickyElement
+// Sticky element is the div that shows up when a chapter triggers a stickyblock
 
 var stickyElement = document.createElement('div');
-// if (config.title) {
-//     console.log("stickypicblock");
-//     var stickyImage = new Image();
-//     stickyImage.src = './images/ckrusenepal-95.jpg';
-//     stickyElement.appendChild(stickyImage);
-// }
+
 if (config.title) {
     var titleText = document.createElement('h1');
     titleText.innerText = config.title;
@@ -153,20 +149,9 @@ if (config.title) {
 
 if (stickyElement.innerText.length > 0) {
     stickyElement.classList.add(config.theme);
-    stickyElement.setAttribute('id', 'videoMap');
+    stickyElement.setAttribute('id', 'photoBlock');
     story.appendChild(stickyElement);
 }
-// if (config.title) {
-//     var videoMapText = document.createElement('h1');
-//     videoMapText.innerText = config.videoMap;
-//     videoMap.appendChild(videoMapText);
-// }
-//
-// if (videoMap.innerText.length > 0) {
-//     videoMap.classList.add(config.theme);
-//     videoMap.setAttribute('id', 'videoMap');
-//     story.appendChild(videoMap);
-// }
 
 // normal stuff below
 
@@ -230,17 +215,42 @@ map.on("load", function() {
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
-// looking if this is a chapter where we want to show sticky
-        if (chapter.showSticky) {
-            videoMap.classList.add('visible');
-            console.log("showsticky block true")
+// choose stickyblocks we want to show.
+// It would be cleaner if i could just create a list of potential sticky elements and activate the ones that are true
+
+// photoBlock
+        if (chapter.photoBlock == true) {
+            // photoBlock.classList.add('visible'); using opacity instead now
+            document.getElementById("photoBlock").style.opacity = "100";
+            console.log("photoBlock block true")
+        }
+        if (chapter.photoBlock == false) {
+            document.getElementById("photoBlock").style.opacity = "0";
+            // photoBlock.classList.remove('visible'); using opacity now instead
+            console.log("photoBlock block false")
         }
 
-        if (chapter.hideSticky) {
-            videoMap.classList.remove('visible');
-            console.log("hidesticky block true")
+// videoBlock
+        if (chapter.videoBlock == true) {
+            document.getElementById("videoBlock").style.opacity = "100";
+            console.log("photoBlock block true")
         }
 
+        if (chapter.videoBlock == false) {
+            document.getElementById("videoBlock").style.opacity = "0";
+            console.log("photoBlock block false")
+        }
+// scrollVideoBlock
+        if (chapter.scrollVideoBlock == true) {
+            document.getElementById("scrollVideoBlock").style.opacity = "100";
+            console.log("photoBlock block true")
+        }
+        if (chapter.scrollVideoBlock == false) {
+            document.getElementById("scrollVideoBlock").style.opacity = "0";
+            console.log("photoBlock block false")
+        }
+
+// this is adding the mapbox layer on the map
         if (chapter.onChapterEnter.length > 0) {
             chapter.onChapterEnter.forEach(setLayerOpacity);
         }

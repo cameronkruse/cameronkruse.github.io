@@ -19,24 +19,35 @@ a, a:hover, a:visited {
     position: fixed;
     z-index: -5;
 }
-#videoMap {
+
+.bg {
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#photoBlock {
+  background-image: url('../images/ckrusenepal-68.jpg');
   position: -webkit-sticky;
   position: sticky;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0px;
   z-index: -4;
   color: #0071bc;
-  height: 200px;
-  width: 50%;
+  height: 500px;
+  width: 100%;
   background-color: powderblue;
-  visibility: hidden
-  /* transition: all ease 0.8s; */
-}
-
-.visible{
-    visibility: visible;
-}
-.hide{
-  visibility: hidden;
+  transition: all ease 1.0s;
+  opacity: 0;
 }
 
 
