@@ -73,9 +73,7 @@ var features = document.createElement('div');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
 
-
 var header = document.createElement('div');
-
 if (config.title) {
 
     var titleText = document.createElement('h1');
@@ -138,9 +136,9 @@ config.chapters.forEach((record, idx) => {
 
 // below is a custom element I bring in called stickyElement
 // Sticky element is the div that shows up when a chapter triggers a stickyblock
-
+// this stickyelement stuff is what I really need to work on
+// I think what I need to do here is basically just write code here to make a full screen container. CSS can control styling and content
 var stickyElement = document.createElement('div');
-
 if (config.title) {
     var titleText = document.createElement('h1');
     titleText.innerText = config.title;
@@ -157,22 +155,21 @@ if (stickyElement.innerText.length > 0) {
 
 story.appendChild(features);
 
+// footer created
 var footer = document.createElement('div');
-
 if (config.footer) {
     var footerText = document.createElement('p');
     footerText.innerHTML = config.footer;
     footer.appendChild(footerText);
 }
-
 if (footer.innerText.length > 0) {
     footer.classList.add(config.theme);
     footer.setAttribute('id', 'footer');
     story.appendChild(footer);
 }
 
+// generic mapbox token and stuff
 mapboxgl.accessToken = config.accessToken;
-
 const transformRequest = (url) => {
     const hasQuery = url.indexOf("?") !== -1;
     const suffix = hasQuery ? "&pluginName=journalismScrollytelling" : "?pluginName=journalismScrollytelling";
@@ -180,7 +177,6 @@ const transformRequest = (url) => {
       url: url + suffix
     }
 }
-
 var map = new mapboxgl.Map({
     container: 'map',
     style: config.style,
@@ -191,15 +187,14 @@ var map = new mapboxgl.Map({
     scrollZoom: false,
     transformRequest: transformRequest
 });
-
+// show or hide marker on map
 var marker = new mapboxgl.Marker();
 if (config.showMarkers) {
     marker.setLngLat(config.chapters[0].location.center).addTo(map);
 }
-
 // instantiate the scrollama
 var scroller = scrollama();
-
+// instantiate map
 map.on("load", function() {
     // setup the instance, pass callback functions
     scroller
@@ -215,13 +210,13 @@ map.on("load", function() {
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
-// choose stickyblocks we want to show.
-// It would be cleaner if i could just create a list of potential sticky elements and activate the ones that are true
 
+// choose stickyblocks we want to show. It would be cleaner if i could just create a list of potential sticky elements and activate the ones that are true
 // photoBlock
         if (chapter.photoBlock == true) {
             // photoBlock.classList.add('visible'); using opacity instead now
             document.getElementById("photoBlock").style.opacity = "100";
+            var stickykind = "photoBlock"
             console.log("photoBlock block true")
         }
         if (chapter.photoBlock == false) {
