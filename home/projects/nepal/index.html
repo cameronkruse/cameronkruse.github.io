@@ -37,6 +37,14 @@
 <body>
 <div id="map"></div>
 <div id="story"></div>
+<div id="stickyPhoto"></div>
+<div id="stickyVideo"></div>
+<div id="stickyScrollVideo"></div>
+
+<video id="scrollVideoBlock" tabindex="0", autobuffer preload>
+  <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="./videos/chtrimmedsmall.mov"></source>
+</video>
+
 <script src="./js/config.js"></script>
 
 <!-- main script starts here -->
@@ -69,6 +77,9 @@ function setLayerOpacity(layer) {
 }
 
 var story = document.getElementById('story');
+var stickyPhoto = document.getElementById('stickyPhoto');
+var stickyVideo = document.getElementById('stickyVideo');
+var stickyScrollVideo = document.getElementById('stickyScrollVideo');
 var features = document.createElement('div');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
@@ -134,25 +145,51 @@ config.chapters.forEach((record, idx) => {
     features.appendChild(container);
 });
 
-// below is a custom element I bring in called stickyElement
+// ********** below is a custom element I bring in called stickyElement
 // Sticky element is the div that shows up when a chapter triggers a stickyblock
 // this stickyelement stuff is what I really need to work on
 // I think what I need to do here is basically just write code here to make a full screen container. CSS can control styling and content
-var stickyElement = document.createElement('div');
-if (config.title) {
-    var titleText = document.createElement('h1');
-    titleText.innerText = config.title;
-    stickyElement.appendChild(titleText);
-}
 
-if (stickyElement.innerText.length > 0) {
-    stickyElement.classList.add(config.theme);
-    stickyElement.setAttribute('id', 'photoBlock');
-    story.appendChild(stickyElement);
+
+stickyPhoto.setAttribute('id', 'photoBlock');
+stickyVideo.setAttribute('id', 'videoBlock');
+stickyScrollVideo.setAttribute('id', 'scrollVideoBlock');
+story.appendChild(stickyPhoto);
+story.appendChild(stickyVideo);
+story.appendChild(stickyScrollVideo);
+
+//******* below is the script for video playing with scroller
+<!-- https://codepen.io/ollieRogers/pen/lfeLc/ -->
+// don't know what enterView Does yet
+// This video doesn't use this block https://www.youtube.com/watch?v=HiegEfkenXA
+// enterView({
+//     selector: 'features',
+//     enter: function(el) {
+//         el.classList.add('entered');
+//     }
+// })
+
+var frameNumber = 0, // start video at frame 0
+  // lower numbers = faster playback
+  playbackConst = 1000,
+  // get page height from video duration
+  setHeight = document.getElementById("features"),
+  // select video element
+  vid = document.getElementById('scrollVideoBlock');
+// dynamically set the page height according to video length I feel like i don't want this if I can avoid it
+vid.addEventListener('loadedmetadata', function() {
+setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+});
+
+// Use requestAnimationFrame for smooth playback
+function scrollPlay(){
+  var frameNumber  = window.pageYOffset/playbackConst;
+  vid.currentTime  = frameNumber;
+  window.requestAnimationFrame(scrollPlay);
 }
+window.requestAnimationFrame(scrollPlay);
 
 // normal stuff below
-
 story.appendChild(features);
 
 // footer created
@@ -214,35 +251,34 @@ map.on("load", function() {
 // choose stickyblocks we want to show. It would be cleaner if i could just create a list of potential sticky elements and activate the ones that are true
 // photoBlock
         if (chapter.photoBlock == true) {
-            // photoBlock.classList.add('visible'); using opacity instead now
             document.getElementById("photoBlock").style.opacity = "100";
-            var stickykind = "photoBlock"
-            console.log("photoBlock block true")
+
+            console.log("photoBlock block true");
         }
         if (chapter.photoBlock == false) {
             document.getElementById("photoBlock").style.opacity = "0";
-            // photoBlock.classList.remove('visible'); using opacity now instead
-            console.log("photoBlock block false")
+            console.log("photoBlock block false");
         }
 
-// videoBlock
-        if (chapter.videoBlock == true) {
-            document.getElementById("videoBlock").style.opacity = "100";
-            console.log("photoBlock block true")
-        }
+// // videoBlock
+//         if (chapter.videoBlock == true) {
+//             document.getElementById("videoBlock").style.opacity = "100";
+//             console.log("videoBlock block true");
+//         }
+//
+//         if (chapter.videoBlock == false) {
+//             document.getElementById("videoBlock").style.opacity = "0";
+//             console.log("videoBlock block false");
+//         }
 
-        if (chapter.videoBlock == false) {
-            document.getElementById("videoBlock").style.opacity = "0";
-            console.log("photoBlock block false")
-        }
 // scrollVideoBlock
         if (chapter.scrollVideoBlock == true) {
             document.getElementById("scrollVideoBlock").style.opacity = "100";
-            console.log("photoBlock block true")
+            console.log("scrollVideoBlock block true");
         }
         if (chapter.scrollVideoBlock == false) {
             document.getElementById("scrollVideoBlock").style.opacity = "0";
-            console.log("photoBlock block false")
+            console.log("scrollVideoBlock block false");
         }
 
 // this is adding the mapbox layer on the map
@@ -250,6 +286,7 @@ map.on("load", function() {
             chapter.onChapterEnter.forEach(setLayerOpacity);
         }
     })
+
     .onStepExit(response => {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.remove('active');

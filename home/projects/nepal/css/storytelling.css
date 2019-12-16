@@ -12,6 +12,7 @@ body {
 a, a:hover, a:visited {
     color: #0071bc;
 }
+
 #map {
     top:0;
     height: 100vh;
@@ -20,18 +21,6 @@ a, a:hover, a:visited {
     z-index: -5;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("img_girl.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 /* the root of all suffering: https://stackoverflow.com/questions/5657964/css-why-doesn-t-percentage-height-work */
 #photoBlock {
   background-image: url('../images/ckrusenepal-68.jpg');
@@ -48,6 +37,32 @@ a, a:hover, a:visited {
   background-color: powderblue;
   transition: all ease 1.0s;
   opacity: 0;
+}
+#videoBlock {
+  background-image: url('../images/ckrusenepal-68.jpg');
+  position: -webkit-sticky;
+  position: sticky;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+  z-index: -4;
+  color: #0071bc;
+  height: 100vh;
+  width: 100%;
+  background-color: powderblue;
+  transition: all ease 1.0s;
+  opacity: 0;
+}
+#scrollVideoBlock {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vp;
+  z-index: -4;
+  transition: all ease 1.0s;
+  opacity: 0
 }
 
 
@@ -105,12 +120,6 @@ a, a:hover, a:visited {
     line-height: 25px;
     font-size: 13px;
 }
-
-/* .step figure.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-} */
 
 .step img {
     width: 100%;
