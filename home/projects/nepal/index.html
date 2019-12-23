@@ -38,7 +38,11 @@
 <div id="map"></div>
 <div id="story"></div>
 <div id="stickyPhoto"></div>
-<div id="stickyVideo"></div>
+<div id="stickyVideo" class="videoBlock">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="./videos/chtrimmedsmall.mov" type="video/mp4">
+  </video>
+</div>
 <div id="stickyScrollVideo"></div>
 
 <video id="scrollVideoBlock" tabindex="0", autobuffer preload>
@@ -145,7 +149,7 @@ config.chapters.forEach((record, idx) => {
     features.appendChild(container);
 });
 
-// ********** below is a custom element I bring in called stickyElement
+// ********** below is a custom element I bring in called stickyElement **********
 // Sticky element is the div that shows up when a chapter triggers a stickyblock
 // this stickyelement stuff is what I really need to work on
 // I think what I need to do here is basically just write code here to make a full screen container. CSS can control styling and content
@@ -158,22 +162,20 @@ story.appendChild(stickyPhoto);
 story.appendChild(stickyVideo);
 story.appendChild(stickyScrollVideo);
 
+// Normal video play and pause
+function playPause() {
+  if (myVideo.paused)
+  myVideo.play();
+  else myVideo.pause();
+}
+
 //******* below is the script for video playing with scroller
-<!-- https://codepen.io/ollieRogers/pen/lfeLc/ -->
-// don't know what enterView Does yet
-// This video doesn't use this block https://www.youtube.com/watch?v=HiegEfkenXA
-// enterView({
-//     selector: 'features',
-//     enter: function(el) {
-//         el.classList.add('entered');
-//     }
-// })
 
 var frameNumber = 0, // start video at frame 0
   // lower numbers = faster playback
   playbackConst = 1000,
   // get page height from video duration
-  setHeight = document.getElementById("features"),
+  setHeight = document.getElementById("story"),
   // select video element
   vid = document.getElementById('scrollVideoBlock');
 // dynamically set the page height according to video length I feel like i don't want this if I can avoid it
@@ -263,6 +265,9 @@ map.on("load", function() {
 // videoBlock
         if (chapter.videoBlock == true) {
             document.getElementById("videoBlock").style.opacity = "100";
+            var myVideo = document.getElementById("stickyVideo");
+            playPause()
+
             console.log("videoBlock block true");
         }
 
@@ -273,8 +278,9 @@ map.on("load", function() {
 
 // scrollVideoBlock
         if (chapter.scrollVideoBlock == true) {
-            document.getElementById("scrollVideoBlock").style.opacity = "100";
+            document.getElementById("scrollVideoBlock").style.opacity = "0";
             console.log("scrollVideoBlock block true");
+            // video to play: '../videos/chtrimmedsmall.mov'
         }
         if (chapter.scrollVideoBlock == false) {
             document.getElementById("scrollVideoBlock").style.opacity = "0";

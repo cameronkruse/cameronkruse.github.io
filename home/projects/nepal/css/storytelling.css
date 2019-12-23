@@ -34,12 +34,11 @@ a, a:hover, a:visited {
   color: #0071bc;
   height: 100vh;
   width: 100%;
-  background-color: powderblue;
+  background-color: green;
   transition: all ease 1.0s;
   opacity: 0;
 }
 #videoBlock {
-  background-image: url('../images/ckrusenepal-68.jpg');
   position: -webkit-sticky;
   position: sticky;
   background-position: center;
@@ -47,10 +46,9 @@ a, a:hover, a:visited {
   background-size: cover;
   top: 0px;
   z-index: -4;
-  color: #0071bc;
   height: 100vh;
-  width: 100%;
-  background-color: powderblue;
+  width: 100vh;
+  background-color: pink;
   transition: all ease 1.0s;
   opacity: 0;
 }
@@ -58,11 +56,11 @@ a, a:hover, a:visited {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 100vp;
   z-index: -4;
   transition: all ease 1.0s;
-  opacity: 0
+  opacity: 0;
 }
 
 
