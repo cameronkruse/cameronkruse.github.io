@@ -8,6 +8,7 @@ var config = {
     subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
     byline: 'By Cameron Kruse, Tashi Bista, and Corey Robinson',
     footer: 'Source: A National Geographic Project',
+    sourcetest: '../videos/applestrimmed.mov',
     chapters: [
         {
             id: 'chapter1',
