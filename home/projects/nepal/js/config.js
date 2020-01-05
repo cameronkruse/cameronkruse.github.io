@@ -18,6 +18,7 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: false,
             stickySource: '',
             location: {
                 center: [83.99787, 29.06679],
@@ -46,6 +47,7 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: false,
             stickySource: '',
             location: {
                 center: [84.014188, 29.041815],
@@ -72,8 +74,9 @@ var config = {
             image: './images/ckrusenepal-95.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             photoBlock: false,
-            videoBlock: true,
+            videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: true,
             stickySource: '../images/ckrusenepal-68.jpg',
             location: {
                 center: [84.014188, 29.041815],
@@ -100,8 +103,9 @@ var config = {
             image: './images/ckrusenepal-1.jpg',
             description: 'Copy these sections to add to your story.',
             photoBlock: false,
-            videoBlock: true,
+            videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: true,
             stickySource: '',
             location: {
                 center: [83.955668, 29.066805],
@@ -125,6 +129,7 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: false,
             stickySource: '',
             location: {
                 center: [83.99449, 29.04885],
@@ -153,6 +158,7 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: false,
             stickySource: '',
             location: {
                 center: [83.99449, 29.04885],
@@ -181,6 +187,7 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
+            sphericalVideo: false,
             stickySource: '',
             location: {
                 center: [84.09096, 28.91339],
