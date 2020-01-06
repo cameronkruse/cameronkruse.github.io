@@ -48,9 +48,8 @@
     <source src="./videos/applestrimmed.mov" type="video/mp4">
   </video>
 </div>
-<div id="sphericalVideo" dflex>
-  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rG4jSz_2HDY?&autoplay=1" frameborder="0" allow="accelerometer; autoplay=true; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe id="sphericalVideo" width="100%" height="100%" src="https://www.youtube.com/embed/rG4jSz_2HDY?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 <script src="./js/config.js"></script>
@@ -291,13 +290,12 @@ map.on("load", function() {
         if (chapter.scrollVideoBlock == true) {
             document.getElementById("scrollVideoBlock").style.opacity = "100";
             console.log("scrollVideoBlock block true");
-            // video to play: '../videos/chtrimmedsmall.mov'
         }
         if (chapter.scrollVideoBlock == false) {
             document.getElementById("scrollVideoBlock").style.opacity = "0";
             console.log("scrollVideoBlock block false");
         }
-// videoBlock
+// sphericalVideoBlock
         if (chapter.sphericalVideo == true) {
             document.getElementById("sphericalVideo").style.opacity = "100";
             console.log("sphericalVideo block true");
@@ -305,6 +303,7 @@ map.on("load", function() {
 
         if (chapter.sphericalVideo == false) {
             document.getElementById("sphericalVideo").style.opacity = "0";
+            pauseVideo(sphericalVideo);
             console.log("sphericalVideo block false");
         }
 
