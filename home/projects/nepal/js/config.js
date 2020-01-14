@@ -19,6 +19,7 @@ var config = {
             videoBlock: false,
             scrollVideoBlock: false,
             sphericalVideo: false,
+            textBlock: false,
             stickySource: '',
             location: {
                 center: [83.99787, 29.06679],
@@ -48,6 +49,7 @@ var config = {
             videoBlock: false,
             scrollVideoBlock: false,
             sphericalVideo: false,
+            textBlock: false,
             stickySource: '',
             location: {
                 center: [84.014188, 29.041815],
@@ -76,7 +78,8 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
-            sphericalVideo: true,
+            sphericalVideo: false,
+            textBlock: false,
             stickySource: '../images/ckrusenepal-68.jpg',
             location: {
                 center: [84.014188, 29.041815],
@@ -105,7 +108,8 @@ var config = {
             photoBlock: false,
             videoBlock: false,
             scrollVideoBlock: false,
-            sphericalVideo: true,
+            sphericalVideo: false,
+            textBlock: false,
             stickySource: '',
             location: {
                 center: [83.955668, 29.066805],
@@ -130,6 +134,7 @@ var config = {
             videoBlock: false,
             scrollVideoBlock: false,
             sphericalVideo: false,
+            textBlock: false,
             stickySource: '',
             location: {
                 center: [83.99449, 29.04885],
@@ -159,6 +164,7 @@ var config = {
             videoBlock: false,
             scrollVideoBlock: false,
             sphericalVideo: false,
+            textBlock: false,
             stickySource: '',
             location: {
                 center: [83.99449, 29.04885],
