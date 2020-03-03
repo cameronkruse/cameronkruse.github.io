@@ -4,10 +4,10 @@ var config = {
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'Where To Run When The Glaciers Run Dry',
+    title: 'When Glaciers Go',
     subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
-    byline: 'By Cameron Kruse, Tashi Bista, and Corey Robinson',
-    footer: 'Source: A National Geographic Project',
+    byline: 'By Cameron Kruse, Corey Robinson, and Tashi Bista',
+    footer: 'Source: A National Geographic Project. Thanks to @Jonniwalker and scrollydrive (adding links later)',
     sourcetest: '../videos/applestrimmed.mov',
     chapters: [
         {
