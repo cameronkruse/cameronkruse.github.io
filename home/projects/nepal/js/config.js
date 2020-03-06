@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/highestroad/ck3ozjhyd0myt1cqz0imxcppq',
+    style: 'mapbox://styles/highestroad/ck7cqndn70h3m1ikx53ikytqs',
     accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q',
     showMarkers: false,
     theme: 'dark',
