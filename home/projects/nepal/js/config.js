@@ -24,7 +24,7 @@ var config = {
             location: {
                 center: [83.99787, 29.06679],
                 zoom: 12.57,
-                pitch: 98.20,
+                pitch: 0,
                 bearing: 60
             },
             onChapterEnter: [
@@ -139,7 +139,7 @@ var config = {
             location: {
                 center: [83.99449, 29.04885],
                 zoom: 12.94,
-                pitch: -162,
+                pitch: 0,
                 bearing: 9
             },
             onChapterEnter: [
@@ -169,7 +169,7 @@ var config = {
             location: {
                 center: [83.99449, 29.04885],
                 zoom: 12.94,
-                pitch: -162,
+                pitch: 0,
                 bearing: 9
             },
             onChapterEnter: [
@@ -198,7 +198,7 @@ var config = {
             location: {
                 center: [84.09096, 28.91339],
                 zoom: 13.03,
-                pitch: 112.8,
+                pitch: 0,
                 bearing: 60
             },
             onChapterEnter: [
