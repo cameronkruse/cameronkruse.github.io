@@ -142,7 +142,7 @@ var config = {
               {
               //     layer: 'chambale-dhey-road2',
               //     opacity: 1
-              // }
+              }
             ],
             onChapterExit: []
         },
