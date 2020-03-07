@@ -59,7 +59,7 @@ if (header.innerText.length > 0) {
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
-    if (record.sticky) = true {
+    if (record.sticky) == true {
         console.log('sticky is true');
     }
     if (record.title) {
