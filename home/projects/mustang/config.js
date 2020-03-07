@@ -19,7 +19,7 @@ var followPitch = 0;
 // to add 'driving' slides just make sure to add 'drive to beginning of slide id'
 // you also need to add a running total to the end of each 'drive-slide', (ex. drive-slide-0, drive-slide-1, drive-slide-2, etc.)
 var config = {
-    style: 'mapbox://styles/mapbox/light-v10',
+    style: 'mapbox://styles/highestroad/ck7cqndn70h3m1ikx53ikytqs',
     // style: 'mapbox://styles/mapbox/satellite-v8',
     // style: 'mapbox://styles/mapbox/outdoors-v10',
     accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aGUwZ2JtMDlmbzNrcGEycnZ1Zm1jeSJ9.mdEVq4ccttmyLD9yPj39Uw',
