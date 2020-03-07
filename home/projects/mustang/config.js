@@ -22,7 +22,7 @@ var config = {
     style: 'mapbox://styles/mapbox/light-v10',
     // style: 'mapbox://styles/mapbox/satellite-v8',
     // style: 'mapbox://styles/mapbox/outdoors-v10',
-    accessToken: 'YOUR_ACCESS_TOKEN',
+    accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aGUwZ2JtMDlmbzNrcGEycnZ1Zm1jeSJ9.mdEVq4ccttmyLD9yPj39Uw',
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
