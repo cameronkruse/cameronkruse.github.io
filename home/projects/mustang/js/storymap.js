@@ -59,7 +59,9 @@ if (header.innerText.length > 0) {
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
-
+    if (record.sticky) = True {
+        console.log('sticky is true');
+    }
     if (record.title) {
         var title = document.createElement('h3');
         title.innerText = record.title;
@@ -148,6 +150,7 @@ function handleStepProgress(response) {
         changeCenter(stepProgress);
     }
 }
+// I don't think I'll edit anything past here. this is basically loading the mapbox map and overlaying all the scroll line stuff on it.
 
 map.on("load", function() {
 
@@ -249,6 +252,7 @@ window.addEventListener('resize', scroller.resize);
 
 $(document).ready(function (){
     $.ajax({
+      // !!!!THIS IS THE LINE TO CHANGE!!!!
       // url:"./data/highwaydrive.geojson",
       url:"./data/road2.geojson",
       dataType: "json",
