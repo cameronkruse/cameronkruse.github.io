@@ -33,7 +33,7 @@ var config = {
     chapters: [
         {
             id: 'slide-0',
-            sticky: False,
+            sticky: false,
             title: 'Display Title',
             image: './path/to/image/source.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -44,7 +44,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -56,7 +56,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -66,7 +66,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -76,7 +76,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -86,7 +86,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -98,7 +98,7 @@ var config = {
         // You can add a normal slide in the middle of the drive slides to take a break
         {
             id: 'slide-4',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -109,7 +109,7 @@ var config = {
         },
         {
             id: 'slide-5',
-            sticky: True,
+            sticky: true,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -119,7 +119,7 @@ var config = {
         },
         {
             id: 'slide-6',
-            sticky: True,
+            sticky: true,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -129,7 +129,7 @@ var config = {
         },
         {
             id: 'slide-2',
-            sticky: False,
+            sticky: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
