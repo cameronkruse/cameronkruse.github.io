@@ -8,7 +8,7 @@
     <meta name="An Experiment" content="">
     <meta name="Cameron Kruse" content="">
 
-    <title>Cameron Kruse</title>
+    <title>Run The Stairs</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,14 +38,13 @@
     </style>
 
     <!-- Mapbox Header-->
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+      body { margin: 0; padding: 0; }
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
     </style>
-
-
 </head>
 
 <body id="page-top">
@@ -79,60 +78,19 @@
         </div>
     </nav>
 
-        <div id='map' style='width: 100%; height: 100%;'></div>
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+    var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/highestroad/ck7i5yvul3keq1is776g3pbt6', // stylesheet location
+    center: [-118.25843, 34.0933], // starting position [lng, lat]
+    zoom: 14.5 // starting zoom
+    });
+    </script>
 
-            <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aThzNG83MDd0aTNkbXFzYTR2cDFubyJ9.nH9oMLxE5jwM0DuTxbZ2UA';
-            var map = new mapboxgl.Map({
-                style: 'mapbox://styles/highestroad/ck7i5yvul3keq1is776g3pbt6',
-                center: [-118.25843, 34.0933],
-                zoom: 14.5,
-                pitch: 0,
-                bearing: 0,
-                hash: true,
-                container: 'map'
-            });
-            // The 'building' layer in the mapbox-streets vector source contains building-height
-            // data from OpenStreetMap.
-            map.on('load', function() {
-                // Insert the layer beneath any symbol layer.
-                var layers = map.getStyle().layers;
+</body>
 
-                var labelLayerId;
-                for (var i = 0; i < layers.length; i++) {
-                    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-                        labelLayerId = layers[i].id;
-                        break;
-                    }
-                }
-
-            //     map.addLayer({
-            //         'id': '3d-buildings',
-            //         'source': 'composite',
-            //         'source-layer': 'building',
-            //         'filter': ['==', 'extrude', 'true'],
-            //         'type': 'fill-extrusion',
-            //         'minzoom': 15,
-            //         'paint': {
-            //             'fill-extrusion-color': '#aaa',
-            //
-            //             // use an 'interpolate' expression to add a smooth transition effect to the
-            //             // buildings as the user zooms in
-            //             'fill-extrusion-height': [
-            //                 "interpolate", ["linear"], ["zoom"],
-            //                 15, 0,
-            //                 15.05, ["get", "height"]
-            //             ],
-            //             'fill-extrusion-base': [
-            //                 "interpolate", ["linear"], ["zoom"],
-            //                 15, 0,
-            //                 15.05, ["get", "min_height"]
-            //             ],
-            //             'fill-extrusion-opacity': .6
-            //         }
-            //     }, labelLayerId);
-            // });
-            </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
