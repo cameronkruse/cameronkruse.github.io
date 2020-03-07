@@ -1,3 +1,5 @@
+console.log('console log is working extremely well FYI');
+
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
