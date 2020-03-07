@@ -12,7 +12,7 @@ var driveTime = driveSlides*driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 14;
+var followZoomLevel = 15;
 var followBearing = 29;
 var followPitch = 0;
 
@@ -26,10 +26,10 @@ var config = {
     showMarkers: false,
     theme: 'light',
     alignment: 'left',
-    title: 'The Title Text of this Story',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
-    footer: 'Source: source citations, etc.',
+    title: 'When Glaciers Go',
+    subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
+    byline: 'By Cameron Kruse',
+    footer: 'Source: A National Geographic Project. Thanks to @Jonniwalker and scrollydrive (adding links later)',
     chapters: [
         {
             id: 'slide-0',

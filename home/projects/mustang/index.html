@@ -5,8 +5,13 @@
     <title>Scrollytelling Template</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <link href='./css/bootstrap.css' rel='stylesheet' />
     <link href='./css/storytelling.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lkv7lpc.css">
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
@@ -15,6 +20,23 @@
 <!-- added style to it's own css doc -->
 
 </head>
+
+<header>
+  <!-- from https://startbootstrap.com/snippets/video-header/ -->
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="./videos/chtrimmedsmall.mov" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-black">
+        <h1 class="display-3">Where to Run When The Glaciers Run Dry</h1>
+        <p class="lead mb-0">Climate refugees high in the Himalayas negotiate with our changing planet</p>
+      </div>
+    </div>
+  </div>
+</header>
+
 <body>
 
 <div id="map"></div>
