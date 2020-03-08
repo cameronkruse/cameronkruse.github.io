@@ -31,8 +31,13 @@ function setLayerOpacity(layer) {
 // ^End Map stuff^
 
 var story = document.getElementById('story');
+// don't think I need this
 var photo = document.getElementById('photo');
+// ^^^
 var features = document.createElement('div');
+var thephotoreal = document.createElement('div');
+thephotoreal.setAttribute('id', 'photoblock');
+
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
 
@@ -66,13 +71,6 @@ config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
 
-    if (record.photoblock) {
-        console.log('photoblock is true');
-        // var title = document.createElement('h3');
-        // title.innerText = record.title;
-        // chapter.appendChild(title);
-    }
-
     if (record.title) {
         var title = document.createElement('h3');
         title.innerText = record.title;
@@ -100,6 +98,7 @@ config.chapters.forEach((record, idx) => {
     chapter.classList.add(config.theme);
     container.appendChild(chapter);
     features.appendChild(container);
+    // photoblock.appendChild();
 });
 
 story.appendChild(features);
@@ -238,7 +237,20 @@ map.on("load", function() {
     .onStepEnter(response => {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.add('active');
+// should make photoblock not opaque
+        var chapterphoto = document.createElement('div');
+
+        if (chapter.photoblock) {
+            console.log('photoblock is true');
+            var image = new Image();
+            image.src = record.photoblock;
+            chapterphoto.appendChild(image);
+            thephotoreal.appendChild(chapterphoto);
+            document.getElementById("photo").style.display = "block";
+        }
+
         // map.flyTo(chapter.location);
+
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
