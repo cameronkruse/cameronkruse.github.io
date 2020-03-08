@@ -29,11 +29,12 @@ var config = {
     title: 'When Glaciers Go',
     subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
     byline: 'By Cameron Kruse',
-    footer: 'Source: A National Geographic Project. Thanks to @Jonniwalker and scrollydrive (adding links later)',
+    footer: 'Source: A National Geographic Project. Thanks to @Jonniwalker, scrollydrive, MapBox, Delair, Hammer, Sierra Designs, Western Digital and more (adding links later)',
     chapters: [
         {
             id: 'slide-0',
             photoblock: false,
+            blankblock: false,
             title: 'Display Title',
             image: './images/ckrusenepal-92.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -45,6 +46,7 @@ var config = {
         {
             id: 'drive-slide-0',
             photoblock: false,
+            blankblock: false,
             title: 'Second Title',
             image: './images/ckrusenepal-28.jpg',
             description: 'Copy these sections to add to your story.',
@@ -57,6 +59,7 @@ var config = {
         {
             id: 'drive-slide-1',
             photoblock: false,
+            blankblock: false,
             title: '3 Title',
             image: './images/ckrusenepal-10.jpg',
             description: 'Copy these sections to add to your story.',
@@ -67,6 +70,7 @@ var config = {
         {
             id: 'drive-slide-2',
             photoblock: './images/ckrusenepal-94.jpg',
+            blankblock: false,
             title: 'photoblock title 1',
             image: './images/ckrusenepal-101.jpg',
             description: 'Copy these sections to add to your story.',
@@ -77,6 +81,7 @@ var config = {
         {
             id: 'drive-slide-3',
             photoblock: './images/ckrusenepal-94.jpg',
+            blankblock: false,
             title: 'photoblock title 2',
             image: './images/ckrusenepal-14.jpg',
             description: 'Copy these sections to add to your story.',
@@ -87,6 +92,7 @@ var config = {
         {
             id: 'drive-slide-4',
             photoblock: false,
+            blankblock: false,
             title: '4 Title',
             image: './images/ckrusenepal-44.jpg',
             description: 'Copy these sections to add to your story.',
@@ -99,7 +105,8 @@ var config = {
         {
             id: 'slide-4',
             photoblock: false,
-            title: '5 Title',
+            blankblock: true,
+            title: 'blankblock 1',
             image: './images/ckrusenepal-112.jpg',
             description: 'Copy these sections to add to your story.',
             location: {
@@ -110,7 +117,8 @@ var config = {
         {
             id: 'slide-5',
             photoblock: false,
-            title: '6 Title',
+            blankblock: true,
+            title: 'blankblock 2',
             image: './images/ckrusenepal-32.jpg',
             description: 'Copy these sections to add to your story.',
             location: {},
@@ -120,6 +128,7 @@ var config = {
         {
             id: 'slide-6',
             photoblock: false,
+            blankblock: false,
             title: '7 Title',
             image: './images/ckrusenepal-28.jpg',
             description: 'Copy these sections to add to your story.',
@@ -130,6 +139,7 @@ var config = {
         {
             id: 'slide-2',
             photoblock: false,
+            blankblock: false,
             title: '8 Title',
             image: './images/ckrusenepal-87.jpg',
             description: 'Copy these sections to add to your story.',

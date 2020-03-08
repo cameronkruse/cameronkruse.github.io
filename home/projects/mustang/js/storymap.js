@@ -36,7 +36,9 @@ var photo = document.getElementById('photo');
 // ^^^
 var features = document.createElement('div');
 var thephotoreal = document.createElement('div');
+var theblankblockreal = document.createElement('div');
 thephotoreal.setAttribute('id', 'photo');
+theblankblockreal.setAttribute('id', 'blankblock');
 
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
@@ -250,6 +252,15 @@ map.on("load", function() {
         } else {
           console.log('photoblock is false')
           document.getElementById("photo").style.display = "none";
+        }
+        var blankblockchapter = document.createElement('div');
+        if (chapter.blankblock) {
+            console.log('blankblock is true');
+            theblankblockreal.appendChild(blankblockchapter);
+            document.getElementById("blankblock").style.display = "block";
+        } else {
+          console.log('blankblock is false')
+          document.getElementById("blankblock").style.display = "none";
         }
 
         // map.flyTo(chapter.location);
