@@ -92,7 +92,7 @@ a, a:hover, a:visited {
 } */
 
 #header {
-    margin: 3vh auto;
+    margin: 0vh auto;
     width: 90vw;
     padding: 2vh;
     text-align: center;
@@ -162,6 +162,7 @@ a, a:hover, a:visited {
     opacity: 0.5;
     background-color: #800000;
     display: none; /* Hidden by default block turns it on */
+    transition: all ease 1.0s;
 }
 #blankblock {
     position: fixed;
@@ -173,6 +174,7 @@ a, a:hover, a:visited {
     z-index: -3;
     background-color: #ccff66;
     display: none; /* Hidden by default */
+    transition: all ease 1.0s;
 }
 
 @media (max-width: 750px) {
