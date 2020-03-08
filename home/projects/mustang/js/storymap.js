@@ -248,6 +248,7 @@ map.on("load", function() {
             thephotoreal.appendChild(chapterphoto);
             document.getElementById("photo").style.display = "block";
         } else {
+          console.log('photoblock is false')
           document.getElementById("photo").style.display = "none";
         }
 
