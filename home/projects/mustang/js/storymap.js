@@ -66,6 +66,13 @@ config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
 
+    if (record.photoblock) {
+        console.log('photoblock is true');
+        // var title = document.createElement('h3');
+        // title.innerText = record.title;
+        // chapter.appendChild(title);
+    }
+
     if (record.title) {
         var title = document.createElement('h3');
         title.innerText = record.title;

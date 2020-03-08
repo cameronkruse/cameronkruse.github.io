@@ -33,6 +33,7 @@ var config = {
     chapters: [
         {
             id: 'slide-0',
+            photoblock: false,
             title: 'Display Title',
             image: './images/ckrusenepal-92.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -43,6 +44,7 @@ var config = {
         },
         {
             id: 'drive-slide-0',
+            photoblock: false,
             title: 'Second Title',
             image: './images/ckrusenepal-28.jpg',
             description: 'Copy these sections to add to your story.',
@@ -54,6 +56,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
+            photoblock: true,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -63,6 +66,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
+            photoblock: true,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -72,6 +76,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -81,6 +86,7 @@ var config = {
         },
         {
             id: 'drive-slide-4',
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -92,6 +98,7 @@ var config = {
         // You can add a normal slide in the middle of the drive slides to take a break
         {
             id: 'slide-4',
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -102,7 +109,7 @@ var config = {
         },
         {
             id: 'slide-5',
-            sticky: 'very true sticky',
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -112,7 +119,7 @@ var config = {
         },
         {
             id: 'slide-6',
-            sticky: 'this could be the source for photo',
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -122,7 +129,7 @@ var config = {
         },
         {
             id: 'slide-2',
-            sticky: false,
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',

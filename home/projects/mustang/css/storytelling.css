@@ -74,7 +74,7 @@ a, a:hover, a:visited {
 }
 
 /* the root of all suffering: https://stackoverflow.com/questions/5657964/css-why-doesn-t-percentage-height-work */
-#photoBlock {
+/* #photoblock {
   background-image: url('../images/ckrusenepal-68.jpg');
   position: -webkit-sticky;
   position: sticky;
@@ -89,7 +89,7 @@ a, a:hover, a:visited {
   background-color: green;
   transition: all ease 1.0s;
   opacity: 0;
-}
+} */
 
 #header {
     margin: 3vh auto;
