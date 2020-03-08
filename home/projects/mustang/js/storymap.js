@@ -240,19 +240,19 @@ map.on("load", function() {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.add('active');
 // should make photoblock not opaque
-        var chapterphoto = document.createElement('div');
         if (chapter.photoblock) {
             console.log('photoblock is true');
             var image = new Image();
             image.src = chapter.photoblock;
             console.log(image.src)
-            chapterphoto.appendChild(image);
-            thephotoreal.appendChild(chapterphoto);
+            thephotoreal.appendChild(image);
             document.getElementById("photo").style.display = "block";
         } else {
           console.log('photoblock is false')
           document.getElementById("photo").style.display = "none";
         }
+
+// Should make blankblock not opaque
         var blankblockchapter = document.createElement('div');
         if (chapter.blankblock) {
             console.log('blankblock is true');
