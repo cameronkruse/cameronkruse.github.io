@@ -247,6 +247,8 @@ map.on("load", function() {
             chapterphoto.appendChild(image);
             thephotoreal.appendChild(chapterphoto);
             document.getElementById("photo").style.display = "block";
+        } else {
+          document.getElementById("photo").style.display = "none";
         }
 
         // map.flyTo(chapter.location);
