@@ -292,7 +292,7 @@ $(document).ready(function (){
     $.ajax({
       // !!!!THIS IS THE LINE TO CHANGE!!!!
       // url:"./data/highwaydrive.geojson",
-      url:"./data/road2.geojson",
+      url:"./data/road3.geojson",
       dataType: "json",
       success: function (data) {
         console.log('data', data.features[0]);

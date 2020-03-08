@@ -101,7 +101,6 @@ var config = {
             onChapterExit: []
         },
 
-        // You can add a normal slide in the middle of the drive slides to take a break
         {
             id: 'slide-4',
             photoblock: false,
@@ -109,8 +108,7 @@ var config = {
             title: 'blankblock 1',
             image: './images/ckrusenepal-112.jpg',
             description: 'Copy these sections to add to your story.',
-            location: {
-            },
+            location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -137,7 +135,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'slide-2',
+            id: 'slide-7',
             photoblock: false,
             blankblock: false,
             title: '8 Title',
