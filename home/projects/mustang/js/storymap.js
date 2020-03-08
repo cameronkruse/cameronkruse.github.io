@@ -36,7 +36,7 @@ var photo = document.getElementById('photo');
 // ^^^
 var features = document.createElement('div');
 var thephotoreal = document.createElement('div');
-thephotoreal.setAttribute('id', 'photoblock');
+thephotoreal.setAttribute('id', 'photo');
 
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
@@ -239,11 +239,11 @@ map.on("load", function() {
         response.element.classList.add('active');
 // should make photoblock not opaque
         var chapterphoto = document.createElement('div');
-
         if (chapter.photoblock) {
             console.log('photoblock is true');
             var image = new Image();
-            image.src = record.photoblock;
+            image.src = chapter.photoblock;
+            console.log(image.src)
             chapterphoto.appendChild(image);
             thephotoreal.appendChild(chapterphoto);
             document.getElementById("photo").style.display = "block";
