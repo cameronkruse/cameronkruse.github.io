@@ -1,5 +1,6 @@
 console.log('console log is working extremely well FYI');
 
+// Map stuff
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -27,7 +28,10 @@ function setLayerOpacity(layer) {
     });
 }
 
+// ^End Map stuff^
+
 var story = document.getElementById('story');
+var photo = document.getElementById('photo');
 var features = document.createElement('div');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
@@ -61,10 +65,6 @@ if (header.innerText.length > 0) {
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
-
-    if (record.sticky) {
-      console.log("sticky in vogue");
-    }
 
     if (record.title) {
         var title = document.createElement('h3');
