@@ -104,6 +104,7 @@ config.chapters.forEach((record, idx) => {
 });
 
 story.appendChild(features);
+photo.appendChild(thephotoreal);
 
 var footer = document.createElement('div');
 
