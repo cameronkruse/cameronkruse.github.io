@@ -56,7 +56,7 @@ var config = {
         },
         {
             id: 'drive-slide-1',
-            photoblock: true,
+            photoblock: false,
             title: 'Second Title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
@@ -66,8 +66,8 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            photoblock: true,
-            title: 'Second Title',
+            photoblock: false,
+            title: 'photoblock title',
             image: './path/to/image/source.png',
             description: 'Copy these sections to add to your story.',
             location: {},
