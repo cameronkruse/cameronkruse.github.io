@@ -69,7 +69,7 @@ var config = {
         },
         {
             id: 'drive-slide-2',
-            photoblock: './images/ckrusenepal-94.jpg',
+            photoblock: "url('../images/ckrusenepal-94.jpg')",
             blankblock: false,
             title: 'photoblock title 1',
             image: './images/ckrusenepal-101.jpg',
@@ -80,7 +80,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            photoblock: './images/ckrusenepal-94.jpg',
+            photoblock: "url('../images/ckrusenepal-94.jpg')",
             blankblock: false,
             title: 'photoblock title 2',
             image: './images/ckrusenepal-14.jpg',

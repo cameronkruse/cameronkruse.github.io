@@ -241,13 +241,17 @@ map.on("load", function() {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.add('active');
 // should make photoblock not opaque
+        var xvariable = chapter.photoblock;
         if (chapter.photoblock) {
             console.log('photoblock is true');
-            var image = new Image();
-            image.src = chapter.photoblock;
-            console.log(image.src)
-            thephotoreal.appendChild(image);
+            console.log(chapter.photoblock);
+            // var image = new Image();
+            // image.src = chapter.photoblock;
+            // console.log(image.src)
+            // thephotoreal.appendChild(image);
+            document.getElementById("photo").style["background-image"] = chapter.photoblock;
             document.getElementById("photo").style.display = "block";
+            // could I just change the background picture source?
         } else {
           console.log('photoblock is false')
           document.getElementById("photo").style.display = "none";
@@ -258,7 +262,7 @@ map.on("load", function() {
         if (chapter.blankblock) {
             console.log('blankblock is true');
             theblankblockreal.appendChild(blankblockchapter);
-            document.getElementById("blankblock").style.display = "block";
+            document.getElementById("blankblock").style["display"] = "block";
         } else {
           console.log('blankblock is false')
           document.getElementById("blankblock").style.display = "none";

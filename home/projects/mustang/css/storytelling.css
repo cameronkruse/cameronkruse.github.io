@@ -152,6 +152,7 @@ a, a:hover, a:visited {
 
 #photo {
     /* background-image: url('../images/ckrusenepal-68.jpg'); */
+    background-image: url();
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,12 +160,12 @@ a, a:hover, a:visited {
     height: 100vh;
     width: 100vw;
     z-index: -4;
-    opacity: 0.5;
     background-color: #800000;
     display: none; /* Hidden by default block turns it on */
     transition: all ease 1.0s;
 }
 #blankblock {
+
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;
