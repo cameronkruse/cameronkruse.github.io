@@ -151,8 +151,7 @@ a, a:hover, a:visited {
 }
 
 #photo {
-    /* background-image: url('../images/ckrusenepal-68.jpg'); */
-    background-image: ../images/ckrusenepal-94.jpg;
+    background-image: url('../images/ckrusenepal-68.jpg');
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;
