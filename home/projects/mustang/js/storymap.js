@@ -249,8 +249,12 @@ map.on("load", function() {
             // image.src = chapter.photoblock;
             // console.log(image.src)
             // thephotoreal.appendChild(image);
-            document.getElementById("photo").style["background-image"] = chapter.photoblock;
             document.getElementById("photo").style.display = "block";
+            document.getElementById("photo").style["background-image"] = chapter.photoblock;
+            const element = document.querySelector('.photoblock');
+            const background = element.style.photo;
+            console.log(background);
+
             // could I just change the background picture source?
         } else {
           console.log('photoblock is false')
