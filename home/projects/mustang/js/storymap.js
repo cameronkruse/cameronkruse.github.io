@@ -1,4 +1,4 @@
-console.log('console log is working extremely well FYI');
+console.log('console log is working');
 
 // Map stuff
 var layerTypes = {
