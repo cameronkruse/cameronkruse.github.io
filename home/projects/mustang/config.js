@@ -80,7 +80,7 @@ var config = {
         },
         {
             id: 'drive-slide-3',
-            photoblock: "url('../images/ckrusenepal-94.jpg')",
+            photoblock: "url('./images/ckrusenepal-61.jpg')",
             blankblock: false,
             title: 'photoblock title 2',
             image: './images/ckrusenepal-14.jpg',
