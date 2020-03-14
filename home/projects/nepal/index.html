@@ -23,13 +23,15 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    <link href='./css/bootstrap.css' rel='stylesheet' />
+    <!-- <link href='./css/bootstrap.css' rel='stylesheet' /> -->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <link href='./css/storytelling.css' rel='stylesheet' />
     <link href='./css/customstyles.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/lkv7lpc.css">
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
     <script src="https://unpkg.com/scrollama"></script>
     <!-- deleted style block and moved it to css/storytelling.css now referenced above -->
 </head>
@@ -38,7 +40,7 @@
 <div id="map"></div>
 <div id="story"></div>
 <div id="stickyPhoto"></div>
-<div id="stickyVideo" class="videoBlock d-flex">
+<!-- <div id="stickyVideo" class="videoBlock d-flex">
   <video playsinline="playsinline" width="100%" height="100%" autoplay="autoplay" muted="muted" loop="loop">
     <source src="./videos/chtrimmedsmall.mov" type="video/mp4">
   </video>
@@ -48,7 +50,7 @@
     <source src="./videos/applestrimmed.mov" type="video/mp4">
   </video>
 </div>
-<iframe id="sphericalVideo" width="100%" height="100%" src="https://www.youtube.com/embed/rG4jSz_2HDY?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="sphericalVideo" width="100%" height="100%" src="https://www.youtube.com/embed/rG4jSz_2HDY?&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 
 
@@ -246,8 +248,90 @@ if (config.showMarkers) {
 }
 // instantiate the scrollama
 var scroller = scrollama();
+
+//from scrollydrive line 241
+function handleStepProgress(response) {
+    let stepProgress;
+
+    if (response.element.id.slice(0,5) === 'drive') {
+        let driveSlideNum = parseInt(response.element.id.slice(-1));
+        if (driveSlideNum === 0) {
+            map.setLayoutProperty('animatedLine', 'visibility', 'visible');
+            stepProgress = Math.round(response.progress*driveSmoothness);
+        } else {
+            stepProgress = Math.round(response.progress*driveSmoothness+driveSmoothness*driveSlideNum);
+        }
+        changeCenter(stepProgress);
+    }
+}
+
 // instantiate map
+
 map.on("load", function() {
+
+    let w = window.innerWidth;
+    let initBounds = routeData.features[0].geometry.coordinates;
+
+    if (followPoint === false) {
+        var bounds = initBounds.reduce(function(bounds, coord) {
+            return bounds.extend(coord);
+        }, new mapboxgl.LngLatBounds(initBounds[0], initBounds[0]));
+
+        if (w >= 500) {
+            map.fitBounds(bounds, {
+                padding: {top: 150, bottom: 150, right: -100, left: 200},
+                duration: 0
+            });
+        } else {
+            map.fitBounds(bounds, {
+                padding: 20,
+                duration: 0
+            });
+        }
+    } else {
+        map.setZoom(followZoomLevel);
+        map.setBearing(followBearing);
+        map.setPitch(followPitch);
+    }
+
+    map.addSource('lineSource', {
+        "type": "geojson",
+        "data": geojsonPoint
+    });
+
+    map.addSource('pointSource', {
+        "type": "geojson",
+        "data": geojsonPoint
+    });
+
+    map.addLayer({
+      "id": "animatedLine",
+      "type": "line",
+      "source": "lineSource",
+      'paint': {
+            'line-opacity': 1,
+            'line-color': '#333',
+            'line-width': 3.5
+       },
+       'layout': {
+           'visibility': 'none'
+       }
+    });
+
+    map.addLayer({
+      "id": "animatedPoint",
+      "type": "circle",
+      "source": "pointSource",
+      'paint': {
+            'circle-radius': 5,
+            'circle-opacity': 1,
+            'circle-color': '#333'
+      },
+      'layout': {
+           // 'visibility': 'none'
+       }
+    });
+
     // setup the instance, pass callback functions
     scroller
     .setup({
@@ -275,43 +359,43 @@ map.on("load", function() {
             console.log("photoBlock block false");
         }
 
-// videoBlock
-        if (chapter.videoBlock == true) {
-            document.getElementById("videoBlock").style.opacity = "100";
-            var myVideo = document.getElementById("stickyVideo");
-            myVideo.src="./videos/applestrimmed.mov";
-            // example^: var vid = document.getElementById("myVideo").src;
+// // videoBlock
+//         if (chapter.videoBlock == true) {
+//             document.getElementById("videoBlock").style.opacity = "100";
+//             var myVideo = document.getElementById("stickyVideo");
+//             myVideo.src="./videos/applestrimmed.mov";
+//             // example^: var vid = document.getElementById("myVideo").src;
+// //
+//             // playPause() this could be used to play and pause video , but doesn't really seem to be used here.
 //
-            // playPause() this could be used to play and pause video , but doesn't really seem to be used here.
-
-            console.log("videoBlock block true");
-        }
-
-        if (chapter.videoBlock == false) {
-            document.getElementById("videoBlock").style.opacity = "0";
-            console.log("videoBlock block false");
-        }
-
-// scrollVideoBlock
-        if (chapter.scrollVideoBlock == true) {
-            document.getElementById("scrollVideoBlock").style.opacity = "100";
-            console.log("scrollVideoBlock block true");
-        }
-        if (chapter.scrollVideoBlock == false) {
-            document.getElementById("scrollVideoBlock").style.opacity = "0";
-            console.log("scrollVideoBlock block false");
-        }
-// sphericalVideoBlock
-        if (chapter.sphericalVideo == true) {
-            document.getElementById("sphericalVideo").style.opacity = "100";
-            console.log("sphericalVideo block true");
-        }
-
-        if (chapter.sphericalVideo == false) {
-            document.getElementById("sphericalVideo").style.opacity = "0";
-            pauseVideo(sphericalVideo);
-            console.log("sphericalVideo block false");
-        }
+//             console.log("videoBlock block true");
+//         }
+//
+//         if (chapter.videoBlock == false) {
+//             document.getElementById("videoBlock").style.opacity = "0";
+//             console.log("videoBlock block false");
+//         }
+//
+// // scrollVideoBlock
+//         if (chapter.scrollVideoBlock == true) {
+//             document.getElementById("scrollVideoBlock").style.opacity = "100";
+//             console.log("scrollVideoBlock block true");
+//         }
+//         if (chapter.scrollVideoBlock == false) {
+//             document.getElementById("scrollVideoBlock").style.opacity = "0";
+//             console.log("scrollVideoBlock block false");
+//         }
+// // sphericalVideoBlock
+//         if (chapter.sphericalVideo == true) {
+//             document.getElementById("sphericalVideo").style.opacity = "100";
+//             console.log("sphericalVideo block true");
+//         }
+//
+//         if (chapter.sphericalVideo == false) {
+//             document.getElementById("sphericalVideo").style.opacity = "0";
+//             pauseVideo(sphericalVideo);
+//             console.log("sphericalVideo block false");
+//         }
 
 // this is adding the mapbox layer on the map
         if (chapter.onChapterEnter.length > 0) {
@@ -322,15 +406,33 @@ map.on("load", function() {
     .onStepExit(response => {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
         response.element.classList.remove('active');
-
         if (chapter.onChapterExit.length > 0) {
             chapter.onChapterExit.forEach(setLayerOpacity);
         }
-    });
+    })
+    .onStepProgress(handleStepProgress);
+
+    createLine();
 });
+
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
+
+$(document).ready(function (){
+    $.ajax({
+      // url:"./data/highwaydrive.geojson",
+      url:"./data/road2.geojson",
+      dataType: "json",
+      success: function (data) {
+        console.log('data', data.features[0]);
+        routeData = data;
+      },
+      error: function () {
+        console.log('error loading data');
+      }
+    });
+});
 
 </script>
 
