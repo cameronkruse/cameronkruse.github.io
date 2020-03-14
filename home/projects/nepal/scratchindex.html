@@ -65,13 +65,10 @@ var layerTypes = {
     'fill-extrusion': ['fill-extrusion-opacity']
 }
 
-// in config.js user calls right/left/center and references this var. This is added to the features classlist
 var alignments = {
     'left': 'lefty',
     'center': 'centered',
-    'right': 'righty',
-// adding my own full alignment i feel like i need to call this per feature not for the whole story as this is where the feature get's it's container.
-    'full': 'fully'
+    'right': 'righty'
 }
 
 function getLayerPaintType(layer) {
@@ -86,9 +83,7 @@ function setLayerOpacity(layer) {
     });
 }
 
-
 var story = document.getElementById('story');
-// rather than getelementsbyid I could createElement 'div' for each one of these. if I did that I could manipulate div based on config.js very similar to how features does it or header
 var stickyPhoto = document.getElementById('stickyPhoto');
 var stickyVideo = document.getElementById('stickyVideo');
 var stickyScrollVideo =  document.getElementById('stickyScrollVideo');
@@ -124,7 +119,7 @@ if (header.innerText.length > 0) {
     story.appendChild(header);
 }
 
-//this is where each chapter's div is created. I should really create a sticky element where I create
+
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
@@ -146,10 +141,9 @@ config.chapters.forEach((record, idx) => {
         story.innerHTML = record.description;
         chapter.appendChild(story);
     }
-// so should probably put this in an if statement asking if record.sticky
+
     container.setAttribute('id', record.id);
     container.classList.add('step');
-// would need to add this to the sticky container as well one as well. It changes the opacity from .25 to .9
     if (idx === 0) {
         container.classList.add('active');
     }
