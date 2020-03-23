@@ -123,6 +123,11 @@ a, a:hover, a:visited {
     width: 33vw;
     margin-left: 62vw;
 }
+.righty {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0vw;
+}
 .light {
     color: #444;
     background-color: #fafafa;
