@@ -1,6 +1,8 @@
 header {
+  font-family: 'Alatsi', sans-serif;
+  color: black;
   position: relative;
-  background-color: black;
+  background-color: white;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -33,7 +35,7 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #white;
   opacity: 0.1;
   z-index: 1;
 }
@@ -48,17 +50,16 @@ header .overlay {
 }
 
 @font-face {
-  font-family: customTitleFont;
-  src: url(sansation_light.woff);
+  font-family: 'Alatsi', sans-serif;
 }
 
+
+/* begin of scrollytelling stuff */
 body {
     margin:0;
     padding:0;
-    /* font-family: mrs-eaves-roman-small-caps, sans-serif; */
-    /* font-family: mrs-eaves, serif; */
-    font-family: 'Alatsi', sans-serif;
-    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Alatsi', sans-serif; */
 
 }
 a, a:hover, a:visited {
@@ -90,12 +91,19 @@ a, a:hover, a:visited {
   transition: all ease 1.0s;
   opacity: 0;
 } */
+h1 {
+  font-family: 'Alatsi', sans-serif;
+}
+h3 {
+  font-family: 'Alatsi', sans-serif;
+}
 
 #header {
     margin: 0vh auto;
     width: 90vw;
     padding: 2vh;
     text-align: center;
+    font-family: 'Alatsi', sans-serif;
 }
 #footer {
     width: 100%;
@@ -106,6 +114,8 @@ a, a:hover, a:visited {
     line-height: 25px;
     font-size: 13px;
 }
+
+
 #features {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -129,8 +139,8 @@ a, a:hover, a:visited {
     margin-left: 0vw;
 }
 .light {
-    color: #444;
-    background-color: #fafafa;
+    color: #000000;
+    background-color: #F5F5F7;
 }
 .dark {
     color: #fafafa;
@@ -138,7 +148,7 @@ a, a:hover, a:visited {
 }
 .step {
     padding-bottom: 50vh;
-    /* margin-bottom: 10vh; */
+    margin-bottom: 10vh;
     opacity: 0.25;
 }
 .step.active {
@@ -146,9 +156,9 @@ a, a:hover, a:visited {
 }
 
 .step div {
-    padding:  25px 50px;
+    padding:  10px 10px;
     line-height: 25px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .step img {
@@ -168,7 +178,6 @@ a, a:hover, a:visited {
     transition: all ease 1.0s;
 }
 #blankblock {
-
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;

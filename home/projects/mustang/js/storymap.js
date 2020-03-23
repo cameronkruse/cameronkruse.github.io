@@ -43,6 +43,7 @@ theblankblockreal.setAttribute('id', 'blankblock');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
 
+// storytelling header begin
 var header = document.createElement('div');
 
 if (config.title) {
@@ -68,6 +69,10 @@ if (header.innerText.length > 0) {
     header.setAttribute('id', 'header');
     story.appendChild(header);
 }
+// storytelling header end
+
+
+
 
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
