@@ -78,6 +78,8 @@ config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
 
+
+
     if (record.title) {
         var title = document.createElement('h3');
         title.innerText = record.title;
@@ -97,6 +99,7 @@ config.chapters.forEach((record, idx) => {
     }
 
     container.setAttribute('id', record.id);
+
     container.classList.add('step');
     if (idx === 0) {
         container.classList.add('active');
@@ -105,7 +108,6 @@ config.chapters.forEach((record, idx) => {
     chapter.classList.add(config.theme);
     container.appendChild(chapter);
     features.appendChild(container);
-    // photoblock.appendChild();
 });
 
 story.appendChild(features);
@@ -262,7 +264,7 @@ map.on("load", function() {
 
             // could I just change the background picture source?
         } else {
-          console.log('photoblock is false')
+          console.log('photoblock is false');
           document.getElementById("photo").style.display = "none";
         }
 
