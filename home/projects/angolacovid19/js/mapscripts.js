@@ -7,14 +7,14 @@ center: [13.25692,-8.83479]
 });
 
 map.on('load', function() {
-map.addSource('museums', {
+map.addSource('CovidStores_v1.0', {
 type: 'vector',
-url: 'mapbox://mapbox.2opop9hr'
+url: 'mapbox://highestroad.ck8aedxc10kdb2so09wnhau2c-2jb6i'
 });
 map.addLayer({
-'id': 'Other Data',
+'id': 'Supermarkets',
 'type': 'circle',
-'source': 'museums',
+'source': 'CovidStores_v1.0',
 'layout': {
 'visibility': 'visible'
 },
@@ -56,7 +56,7 @@ trackUserLocation: true
 })
 );
 
-var toggleableLayerIds = ['Contours', 'Other Data'];
+var toggleableLayerIds = ['Contours', 'Supermarkets'];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
 var id = toggleableLayerIds[i];

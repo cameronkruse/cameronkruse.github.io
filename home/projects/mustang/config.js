@@ -12,8 +12,8 @@ var driveTime = driveSlides*driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 15;
-var followBearing = 29;
+var followZoomLevel = 12;
+var followBearing = 0;
 var followPitch = 0;
 
 // to add 'driving' slides just make sure to add 'drive to beginning of slide id'
@@ -25,7 +25,7 @@ var config = {
     accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aGUwZ2JtMDlmbzNrcGEycnZ1Zm1jeSJ9.mdEVq4ccttmyLD9yPj39Uw',
     showMarkers: false,
     theme: 'light',
-    alignment: 'left',
+    alignment: 'center',
     title: 'When Glaciers Go',
     subtitle: 'Climate refugees high in the Himalayas negotiate with our changing planet',
     byline: 'By Cameron Kruse',
