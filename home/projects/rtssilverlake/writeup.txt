@@ -1,0 +1,11 @@
+To paraphrase Steinbeck there are two types of people: map people, whose joy is to know where he is pin-pointed every moment in terms black and red lines, in dotted indications and squirming blue of lakes and the shadings that indicate mountains; and those that were born lost and take no pleasure in being found, nor much identification from shapes which symbolize continents and states. While Steinbeck is the latter, I am the former. It’s not that I am looking hiding behind the maps too timid to explore the world around me, it’s just that I enjoy the companionship a map provides.
+
+Looking at a map before I set out on an adventure, I can only imagine what such a line might look like in real life. A simple carat may be my life’s work to summit or rolling hill I would never notice. On my journeys a map becomes a good friend - someone you can bounce ideas off of, or look to for advice. But most of all maps helps me organize what I see into a story; punctuations in the run on sentence that moving from one place to another can feel like.
+
+As we’ve all been stuck in one place for so long I started seeking out adventures in my neighborhood. It so happens that There are a lot of stairs in my hilly neighborhood of Silverlake, Los Angeles. Using Mapbox, I designed a map that highlighted all public staircases known around the world. Turns out there were about 40 in my neighborhood.
+
+The rules were:
+Climb every staircase in Silverlake. You may go down the stairs, but must ascend a staircase to check it off the list.
+If a staircase is fenced off you can skip it, but must at least get to the base.
+Where a mask when people were around.
+I printed out a screenshot of the map, sketched out a back of the napkin 40 way traveling salesman math problem, and set out to run the stairs.
