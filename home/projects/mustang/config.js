@@ -33,11 +33,11 @@ var config = {
     chapters: [
         {
             id: 'slide-0',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-82.jpg')",
             blankblock: false,
-            title: 'Card title 1',
-            image: './images/ckrusenepal-92.jpg',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            title: 'Chambale, Nepal',
+            // image: './images/ckrusenepal-28.jpg',
+            description: 'The sun hasn’t even risen behind the steep sandy cliffs of Chambale, but the water splashing over his calloused hands shakes Sangbo from the lingering fog of sleep bringing him into the present moment with a cold jolt. He pushes a medium sized boulder in front of the small stream and redirects the water vaguely towards a neat row of chest high apple trees rising from the river rocks strewn through the landscape. He grabs a shovel and chases the water as it snakes its way towards the first tree. Digging out a channel for the water to meet the tree, his mind wanders: “how long have I been chasing water? Who are we, out of all the generations, to lead this chase?” The divot encompassing the small tree begins to fill, creating a dirty puddle of water. Sangbo moves on to the next tree.',
             location: {
             },
             onChapterEnter: [],
@@ -45,11 +45,11 @@ var config = {
         },
         {
             id: 'drive-slide-0',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-81.jpg')",
             blankblock: false,
-            title: 'Second Title',
-            image: './images/ckrusenepal-28.jpg',
-            description: 'Copy these sections to add to your story.',
+            // title: 'Second Title',
+            // image: './images/ckrusenepal-28.jpg',
+            description: 'Around him he sees more than 1,000 trees stretch across a dried river bed each holding their own against the unforgiving Himalayan climate. The trees seem to wear the struggle of high altitude existence; they are small, covered in dust, many bent from the ruthless winds. As sad as they look, they are the only trees for as far as the eye can see - a symbol of resistance against the poor odds that nature seemed to be pushing his way. Digging another channel, his mind wanders again. This time back to the old village of Dhey ten miles away over the mountain rising above him.  “It wasn’t until eight years ago that the water seemed to start disappearing. There was always enough to grow food and run the mill for as long as I can remember and as long as my grandparents remember. What changed?” The water splashes into the tree in front of him and he moves on, channeling the water as he goes. He falls into a methodical rhythm,  moving tree to tree, chasing the water he had come here to find.',
             location: {
                 // location information is from the drive route
             },

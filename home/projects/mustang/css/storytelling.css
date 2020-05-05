@@ -165,7 +165,7 @@ h3 {
 #photo {
     background-image: url('../images/ckrusenepal-68.jpg');
     position: fixed;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
