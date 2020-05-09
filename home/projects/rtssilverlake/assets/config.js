@@ -4,16 +4,17 @@ var config = {
     showMarkers: true,
     theme: 'light',
     alignment: 'left',
-    title: 'Run The Stairs',
-    subtitle: 'My quest to run all the stairs',
-    byline: 'Cameron Kruse',
+    // title: 'Run The Stairs',
+    // subtitle: 'My quest to run all the stairs',
+    // byline: 'Cameron Kruse',
     footer: 'Source: source citations, etc.',
     chapters: [
+        
         {
-            id: 'slug-style-id',
-            title: 'Display Title',
-            image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            id: 'rule1',
+            title: 'Rule 1',
+            // image: './path/to/image/source.png',
+            description: 'Climb every staircase in Silverlake. Depending on how you count them there are about 40 staircases in Silverlake',
             location: {
               center: [-118.26592, 34.09497],
               zoom: 13.15,

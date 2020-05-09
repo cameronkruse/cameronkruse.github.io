@@ -78,3 +78,8 @@ a, a:hover, a:visited {
         margin: 0 auto;
     }
 }
+
+p::first-letter {
+  font-size: 200% !important;
+  color: #8A2BE2 !important;
+}
