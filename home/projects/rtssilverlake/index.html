@@ -8,19 +8,38 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
-    <script src="./assets/vidheader.js"></script>
     <link href='./assets/storystyle.css' rel='stylesheet' />
 </head>
 
-<section class="flex">
-  <div class="header-video" style="opacity: 1;">
-    <iframe src="./assets/rtsall.mp4" width="1200" height="900" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="./assets/rtsall.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">RUN THE STAIRS</h1>
+        <p class="lead mb-0">Silverlake, LA</p>
+      </div>
+    </div>
   </div>
-  <h1>Run The Stairs</h1>
-  <p>Silverlake, LA</p>
-  <!-- <button class="pause">Pause/Play</button>
-  <button class="volume muted">Volume On/Off</button> -->
-</section>
+</header>
+
+<!-- <section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+        <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+        <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+        <p class="mb-0">
+          Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
 
 <body>
 
