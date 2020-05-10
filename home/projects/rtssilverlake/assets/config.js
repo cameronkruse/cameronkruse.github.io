@@ -628,5 +628,389 @@ var config = {
                 // }
             ]
         },
+        {
+            id: 'stair22',
+            title: 'Staircase 22',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.25699, 34.09362],
+              zoom: 17.65,
+              pitch: 45.00,
+              bearing: -59.18
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair23',
+            title: 'Staircase 23',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.26094, 34.09518],
+              zoom: 17.00,
+              pitch: 48.00,
+              bearing: 133.62
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair24',
+            title: 'Staircase 24',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.26279, 34.09372],
+              zoom: 17.00,
+              pitch: 48.00,
+              bearing: 133.62
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair25',
+            title: 'Staircase 25',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.26085, 34.08953],
+              zoom: 17.00,
+              pitch: 24.50,
+              bearing: -57.58
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair26',
+            title: 'Staircase 26',
+            image: './assets/images/rtsmap.jpg',
+            description: ' There should have been an extension on this one, but it fenced off on private property right next to a driveway.',
+            location: {
+              center: [-118.26081, 34.08616],
+              zoom: 17.77,
+              pitch: 24.50,
+              bearing: -57.58
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair27',
+            title: 'Staircase 27',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.26879, 34.08782],
+              zoom: 17.77,
+              pitch: 34.00,
+              bearing: 131.61
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair28',
+            title: 'Staircase 28',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.26888, 34.08603],
+              zoom: 18.17,
+              pitch: 37.00,
+              bearing: 86.81
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair29',
+            title: 'Staircase 29',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.26857, 34.08526],
+              zoom: 18.17,
+              pitch: 38.50,
+              bearing: 30.01
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair30',
+            title: 'Staircase 30',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.27761, 34.07726],
+              zoom: 17.20,
+              pitch: 31.00,
+              bearing: -152.39
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair31',
+            title: 'Staircase 31',
+            image: './assets/images/rtsmap.jpg',
+            description: 'Whoops! Second blunder - it was getting dark and I ventured up a staircase to an apartment complex instead of the actual staircase. I will need to come back for this one.',
+            location: {
+              center: [-118.27596, 34.08250],
+              zoom: 17.23,
+              pitch: 0.00,
+              bearing: -29.69
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair32',
+            title: 'Staircase 32',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.27519, 34.08307],
+              zoom: 17.23,
+              pitch: 6.00,
+              bearing: -56.89
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair33',
+            title: 'Staircase 33',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.27630, 34.08685],
+              zoom: 17.20,
+              pitch: 40.00,
+              bearing: -147.92
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair33',
+            title: 'Staircase 33',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.27489, 34.08644],
+              zoom: 17.08,
+              pitch: 33.00,
+              bearing: 72.58
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair34',
+            title: 'Staircase 34',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.28105, 34.09328],
+              zoom: 18.38,
+              pitch: 30.00,
+              bearing: -137.82
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair35',
+            title: 'Staircase 35',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.27423, 34.09536],
+              zoom: 17.43,
+              pitch: 35.50,
+              bearing: 87.44
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair36',
+            title: 'Staircase 36',
+            image: './assets/images/rtsmap.jpg',
+            description: '',
+            location: {
+              center: [-118.27219, 34.09731],
+              zoom: 17.35,
+              pitch: 55.00,
+              bearing: -159.51
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
     ]
 };
