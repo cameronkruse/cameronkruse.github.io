@@ -127,7 +127,7 @@ var config = {
         {
             id: 'stair1',
             title: 'Staircase 1',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts.jpg',
             description: '',
             location: {
               center: [-118.27405, 34.08813],
@@ -151,7 +151,7 @@ var config = {
         {
             id: 'stair2',
             title: 'Staircase 2',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-2.jpg',
             description: '',
             location: {
               center: [-118.27245, 34.09023],
@@ -175,7 +175,7 @@ var config = {
         {
             id: 'stair3',
             title: 'Staircase 3',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-3.jpg',
             description: '',
             location: {
               center: [-118.27067, 34.09047],
@@ -199,7 +199,7 @@ var config = {
         {
             id: 'stair4',
             title: 'Staircase 4',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-6.jpg',
             description: '',
             location: {
               center: [-118.26883, 34.09146],
@@ -223,7 +223,7 @@ var config = {
         {
             id: 'stair5',
             title: 'Staircase 5',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-7.jpg',
             description: '',
             location: {
               center: [-118.26695, 34.09528],
@@ -247,7 +247,8 @@ var config = {
         {
             id: 'stair6',
             title: 'Staircase 6',
-            image: './assets/images/rtsmap.jpg',
+// NEED PICTURE
+            // image: './assets/images/rts-8.jpg',
             description: '',
             location: {
               center: [-118.26691, 34.09922],
@@ -271,7 +272,7 @@ var config = {
         {
             id: 'stair7',
             title: 'Staircase 7',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-21.jpg',
             description: '',
             location: {
               center: [-118.26991, 34.10264],
@@ -295,7 +296,7 @@ var config = {
         {
             id: 'stair8',
             title: 'Staircase 8',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-8.jpg',
             description: '',
             location: {
               center: [-118.26810, 34.10398],
@@ -319,7 +320,7 @@ var config = {
         {
             id: 'stair9',
             title: 'Staircase 9',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-9.jpg',
             description: '',
             location: {
               center: [-118.26106, 34.10514],
@@ -343,7 +344,7 @@ var config = {
         {
             id: 'stair10',
             title: 'Staircase 10',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-10.jpg',
             description: '',
             location: {
               center: [-118.25729, 34.10610],
@@ -367,7 +368,7 @@ var config = {
         {
             id: 'stair11',
             title: 'Staircase 11',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-12.jpg',
             description: '',
             location: {
               center: [-118.25394, 34.10322],
@@ -391,7 +392,7 @@ var config = {
         {
             id: 'stair12',
             title: 'Staircase 12',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-13.jpg',
             description: '',
             location: {
               center: [-118.25486, 34.10351],
@@ -415,7 +416,7 @@ var config = {
         {
             id: 'stair13',
             title: 'Staircase 13',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-14.jpg',
             description: '',
             location: {
               center: [-118.25636, 34.10214],
@@ -439,8 +440,8 @@ var config = {
         {
             id: 'stair14',
             title: 'Staircase 14',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-17.jpg',
+            description: 'This was the most beautiful staircase I happened across. What a wonderful suprise to see a staircase full of butterfly artwork.',
             location: {
               center: [-118.25346, 34.10221],
               zoom: 19.66,
@@ -463,7 +464,7 @@ var config = {
         {
             id: 'stair15',
             title: 'Staircase 15',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-11.jpg',
             description: '',
             location: {
               center: [-118.25411, 34.10220],
@@ -485,9 +486,33 @@ var config = {
             ]
         },
         {
+            id: 'lost',
+            title: 'Lost!',
+            image: './assets/images/rts-15.jpg',
+            description: 'The first time I tried to run the stairs. I got lost around here. To get to the next staircase I needed to cross under a few highways. Somewhere I took a wrong turn that felt right and ended up in the middle of Echo Park. I opted to try again in the near future from the start rather than go back a few miles. Some of these pictures are from the first try, but the GPS track is from the second when I ran the entire route.',
+            location: {
+              center: [-118.24176, 34.09253],
+              zoom: 14.72,
+              pitch: 23.50,
+              bearing: 173.29
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
             id: 'stair16',
             title: 'Staircase 16',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-22.jpg',
             description: '',
             location: {
               center: [-118.25262, 34.09892],
@@ -511,8 +536,8 @@ var config = {
         {
             id: 'stair17',
             title: 'Staircase 17',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-23.jpg',
+            description: 'Look at that legendary wild cactus!',
             location: {
               center: [-118.25660, 34.09615],
               zoom: 18.94,
@@ -535,8 +560,8 @@ var config = {
         {
             id: 'stair18',
             title: 'Staircase 18',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-24.jpg',
+            description: 'This was probably the longest staircase, but it is also deceiving as it goes up and then down the other side.',
             location: {
               center: [-118.25615, 34.09521],
               zoom: 16.74,
@@ -559,8 +584,8 @@ var config = {
         {
             id: 'stair19',
             title: 'Staircase 19',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-27.jpg',
+            description: 'This one felt like it might have been a private staircase and it wasn\'t on my map, but I ran it anyway.',
             location: {
               center: [-118.25954, 34.09563],
               zoom: 16.72,
@@ -583,8 +608,8 @@ var config = {
         {
             id: 'stair20',
             title: 'Staircase 20',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-25.jpg',
+            description: 'Back on the long one going up the other side. Some beautiful artwork in the yards.',
             location: {
               center: [-118.25830, 34.09565],
               zoom: 17.32,
@@ -607,7 +632,7 @@ var config = {
         {
             id: 'stair21',
             title: 'Staircase 21',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-26.jpg',
             description: '',
             location: {
               center: [-118.25701, 34.09496],
@@ -631,7 +656,7 @@ var config = {
         {
             id: 'stair22',
             title: 'Staircase 22',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-28.jpg',
             description: '',
             location: {
               center: [-118.25699, 34.09362],
@@ -655,7 +680,7 @@ var config = {
         {
             id: 'stair23',
             title: 'Staircase 23',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-29.jpg',
             description: '',
             location: {
               center: [-118.26094, 34.09518],
@@ -679,8 +704,8 @@ var config = {
         {
             id: 'stair24',
             title: 'Staircase 24',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-30.jpg',
+            description: 'The first staircase I found that had been fenced off.',
             location: {
               center: [-118.26279, 34.09372],
               zoom: 17.00,
@@ -703,8 +728,8 @@ var config = {
         {
             id: 'stair25',
             title: 'Staircase 25',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-31.jpg',
+            description: 'Two in a row! Fortunately, this is the last one I found that was closed.',
             location: {
               center: [-118.26085, 34.08953],
               zoom: 17.00,
@@ -727,8 +752,8 @@ var config = {
         {
             id: 'stair26',
             title: 'Staircase 26',
-            image: './assets/images/rtsmap.jpg',
-            description: ' There should have been an extension on this one, but it fenced off on private property right next to a driveway.',
+            image: './assets/images/rts-33.jpg',
+            description: 'There may have been an extension on this one, but it was  fenced off on private property right next to a driveway.',
             location: {
               center: [-118.26081, 34.08616],
               zoom: 17.77,
@@ -751,8 +776,8 @@ var config = {
         {
             id: 'stair27',
             title: 'Staircase 27',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            image: './assets/images/rts-34.jpg',
+            description: 'Sunsets while running are always bitter sweet. On one hand it\'s incredible to be outside when it\'s so beautiful and the right temperature. On the other hand, it also get\'s dark right after sunset.',
             location: {
               center: [-118.26879, 34.08782],
               zoom: 17.77,
@@ -775,7 +800,7 @@ var config = {
         {
             id: 'stair28',
             title: 'Staircase 28',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-35.jpg',
             description: '',
             location: {
               center: [-118.26888, 34.08603],
@@ -799,8 +824,8 @@ var config = {
         {
             id: 'stair29',
             title: 'Staircase 29',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            // image: './assets/images/rtsmap.jpg',
+            description: 'Missed getting a picture of this one.',
             location: {
               center: [-118.26857, 34.08526],
               zoom: 18.17,
@@ -823,8 +848,8 @@ var config = {
         {
             id: 'stair30',
             title: 'Staircase 30',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            // image: './assets/images/rtsmap.jpg',
+            description: 'Getting to this staircase was a low point mentally. I was about 13 miles in, running low on calories, it was over a mile to get over to this part of Silverlake for one staircase, and I twisted my ankle on a curb on the way over. Also forgot to takea  picture of this one.',
             location: {
               center: [-118.27761, 34.07726],
               zoom: 17.20,
@@ -847,8 +872,8 @@ var config = {
         {
             id: 'stair31',
             title: 'Staircase 31',
-            image: './assets/images/rtsmap.jpg',
-            description: 'Whoops! Second blunder - it was getting dark and I ventured up a staircase to an apartment complex instead of the actual staircase. I will need to come back for this one.',
+            image: './assets/images/rts-36.jpg',
+            description: 'Whoops! Another blunder - it was getting dark and I ventured up a staircase to an apartment complex instead of the actual staircase. I will need to come back for this one.',
             location: {
               center: [-118.27596, 34.08250],
               zoom: 17.23,
@@ -871,7 +896,7 @@ var config = {
         {
             id: 'stair32',
             title: 'Staircase 32',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-37.jpg',
             description: '',
             location: {
               center: [-118.27519, 34.08307],
@@ -895,13 +920,13 @@ var config = {
         {
             id: 'stair33',
             title: 'Staircase 33',
-            image: './assets/images/rtsmap.jpg',
+            image: './assets/images/rts-38.jpg',
             description: '',
             location: {
-              center: [-118.27630, 34.08685],
-              zoom: 17.20,
-              pitch: 40.00,
-              bearing: -147.92
+              center: [-118.27598, 34.08509],
+              zoom: 17.57,
+              pitch: 2.50,
+              bearing: -114.95
             },
             onChapterEnter: [
                 {
@@ -917,10 +942,10 @@ var config = {
             ]
         },
         {
-            id: 'stair33',
-            title: 'Staircase 33',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            id: 'stair34',
+            title: 'Staircase 34',
+            image: './assets/images/rts-39.jpg',
+            description: 'This staircase was a big reason I set out on this adventure. Every morning when I\'d walk down the block to get coffee, I would see this heart painted on the steps crying at how small my legs are from not running more stairs.',
             location: {
               center: [-118.27489, 34.08644],
               zoom: 17.08,
@@ -941,9 +966,57 @@ var config = {
             ]
         },
         {
-            id: 'stair34',
-            title: 'Staircase 34',
-            image: './assets/images/rtsmap.jpg',
+            id: 'stair35',
+            title: 'Staircase 35',
+            image: './assets/images/rts-41.jpg',
+            description: 'Another low point. I got lost on the way here, was about 15 miles in, and running in the dark.',
+            location: {
+              center: [-118.27324, 34.08523],
+              zoom: 16.93,
+              pitch: 8.50,
+              bearing: 97.91
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair36',
+            title: 'Staircase 36',
+            image: './assets/images/rts-42.jpg',
+            description: '',
+            location: {
+              center: [-118.27489, 34.08645],
+              zoom: 16.93,
+              pitch: 8.50,
+              bearing: 73.85
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'stair37',
+            title: 'Staircase 37',
+            image: './assets/images/rts-43.jpg',
             description: '',
             location: {
               center: [-118.28105, 34.09328],
@@ -965,10 +1038,10 @@ var config = {
             ]
         },
         {
-            id: 'stair35',
-            title: 'Staircase 35',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            id: 'stair38',
+            title: 'Staircase 38',
+            image: './assets/images/rts-44.jpg',
+            description: 'Very dark by this point. Really understimated the hill I had to climb to get here. Apparently these are named after an elderly woman who would climb them every day for years. Really impressive considering how long they are.',
             location: {
               center: [-118.27423, 34.09536],
               zoom: 17.43,
@@ -989,15 +1062,39 @@ var config = {
             ]
         },
         {
-            id: 'stair36',
-            title: 'Staircase 36',
-            image: './assets/images/rtsmap.jpg',
-            description: '',
+            id: 'stair39',
+            title: 'Staircase 39',
+            image: './assets/images/rts-45.jpg',
+            description: 'Last one!!! I did it!',
             location: {
               center: [-118.27219, 34.09731],
               zoom: 17.35,
               pitch: 55.00,
               bearing: -159.51
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'home',
+            title: 'I Did It!',
+            image: './assets/images/rts-46.jpg',
+            description: 'Last one!!! I did it!',
+            location: {
+              center: [-118.27249, 34.09161],
+              zoom: 14.07,
+              pitch: 0.00,
+              bearing: 0.00
             },
             onChapterEnter: [
                 {
