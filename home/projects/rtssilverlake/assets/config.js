@@ -80,7 +80,7 @@ var config = {
             id: 'rule3',
             title: 'Rule 3 - Wear a Mask',
             image: './assets/images/rts-19.jpg',
-            description: 'Wear a mask when people were around. I ran this during the COVID-19 Quarantine.',
+            description: 'Wear a mask when people were around. I ran this during the COVID-19 quarantine.',
             location: {
               center: [-118.26876, 34.09305],
               zoom: 13.19,
@@ -200,7 +200,7 @@ var config = {
             id: 'stair4',
             title: 'Staircase 4',
             image: './assets/images/rts-6.jpg',
-            description: '',
+            description: 'My first blunder! I missed one of the flights on this staircase.',
             location: {
               center: [-118.26883, 34.09146],
               zoom: 17.16,
@@ -249,7 +249,7 @@ var config = {
             title: 'Staircase 6',
 // NEED PICTURE
             // image: './assets/images/rts-8.jpg',
-            description: '',
+            description: 'I missed taking a photo of this one. I\'ll have to go back',
             location: {
               center: [-118.26691, 34.09922],
               zoom: 17.16,
@@ -441,7 +441,7 @@ var config = {
             id: 'stair14',
             title: 'Staircase 14',
             image: './assets/images/rts-17.jpg',
-            description: 'This was the most beautiful staircase I happened across. What a wonderful suprise to see a staircase full of butterfly artwork.',
+            description: 'This was the most beautiful staircase I happened across. What a wonderful surprise to see a staircase full of butterfly artwork.',
             location: {
               center: [-118.25346, 34.10221],
               zoom: 19.66,
@@ -849,7 +849,7 @@ var config = {
             id: 'stair30',
             title: 'Staircase 30',
             // image: './assets/images/rtsmap.jpg',
-            description: 'Getting to this staircase was a low point mentally. I was about 13 miles in, running low on calories, it was over a mile to get over to this part of Silverlake for one staircase, and I twisted my ankle on a curb on the way over. Also forgot to takea  picture of this one.',
+            description: 'Getting to this staircase was a low point mentally. I was about 13 miles in, running low on calories, it was over a mile to get over to this part of Silverlake for one staircase, and I twisted my ankle on a curb on the way. Also forgot to take a  picture of this one.',
             location: {
               center: [-118.27761, 34.07726],
               zoom: 17.20,
@@ -1065,7 +1065,7 @@ var config = {
             id: 'stair39',
             title: 'Staircase 39',
             image: './assets/images/rts-45.jpg',
-            description: 'Last one!!! I did it!',
+            description: 'Last one - I made it!',
             location: {
               center: [-118.27219, 34.09731],
               zoom: 17.35,
@@ -1087,9 +1087,33 @@ var config = {
         },
         {
             id: 'home',
-            title: 'I Did It!',
+            title: '39 Staircases \nDistance - 16.86mi \nElevation - 4,040ft \nTime - 4:08:42',
             image: './assets/images/rts-46.jpg',
-            description: 'Last one!!! I did it!',
+            description: 'Overall, I was absolutely blown away by Silverlake. It\'s an incredible neighborhood with really wild and diverse natural life for being right in the middle of LA. I fared pretty well through the experience, but there was considerablly more climbing than I expected.',
+            location: {
+              center: [-118.27249, 34.09161],
+              zoom: 14.07,
+              pitch: 0.00,
+              bearing: 0.00
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'silverlake',
+                    // opacity: 0
+                }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
+            ]
+        },
+        {
+            id: 'thanks',
+            title: 'Thanks',
+            image: './assets/images/rts-46.jpg',
+            description: 'Thanks to Charles Fleming for his book Secret Stairs of LA that got me thinking about this. \nThanks Ricky Gates for his run every street challenge that has inspired me to explore more urban areas through running. \nAnd thanks Beau Miles for his short film "Run The Line" which inspired me to make a proper challenge out of the stairs journey. ',
             location: {
               center: [-118.27249, 34.09161],
               zoom: 14.07,
