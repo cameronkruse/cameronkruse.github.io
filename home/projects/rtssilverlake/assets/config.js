@@ -1,7 +1,7 @@
 var config = {
     style: 'mapbox://styles/highestroad/ck9jfwr6b0rjg1ip36kxvvzb4',
     accessToken:'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aThzNG83MDd0aTNkbXFzYTR2cDFubyJ9.nH9oMLxE5jwM0DuTxbZ2UA',
-    showMarkers: true,
+    showMarkers: false,
     theme: 'light',
     alignment: 'left',
     // title: 'Run The Stairs',
