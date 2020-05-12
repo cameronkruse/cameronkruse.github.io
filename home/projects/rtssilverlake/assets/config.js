@@ -7,13 +7,13 @@ var config = {
     // title: 'Run The Stairs',
     // subtitle: 'My quest to run all the stairs',
     // byline: 'Cameron Kruse',
-    footer: 'Source: source citations, etc.',
+    footer: 'Made with Mapbox storytelling template.',
     chapters: [
         {
             id: 'background',
             title: 'Los Angeles, CA',
             // image: './path/to/image/source.png',
-            description: "So I live in Los Angeles, specifically the neighborhood of Silverlake in Los Angeles. It is east of downtown just southwest of Dodger stadium. To help me on my journey I built a map with Mapbox to find all the stairs and highlight other geographic features that would help me on my way.",
+            description: "So I live in Los Angeles, specifically the neighborhood of Silverlake in Los Angeles. It is east of downtown just southwest of Dodger stadium. It's the little pink area towards the top of the city.",
             location: {
               center: [-118.26555, 33.93443],
               zoom: 9.61,
@@ -22,8 +22,8 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    // layer: 'silverlake',
-                    // opacity: 0
+                    layer: 'runtrack',
+                    opacity: 0
                 }
             ],
             onChapterExit: [
@@ -31,6 +31,30 @@ var config = {
                 //     layer: 'runtrack',
                 //     opacity: 1
                 // }
+            ]
+        },
+        {
+            id: 'mapblock',
+            title: 'The Map',
+            // image: './path/to/image/source.png',
+            description: "To help me on my journey I built a map with Mapbox to find all the stairs and highlight other geographic features that would help me on my way. Stairs on this map are highlighted in yellow. Silverlake the neighborhood are the pink dashes. My path is the blue dashes.",
+            location: {
+              center: [-118.256938, 34.106153],
+              zoom: 17.34,
+              pitch: 0.00,
+              bearing: -126.8
+            },
+            onChapterEnter: [
+                {
+                  layer: 'runtrack',
+                  opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'runtrack',
+                    opacity: 0
+                }
             ]
         },
         {
@@ -113,8 +137,8 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    // layer: 'silverlake',
-                    // opacity: 0
+                    layer: 'runtrack',
+                    opacity: 1
                 }
             ],
             onChapterExit: [
