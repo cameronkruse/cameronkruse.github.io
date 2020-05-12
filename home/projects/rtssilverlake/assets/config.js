@@ -7,12 +7,12 @@ var config = {
     // title: 'Run The Stairs',
     // subtitle: 'My quest to run all the stairs',
     // byline: 'Cameron Kruse',
-    footer: 'Made with Mapbox storytelling template.',
+    footer: '<a href="https://www.instagram.com/camkruse/" target="_blank">@camkruse</a> Made with Mapbox storytelling template.',
     chapters: [
         {
             id: 'background',
             title: 'Los Angeles, CA',
-            // image: './path/to/image/source.png',
+            image: './assets/images/rts-20.jpg',
             description: "So I live in Los Angeles, specifically the neighborhood of Silverlake in Los Angeles. It is east of downtown just southwest of Dodger stadium. It's the little pink area towards the top of the city.",
             location: {
               center: [-118.26555, 33.93443],
@@ -1136,8 +1136,8 @@ var config = {
         {
             id: 'thanks',
             title: 'Thanks',
-            image: './assets/images/rts-46.jpg',
-            description: 'Thanks to Charles Fleming for his book Secret Stairs of LA that got me thinking about this. \nThanks Ricky Gates for his run every street challenge that has inspired me to explore more urban areas through running. \nAnd thanks Beau Miles for his short film "Run The Line" which inspired me to make a proper challenge out of the stairs journey. ',
+            // image: './assets/images/rts-46.jpg',
+            description: 'Thanks to Charles Fleming for his book <a href="https://www.amazon.com/dp/B00XIN2YPU" target="_blank">Secret Stairs of LA</a> that got me thinking about this. \nThanks Ricky Gates for his <a href="https://www.youtube.com/watch?v=jy_W5qsjB5U" target="_blank">Every Single Street Project</a> that has inspired me to explore more urban areas through running. \nAnd thanks Beau Miles for his short film <a href="https://youtu.be/rxCghemtjjM" target="_blank">Run The Line</a> which inspired me to make a proper challenge out of the stairs journey.',
             location: {
               center: [-118.27249, 34.09161],
               zoom: 14.07,
