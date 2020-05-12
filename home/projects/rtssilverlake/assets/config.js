@@ -118,10 +118,10 @@ var config = {
                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'runtrack',
-                //     opacity: 1
-                // }
+                {
+                    layer: 'runtrack',
+                    opacity: 1
+                }
             ]
         },
         {
