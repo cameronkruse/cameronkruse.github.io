@@ -21,10 +21,10 @@ var config = {
               bearing: 0.00
             },
             onChapterEnter: [
-                {
-                    layer: 'runtrack',
-                    opacity: 0
-                }
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 0
+                // }
             ],
             onChapterExit: [
                 // {
@@ -46,14 +46,14 @@ var config = {
             },
             onChapterEnter: [
                 {
-                  layer: 'runtrack',
-                  opacity: 1
+                  // layer: 'runtrack',
+                  // opacity: 1
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'runtrack',
-                    opacity: 0
+                    // layer: 'runtrack',
+                    // opacity: 0
                 }
             ]
         },
@@ -118,10 +118,10 @@ var config = {
                 }
             ],
             onChapterExit: [
-                {
-                    layer: 'runtrack',
-                    opacity: 1
-                }
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
             ]
         },
         {
@@ -136,10 +136,10 @@ var config = {
               bearing: -151.20
             },
             onChapterEnter: [
-                {
-                    layer: 'runtrack',
-                    opacity: 1
-                }
+                // {
+                //     layer: 'runtrack',
+                //     opacity: 1
+                // }
             ],
             onChapterExit: [
                 // {
