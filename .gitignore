@@ -11,4 +11,4 @@ __ pycache __
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
-home/projects/.DS_Store
+.DS_Store
