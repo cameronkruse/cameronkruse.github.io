@@ -37,7 +37,7 @@ var config = {
             id: 'mapblock',
             title: 'The Map',
             // image: './path/to/image/source.png',
-            description: "To help me on my journey I built a map with Mapbox to find all the stairs and highlight other geographic features that would help me on my way. Stairs on this map are highlighted in yellow. Silverlake the neighborhood are the pink dashes. My path is the blue dashes.",
+            description: "To help me on my journey I built a map with Mapbox to find all the stairs and highlight other geographic features that would help me on my way. Stairs on this map are highlighted in yellow. Silverlake the neighborhood are the pink line. My path is the blue line.",
             location: {
               center: [-118.256938, 34.106153],
               zoom: 17.34,
@@ -46,14 +46,14 @@ var config = {
             },
             onChapterEnter: [
                 {
-                  // layer: 'runtrack',
-                  // opacity: 1
+                  layer: 'runtrack',
+                  opacity: 1
                 }
             ],
             onChapterExit: [
                 {
-                    // layer: 'runtrack',
-                    // opacity: 0
+                    layer: 'runtrack',
+                    opacity: 0
                 }
             ]
         },
@@ -75,10 +75,10 @@ var config = {
                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'runtrack',
-                //     opacity: 1
-                // }
+                {
+                    layer: 'runtrack',
+                    opacity: 1
+                }
             ]
         },
         {
