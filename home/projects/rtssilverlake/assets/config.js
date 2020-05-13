@@ -21,10 +21,10 @@ var config = {
               bearing: 0.00
             },
             onChapterEnter: [
-                // {
-                //     layer: 'runtrack',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'runtrack',
+                    opacity: 0
+                }
             ],
             onChapterExit: [
                 // {
