@@ -136,10 +136,10 @@ var config = {
               bearing: -151.20
             },
             onChapterEnter: [
-                // {
-                //     layer: 'runtrack',
-                //     opacity: 1
-                // }
+                {
+                    layer: 'runtrack',
+                    opacity: 1
+                }
             ],
             onChapterExit: [
                 // {
