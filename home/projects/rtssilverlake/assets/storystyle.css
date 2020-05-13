@@ -134,8 +134,8 @@ header .overlay {
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('./images/rts-15.jpg') black no-repeat center center scroll;
-    width: 90vw;
-    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
   }
   header video {
     display: none;
