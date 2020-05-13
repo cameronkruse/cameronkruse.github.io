@@ -133,8 +133,8 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('./images/rts-15.jpg') black no-repeat scroll;
-    max-width: 100vw;
+    background: url('./images/rts-15.jpg') black center center no-repeat scroll;
+    max-width: 100vw !important;
   }
   header video {
     display: none;
