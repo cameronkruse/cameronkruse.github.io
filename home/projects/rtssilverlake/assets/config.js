@@ -13,7 +13,7 @@ var config = {
             id: 'background',
             title: 'Los Angeles, CA',
             image: './assets/images/rts-20.jpg',
-            description: "So I live in Los Angeles, specifically the neighborhood of Silverlake in Los Angeles. It is east of downtown just southwest of Dodger stadium. It's the little pink area towards the top of the city.",
+            description: 'So I live in Los Angeles, specifically the neighborhood of Silverlake in Los Angeles. It is east of downtown just southwest of Dodger stadium. It\'s the little pink area towards the top of the city.',
             location: {
               center: [-118.26555, 33.93443],
               zoom: 9.61,
@@ -1156,6 +1156,6 @@ var config = {
                 //     opacity: 1
                 // }
             ]
-        },
+        }
     ]
 };
