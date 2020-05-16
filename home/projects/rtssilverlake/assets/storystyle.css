@@ -44,7 +44,7 @@ h3 {
 #features {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    z-index: 100;
+    z-index: 90;
 }
 .centered {
     width: 50vw;
@@ -89,6 +89,7 @@ h3 {
     #features {
         width: 90vw;
         margin: 0 auto;
+        z-index: 100;
     }
 }
 header {
