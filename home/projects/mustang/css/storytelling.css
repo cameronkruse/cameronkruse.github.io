@@ -1,58 +1,3 @@
-header {
-  font-family: 'Alatsi', sans-serif;
-  color: black;
-  position: relative;
-  background-color: white;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #white;
-  opacity: 0.1;
-  z-index: 1;
-}
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('./images/ckrusenepal-1.jpg') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
-
-@font-face {
-  font-family: 'Alatsi', sans-serif;
-}
-
 
 /* begin of scrollytelling stuff */
 body {
@@ -73,38 +18,11 @@ a, a:hover, a:visited {
     position: fixed;
     z-index: -5;
 }
-
-/* the root of all suffering: https://stackoverflow.com/questions/5657964/css-why-doesn-t-percentage-height-work */
-/* #photoblock {
-  background-image: url('../images/ckrusenepal-68.jpg');
-  position: -webkit-sticky;
-  position: sticky;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0px;
-  z-index: -4;
-  color: #0071bc;
-  height: 100vh;
-  width: 100%;
-  background-color: green;
-  transition: all ease 1.0s;
-  opacity: 0;
-} */
-h1 {
-  font-family: 'Alatsi', sans-serif;
-}
-h3 {
-  font-family: 'Alatsi', sans-serif;
-}
-
-
 #header {
-    margin: 0vh auto;
+    margin: 3vh auto;
     width: 90vw;
     padding: 2vh;
     text-align: center;
-    font-family: 'Alatsi', sans-serif;
 }
 #footer {
     width: 100%;
@@ -115,13 +33,10 @@ h3 {
     line-height: 25px;
     font-size: 13px;
 }
-
-
-
 #features {
     padding-top: 10vh;
-    padding-bottom: 10vh;
-    z-index: 100;
+    padding-bottom: 0vh;
+    z-index: 90;
 }
 .centered {
     width: 50vw;
@@ -136,8 +51,8 @@ h3 {
     margin-left: 62vw;
 }
 .light {
-    color: #000000;
-    background-color: #F5F5F7;
+    color: #444;
+    background-color: #fafafa;
 }
 .dark {
     color: #fafafa;
@@ -145,24 +60,34 @@ h3 {
 }
 .step {
     padding-bottom: 50vh;
-    margin-bottom: 10vh;
+    /* margin-bottom: 10vh; */
     opacity: 0.25;
 }
 .step.active {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .step div {
-    padding:  10px 10px;
+    padding:  10px 15px;
+    padding-bottom: 0px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .step img {
     width: 100%;
 }
 
+@media (max-width: 750px) {
+    #features {
+        width: 90vw;
+        margin: 0 auto;
+        z-index: 100;
+    }
+}
+
 #photo {
+    top:0;
     background-image: url('../images/ckrusenepal-68.jpg');
     position: fixed;
     background-position: top center;
@@ -178,7 +103,7 @@ h3 {
     position: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     height: 100vh;
     width: 100vw;
     z-index: -3;
@@ -187,14 +112,80 @@ h3 {
     transition: all ease 1.0s;
 }
 
-@media (max-width: 750px) {
-    #features {
-        width: 90vw;
-        margin: 0 auto;
-    }
-}
 @font-face {
   font-family: "Open Sans";
   src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
        url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
 }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400 !important;
+
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300 !important;
+
+}
+h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300 !important;
+}
+
+header {
+  position: relative;
+  background-color: white;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 0;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #white;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('./images/ckrusenepal-1.jpg') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+/* the root of all suffering: https://stackoverflow.com/questions/5657964/css-why-doesn-t-percentage-height-work */

@@ -3,7 +3,7 @@ var config = {
     accessToken:'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aThzNG83MDd0aTNkbXFzYTR2cDFubyJ9.nH9oMLxE5jwM0DuTxbZ2UA',
     showMarkers: false,
     theme: 'light',
-    alignment: 'center',
+    alignment: 'right',
     // title: 'Run The Stairs',
     // subtitle: 'My quest to run all the stairs',
     // byline: 'Cameron Kruse',
