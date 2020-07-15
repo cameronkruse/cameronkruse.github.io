@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166312106-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166312106-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cameron Kruse</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Fish StockingMap" content="">
+    <meta name="Cameron Kruse" content="">
+
+    <title>Cameron Kruse</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+    <!-- Mapbox Header-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Cameron Kruse</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../highestroad">The Highest Road</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartesianproduct">Cartesian Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <div id='map' style='width: 100%; height: 100%;'></div>
+
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+            var map = new mapboxgl.Map({
+                style: 'mapbox://styles/highestroad/ckcnmdwwm00qo1ipkan62bnu7',
+                center: [-119.273915, 37.917617],
+                zoom: 12,
+                pitch: 0,
+                bearing: 0,
+                hash: true,
+                container: 'map'
+            });
+
+            // The 'building' layer in the mapbox-streets vector source contains building-height
+            // data from OpenStreetMap.
+            map.on('load', function() {
+                // Insert the layer beneath any symbol layer.
+                var layers = map.getStyle().layers;
+
+                var labelLayerId;
+                for (var i = 0; i < layers.length; i++) {
+                    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                        labelLayerId = layers[i].id;
+                        break;
+                    }
+                }
+
+                map.addLayer({
+                    'id': '3d-buildings',
+                    'source': 'composite',
+                    'source-layer': 'building',
+                    'filter': ['==', 'extrude', 'true'],
+                    'type': 'fill-extrusion',
+                    'minzoom': 15,
+                    'paint': {
+                        'fill-extrusion-color': '#aaa',
+
+                        // use an 'interpolate' expression to add a smooth transition effect to the
+                        // buildings as the user zooms in
+                        'fill-extrusion-height': [
+                            "interpolate", ["linear"], ["zoom"],
+                            15, 0,
+                            15.05, ["get", "height"]
+                        ],
+                        'fill-extrusion-base': [
+                            "interpolate", ["linear"], ["zoom"],
+                            15, 0,
+                            15.05, ["get", "min_height"]
+                        ],
+                        'fill-extrusion-opacity': .6
+                    }
+                }, labelLayerId);
+            });
+            </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
