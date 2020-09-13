@@ -14,8 +14,8 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    font-family: sans-serif;
-   -webkit-font-smoothing: antialiased; 
+    font-family: 'Montserrat', sans-serif;
+   -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -36,7 +36,7 @@ header {
     width: 100%;
     height: 114px;
    -moz-box-sizing: border-box;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     z-index: 2;
 
     -webkit-transition: all .2s ease-out;
@@ -74,7 +74,7 @@ header div.meta-left {
     padding-left: 20px;
     padding-top: 20px;
    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 header div.meta-right {
@@ -83,29 +83,31 @@ header div.meta-right {
     padding-right: 6px;
     padding-top: 6px;
    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 header p.title {
     position: relative;
     margin: 0;
     padding: 0 0 0 2px;
-    font-size: 24px;
     text-align: left;
-    font-weight: bold;
    -moz-box-sizing: border-box;
     box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 header p.author {
     position: relative;
-    margin: 2.5em 0 0 0;
-    padding: 0 0 0 2px;
-    color: #999999;
-    font-size: 12px;
+    margin: 1em 0 0 0;
+    padding: 0 0 0 7px;
+    color: #FFF;
+    font-size: 14px;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -288,7 +290,7 @@ header ul.gallery-meta li {
     padding: 114px 0px 0px 0px;
     width: 100%;
    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 div.thumbnails {
@@ -310,19 +312,19 @@ div.thumbnail {
    -moz-transition: -moz-box-shadow .03s ease-in;
    -ms-transition: box-shadow .03s ease-in;
    -o-transition: box-shadow .03s ease-in;
-    transition: box-shadow .03s ease-in; 
+    transition: box-shadow .03s ease-in;
 }
 
 div.thumbnail:hover {
-   -moz-box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);  
-   -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);   
+   -moz-box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);
+   -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);
     box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);
 
    -webkit-transition: all .03s ease-out;
    -moz-transition: all .03s ease-out;
    -ms-transition: all .03s ease-out;
    -o-transition: all .03s ease-out;
-    transition: all .03s ease-out;  
+    transition: all .03s ease-out;
 }
 
 .row-spacing-sm div.thumbnail {
@@ -457,7 +459,7 @@ div.thumbnail img {
     height: 100%;
     padding: 45px 0px 100px 0px;
    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #loupeContainer div.side-navigation div.hotspot {
@@ -465,7 +467,7 @@ div.thumbnail img {
     width: 25%;
     height: 100%;
 
-   -webkit-user-select: none;   
+   -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    -o-user-select: none;
@@ -589,11 +591,11 @@ div.thumbnail img {
     width: 45px;
     height: 45px;
     cursor: pointer;
-   -webkit-user-select: none;   
+   -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    -o-user-select: none;
-    user-select: none; 
+    user-select: none;
 }
 
 #buttonPrev.disabled {
@@ -614,7 +616,7 @@ div.thumbnail img {
     width: 45px;
     height: 45px;
     cursor: pointer;
-   -webkit-user-select: none;   
+   -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
    -o-user-select: none;
@@ -666,7 +668,7 @@ div.thumbnail img {
         padding: 45px 45px 150px 45px;
         font-size: 13px;
     }
-    
+
     #loupeContainer div.info-container {
         height: 150px;
     }
