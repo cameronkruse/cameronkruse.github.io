@@ -61,63 +61,35 @@
 </head>
 
 <body id="page-top">
-  <nav class="navbar static-top navbar-toggleable-md navbar-light" id="mainNav">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container">
-          <a class="navbar-brand" href="https://cameronwkruse.com/home/">Cameron Kruse</a>
-          <div class="collapse navbar-collapse" id="navbarExample">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="https://youtu.be/b-wRvrodaPM">When Glaciers Go</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/rtssilverlake/">Run The Stairs</a>
-                      <a class="dropdown-item" href="https://www.youtube.com/watch?v=nF6bakUlw6k&feature=youtu.be">AR Storytelling</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/highestroad.html">Highest Road</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/cartesianproduct">Cartesian Product</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/cartesianproduct">Ice Cream Expedition</a>
-                      <a class="dropdown-item" href="https://www.youtube.com/watch?v=YqW20OnhjaU">Dirt On Baseball</a>
-                      <!-- <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a> -->
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Media
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/media/">General Media</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="https://youtu.be/b-wRvrodaPM">Subaru Commercial</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/rtssilverlake/">TedX Safi</a>
-                      <a class="dropdown-item" href="https://www.youtube.com/watch?v=nF6bakUlw6k&feature=youtu.be">GoPro Ping Pong</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Quick Takes
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/chinaaid/">Chinese Aid Map</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/runthestairs/">Find Public Stairs</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/topomap/">Topo Art Map</a>
-                      <a class="dropdown-item" href="https://cameronwkruse.com/home/projects/wheretoclimb/">Climbing Weather</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="https://medium.com/@cameronwkruse">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="https://cameronwkruse.com/home/#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Cameron Kruse</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./highestroad">The Highest Road</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartesianproduct">Cartesian Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
         <div id='map' style='width: 100%; height: 100%;'></div>
 
@@ -133,46 +105,6 @@
                 container: 'map'
             });
 
-            // The 'building' layer in the mapbox-streets vector source contains building-height
-            // data from OpenStreetMap.
-            map.on('load', function() {
-                // Insert the layer beneath any symbol layer.
-                var layers = map.getStyle().layers;
-
-                var labelLayerId;
-                for (var i = 0; i < layers.length; i++) {
-                    if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-                        labelLayerId = layers[i].id;
-                        break;
-                    }
-                }
-
-                map.addLayer({
-                    'id': '3d-buildings',
-                    'source': 'composite',
-                    'source-layer': 'building',
-                    'filter': ['==', 'extrude', 'true'],
-                    'type': 'fill-extrusion',
-                    'minzoom': 15,
-                    'paint': {
-                        'fill-extrusion-color': '#aaa',
-
-                        // use an 'interpolate' expression to add a smooth transition effect to the
-                        // buildings as the user zooms in
-                        'fill-extrusion-height': [
-                            "interpolate", ["linear"], ["zoom"],
-                            15, 0,
-                            15.05, ["get", "height"]
-                        ],
-                        'fill-extrusion-base': [
-                            "interpolate", ["linear"], ["zoom"],
-                            15, 0,
-                            15.05, ["get", "min_height"]
-                        ],
-                        'fill-extrusion-opacity': .6
-                    }
-                }, labelLayerId);
-            });
             </script>
 
     <!-- Bootstrap core JavaScript -->
