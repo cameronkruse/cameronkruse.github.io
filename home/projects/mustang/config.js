@@ -6,7 +6,7 @@ var driveSlides = 1;
 var driveSmoothness = 200;
 
 // Value used to drive
-var driveTime = driveSlides*driveSmoothness;
+var driveTime = driveSlides * driveSmoothness;
 
 // Do you want to follow the point? True = follow
 var followPoint = true;
@@ -14,7 +14,9 @@ var followPoint = true;
 // ...If so, what zoom, pitch, and bearing should be used to follow?
 var followZoomLevel = 12;
 var followBearing = 0;
-var followPitch = 0;
+var followPitch = 40;
+
+//TODO: Add Drop Shadows to storytelling boxes - https://cdn-images.kontinentalist.com/static-html/food-security-mekong-river-hydropower-dam-climate-change/index.html
 
 // to add 'driving' slides just make sure to add 'drive to beginning of slide id'
 // you also need to add a running total to the end of each 'drive-slide', (ex. drive-slide-0, drive-slide-1, drive-slide-2, etc.)
@@ -39,10 +41,10 @@ var config = {
             // image: './images/ckrusenepal-28.jpg',
             description: 'The sun hasn’t even risen behind the steep sandy cliffs of Chambale, but the water splashing over his calloused hands shakes Sangbo from the lingering fog of sleep bringing him into the present moment with a cold jolt. He pushes a medium sized boulder in front of the small stream and redirects the water vaguely towards a neat row of chest high apple trees rising from the river rocks strewn through the landscape.',
             location: {
-              center: [-118.26555, 33.93443],
-              zoom: 9.61,
-              pitch: 0.00,
-              bearing: 0.00
+                center: [-118.26555, 33.93443],
+                zoom: 9.61,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -54,8 +56,7 @@ var config = {
             // title: 'Chambale, Nepal',
             // image: './images/ckrusenepal-28.jpg',
             description: ' He grabs a shovel and chases the water as it snakes its way towards the first tree. Digging out a channel for the water to meet the tree, his mind wanders: “how long have I been chasing water? Who are we, out of all the generations, to lead this chase?” The divot encompassing the small tree begins to fill, creating a dirty puddle of water. Sangbo moves on to the next tree.',
-            location: {
-            },
+            location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
@@ -136,10 +137,10 @@ var config = {
             image: '',
             description: 'As glacial melt has increased, scientists have begun to measure the rate of melting. According to one study the melting of the Himalayan glaciers has more than doubled in the past 20 years when compared to the previous 20 years. On average a typical glacier loses more than a vertical foot and half of ice each year.',
             location: {
-              center: [82.63850, 28.83608],
-              zoom: 4.89,
-              pitch: 0.00,
-              bearing: 0.00
+                center: [82.63850, 28.83608],
+                zoom: 4.89,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -152,10 +153,10 @@ var config = {
             image: '',
             description: 'As this ice melts the water trickles downstream joining into the streams that supply water to billions of people. For most of those downstream, glacial melt has not necessarily caused a noticeable difference in water supply. More water melting off of glaciers typically just means more water going into oceans and perhaps slight increases in water in seasons that may be dry. However, as you move upstream, this story begins to change.',
             location: {
-              center: [82.63850, 28.83608],
-              zoom: 4.89,
-              pitch: 0.00,
-              bearing: 0.00
+                center: [82.63850, 28.83608],
+                zoom: 4.89,
+                pitch: 30.00,
+                bearing: 0.00
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -168,10 +169,10 @@ var config = {
             image: '',
             description: 'Those that live in close proximity to glaciers, the people of Dhey, and other communities in the Himalaya are often dependent on groundwater; springs fed by consistent glacial melt patterns. Historically villages have formed around such sources rather than the large river tributaries as ground water is clean, the village is not at risk from seasonal flooding, and the soil is typically much better for farming.',
             location: {
-              center: [82.63850, 28.83608],
-              zoom: 4.89,
-              pitch: 0.00,
-              bearing: 0.00
+                center: [82.63850, 28.83608],
+                zoom: 4.89,
+                pitch: 40.00,
+                bearing: 0.00
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -184,10 +185,10 @@ var config = {
             image: '',
             description: 'Unfortunately, as glacial melt patterns have changed, the groundwater distribution has also changed. In many areas groundwater fed springs are no longer consistently producing the water needed to support the agricultural practices of a village. The closer a village is to it’s glacial water source, the more at risk it is of losing its water source. As glacial melt patterns have quickly changed, many villages have no other choice but to pack up and leave; leaving behind their homes and ancient way of life like ghosts littered about the himalayan tundra.',
             location: {
-              center: [82.63850, 28.83608],
-              zoom: 4.89,
-              pitch: 0.00,
-              bearing: 0.00
+                center: [82.63850, 28.83608],
+                zoom: 4.89,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [],
             onChapterExit: []

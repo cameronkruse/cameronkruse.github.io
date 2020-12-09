@@ -23,7 +23,7 @@ function getLayerPaintType(layer) {
 
 function setLayerOpacity(layer) {
     var paintProps = getLayerPaintType(layer.layer);
-    paintProps.forEach(function(prop) {
+    paintProps.forEach(function (prop) {
         map.setPaintProperty(layer.layer, prop, layer.opacity);
     });
 }
@@ -133,13 +133,14 @@ const transformRequest = (url) => {
     const hasQuery = url.indexOf("?") !== -1;
     const suffix = hasQuery ? "&pluginName=journalismScrollytelling" : "?pluginName=journalismScrollytelling";
     return {
-      url: url + suffix
+        url: url + suffix
     }
 }
 
 var map = new mapboxgl.Map({
     container: 'map',
     style: config.style,
+
     // center: config.chapters[0].location.center,
     // zoom: config.chapters[0].location.zoom,
     // bearing: config.chapters[0].location.bearing,
@@ -159,32 +160,37 @@ var scroller = scrollama();
 function handleStepProgress(response) {
     let stepProgress;
 
-    if (response.element.id.slice(0,5) === 'drive') {
+    if (response.element.id.slice(0, 5) === 'drive') {
         let driveSlideNum = parseInt(response.element.id.slice(-1));
         if (driveSlideNum === 0) {
             map.setLayoutProperty('animatedLine', 'visibility', 'visible');
-            stepProgress = Math.round(response.progress*driveSmoothness);
+            stepProgress = Math.round(response.progress * driveSmoothness);
         } else {
-            stepProgress = Math.round(response.progress*driveSmoothness+driveSmoothness*driveSlideNum);
+            stepProgress = Math.round(response.progress * driveSmoothness + driveSmoothness * driveSlideNum);
         }
         changeCenter(stepProgress);
     }
 }
 // I don't think I'll edit anything past here. this is basically loading the mapbox map and overlaying all the scroll line stuff on it.
 
-map.on("load", function() {
+map.on("load", function () {
 
     let w = window.innerWidth;
     let initBounds = routeData.features[0].geometry.coordinates;
 
     if (followPoint === false) {
-        var bounds = initBounds.reduce(function(bounds, coord) {
+        var bounds = initBounds.reduce(function (bounds, coord) {
             return bounds.extend(coord);
         }, new mapboxgl.LngLatBounds(initBounds[0], initBounds[0]));
 
         if (w >= 500) {
             map.fitBounds(bounds, {
-                padding: {top: 150, bottom: 150, right: -100, left: 200},
+                padding: {
+                    top: 150,
+                    bottom: 150,
+                    right: -100,
+                    left: 200
+                },
                 duration: 0
             });
         } else {
@@ -210,111 +216,135 @@ map.on("load", function() {
     });
 
     map.addLayer({
-      "id": "animatedLine",
-      "type": "line",
-      "source": "lineSource",
-      'paint': {
+        "id": "animatedLine",
+        "type": "line",
+        "source": "lineSource",
+        'paint': {
             'line-opacity': 1,
             'line-color': '#333',
             'line-width': 3.5
-       },
-       'layout': {
-           'visibility': 'none'
-       }
+        },
+        'layout': {
+            'visibility': 'none'
+        }
     });
 
     map.addLayer({
-      "id": "animatedPoint",
-      "type": "circle",
-      "source": "pointSource",
-      'paint': {
+        "id": "animatedPoint",
+        "type": "circle",
+        "source": "pointSource",
+        'paint': {
             'circle-radius': 5,
             'circle-opacity': 1,
             'circle-color': '#333'
-      },
-      'layout': {
-           // 'visibility': 'none'
-       }
+        },
+        'layout': {
+            // 'visibility': 'none'
+        }
     });
 
     // setup the instance, pass callback functions
     scroller
-    .setup({
-        step: '.step',
-        offset: 0.5,
-        progress: true
-    })
-    .onStepEnter(response => {
-        var chapter = config.chapters.find(chap => chap.id === response.element.id);
-        response.element.classList.add('active');
-// should make photoblock not opaque
-        var xvariable = chapter.photoblock;
-        if (chapter.photoblock) {
-            console.log('photoblock is true');
-            console.log(chapter.photoblock);
-            // var image = new Image();
-            // image.src = chapter.photoblock;
-            // console.log(image.src)
-            // thephotoreal.appendChild(image);
-            document.getElementById("photo").style.display = "block";
-            document.getElementById("photo").style["background-image"] = chapter.photoblock;
-            const element = document.querySelector('.photoblock');
-            const background = element.style.photo;
-            console.log(background);
+        .setup({
+            step: '.step',
+            offset: 0.5,
+            progress: true
+        })
+        .onStepEnter(response => {
+            var chapter = config.chapters.find(chap => chap.id === response.element.id);
+            response.element.classList.add('active');
+            // should make photoblock not opaque
+            var xvariable = chapter.photoblock;
+            if (chapter.photoblock) {
+                console.log('photoblock is true');
+                console.log(chapter.photoblock);
+                // var image = new Image();
+                // image.src = chapter.photoblock;
+                // console.log(image.src)
+                // thephotoreal.appendChild(image);
+                document.getElementById("photo").style.display = "block";
+                document.getElementById("photo").style["background-image"] = chapter.photoblock;
+                const element = document.querySelector('.photoblock');
+                const background = element.style.photo;
+                console.log(background);
 
-            // could I just change the background picture source?
-        } else {
-          console.log('photoblock is false');
-          document.getElementById("photo").style.display = "none";
-        }
+                // could I just change the background picture source?
+            } else {
+                console.log('photoblock is false');
+                document.getElementById("photo").style.display = "none";
+            }
 
-// Should make blankblock not opaque
-        var blankblockchapter = document.createElement('div');
-        if (chapter.blankblock) {
-            console.log('blankblock is true');
-            theblankblockreal.appendChild(blankblockchapter);
-            document.getElementById("blankblock").style["display"] = "block";
-        } else {
-          console.log('blankblock is false')
-          document.getElementById("blankblock").style.display = "none";
-        }
+            // Should make blankblock not opaque
+            var blankblockchapter = document.createElement('div');
+            if (chapter.blankblock) {
+                console.log('blankblock is true');
+                theblankblockreal.appendChild(blankblockchapter);
+                document.getElementById("blankblock").style["display"] = "block";
+            } else {
+                console.log('blankblock is false')
+                document.getElementById("blankblock").style.display = "none";
+            }
 
-        // map.flyTo(chapter.location);
+            // map.flyTo(chapter.location);
 
-        if (config.showMarkers) {
-            marker.setLngLat(chapter.location.center);
-        }
-        if (chapter.onChapterEnter.length > 0) {
-            chapter.onChapterEnter.forEach(setLayerOpacity);
-        }
-    })
-    .onStepExit(response => {
-        var chapter = config.chapters.find(chap => chap.id === response.element.id);
-        response.element.classList.remove('active');
-        if (chapter.onChapterExit.length > 0) {
-            chapter.onChapterExit.forEach(setLayerOpacity);
-        }
-    })
-    .onStepProgress(handleStepProgress);
+            if (config.showMarkers) {
+                marker.setLngLat(chapter.location.center);
+            }
+            if (chapter.onChapterEnter.length > 0) {
+                chapter.onChapterEnter.forEach(setLayerOpacity);
+            }
+        })
+        .onStepExit(response => {
+            var chapter = config.chapters.find(chap => chap.id === response.element.id);
+            response.element.classList.remove('active');
+            if (chapter.onChapterExit.length > 0) {
+                chapter.onChapterExit.forEach(setLayerOpacity);
+            }
+        })
+        .onStepProgress(handleStepProgress);
 
     createLine();
+});
+map.on('load', function () {
+    map.addSource('mapbox-dem', {
+        'type': 'raster-dem',
+        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        'tileSize': 512,
+        'maxzoom': 14
+    });
+    // add the DEM source as a terrain layer with exaggerated height
+    map.setTerrain({
+        'source': 'mapbox-dem',
+        'exaggeration': 1.5
+    });
+
+    // add a sky layer that will show when the map is highly pitched
+    map.addLayer({
+        'id': 'sky',
+        'type': 'sky',
+        'paint': {
+            'sky-type': 'atmosphere',
+            'sky-atmosphere-sun': [0.0, 0.0],
+            'sky-atmosphere-sun-intensity': 15
+        }
+    });
 });
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
 
-$(document).ready(function (){
+$(document).ready(function () {
     $.ajax({
-      // !!!!THIS IS THE LINE TO CHANGE!!!!
-      // url:"./data/highwaydrive.geojson",
-      url:"./data/road3.geojson",
-      dataType: "json",
-      success: function (data) {
-        console.log('data', data.features[0]);
-        routeData = data;
-      },
-      error: function () {
-        console.log('error loading data');
-      }
+        // !!!!THIS IS THE LINE TO CHANGE!!!!
+        // url:"./data/highwaydrive.geojson",
+        url: "./data/road3.geojson",
+        dataType: "json",
+        success: function (data) {
+            console.log('data', data.features[0]);
+            routeData = data;
+        },
+        error: function () {
+            console.log('error loading data');
+        }
     });
 });
