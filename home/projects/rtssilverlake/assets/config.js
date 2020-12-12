@@ -156,7 +156,7 @@ var config = {
             location: {
               center: [-118.27405, 34.08813],
               zoom: 17.16,
-              pitch: 0.00,
+              pitch: 70.02,
               bearing: 63.12
             },
             onChapterEnter: [
@@ -180,7 +180,7 @@ var config = {
             location: {
               center: [-118.27245, 34.09023],
               zoom: 17.16,
-              pitch: 0.00,
+              pitch: 70.02,
               bearing: 113.52
             },
             onChapterEnter: [
@@ -277,7 +277,7 @@ var config = {
             location: {
               center: [-118.26691, 34.09922],
               zoom: 17.16,
-              pitch: 0.00,
+              pitch: 70.02,
               bearing: -88.89
             },
             onChapterEnter: [
@@ -901,7 +901,7 @@ var config = {
             location: {
               center: [-118.27596, 34.08250],
               zoom: 17.23,
-              pitch: 0.00,
+              pitch: 70.02,
               bearing: -29.69
             },
             onChapterEnter: [
@@ -1117,7 +1117,7 @@ var config = {
             location: {
               center: [-118.27249, 34.09161],
               zoom: 14.07,
-              pitch: 0.00,
+              pitch: 70.02,
               bearing: 0.00
             },
             onChapterEnter: [

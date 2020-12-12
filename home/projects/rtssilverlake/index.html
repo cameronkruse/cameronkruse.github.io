@@ -22,8 +22,8 @@
     <meta charset='utf-8' />
     <title>Run The Stairs</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script src="./assets/vidheader.js"></script>
@@ -263,8 +263,47 @@ if (config.showMarkers) {
 // instantiate the scrollama
 var scroller = scrollama();
 
+//map.on('click', function () {
+//    map.addSource('mapbox-dem', {
+//        'type': 'raster-dem',
+//        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+//        'tileSize': 512,
+//        'maxzoom': 14
+//    });
+//    // add the DEM source as a terrain layer with exaggerated height
+//    map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+//
+//    // add a sky layer that will show when the map is highly pitched
+//    map.addLayer({
+//        'id': 'sky',
+//        'type': 'sky',
+//        'paint': {
+//            'sky-type': 'atmosphere',
+//            'sky-atmosphere-sun': [0.0, 0.0],
+//            'sky-atmosphere-sun-intensity': 15
+//        }
+//    });
+//});
+//    
 map.on("load", function() {
     // setup the instance, pass callback functions
+    console.log("map on load triggered")
+    map.addSource('mapbox-dem', {
+        'type': 'raster-dem',
+        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        'tileSize': 512,
+        'maxzoom': 14
+    });
+    map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 3.0 });
+    map.addLayer({
+        'id': 'sky',
+        'type': 'sky',
+        'paint': {
+            'sky-type': 'atmosphere',
+            'sky-atmosphere-sun': [0.0, 0.0],
+            'sky-atmosphere-sun-intensity': 15
+        }
+    });
     scroller
     .setup({
         step: '.step',
@@ -290,6 +329,8 @@ map.on("load", function() {
         }
     });
 });
+
+
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);

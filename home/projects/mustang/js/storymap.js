@@ -43,6 +43,11 @@ theblankblockreal.setAttribute('id', 'blankblock');
 features.classList.add(alignments[config.alignment]);
 features.setAttribute('id', 'features');
 
+//TODO: could add an if statement here: 
+//if (config.testfield) {
+//    features.setAttribute('')
+//}
+
 // storytelling header begin
 var header = document.createElement('div');
 
