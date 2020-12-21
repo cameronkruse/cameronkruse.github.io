@@ -313,7 +313,8 @@ map.on("load", function () {
 map.on('load', function () {
     map.addSource('mapbox-dem', {
         'type': 'raster-dem',
-        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+//        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        'url': '/Users/cameronkruse/Desktop/Chawale Model/Model.obj',
         'tileSize': 512,
         'maxzoom': 14
     });

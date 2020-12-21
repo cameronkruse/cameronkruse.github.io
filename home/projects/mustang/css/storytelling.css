@@ -98,7 +98,7 @@ a, a:hover, a:visited {
     width: 100vw;
     z-index: -4;
     display: none; /* Hidden by default block turns it on */
-    transition: all ease 0.5s;
+    transition: width 0.0s, height 0.0s, opacity 0.5s;
 }
 #blankblock {
     position: fixed;
