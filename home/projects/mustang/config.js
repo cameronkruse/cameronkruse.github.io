@@ -14,7 +14,7 @@ var followPoint = true;
 // ...If so, what zoom, pitch, and bearing should be used to follow?
 var followZoomLevel = 12;
 var followBearing = 0;
-var followPitch = 40;
+var followPitch = 80.00;
 
 //TODO: Add Drop Shadows to storytelling boxes - https://cdn-images.kontinentalist.com/static-html/food-security-mekong-river-hydropower-dam-climate-change/index.html
 
@@ -155,7 +155,7 @@ var config = {
             location: {
                 center: [82.63850, 28.83608],
                 zoom: 4.89,
-                pitch: 30.00,
+                pitch: 80.00,
                 bearing: 0.00
             },
             onChapterEnter: [],
@@ -171,7 +171,7 @@ var config = {
             location: {
                 center: [82.63850, 28.83608],
                 zoom: 4.89,
-                pitch: 40.00,
+                pitch: 80.00,
                 bearing: 0.00
             },
             onChapterEnter: [],
@@ -187,7 +187,7 @@ var config = {
             location: {
                 center: [82.63850, 28.83608],
                 zoom: 4.89,
-                pitch: 0.00,
+                pitch: 80.00,
                 bearing: 0.00
             },
             onChapterEnter: [],
