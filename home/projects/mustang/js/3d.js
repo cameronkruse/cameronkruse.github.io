@@ -1,5 +1,4 @@
-< script >
-    mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
 var map = new mapboxgl.Map({
     container: 'map',
     zoom: 13.1,
@@ -32,5 +31,4 @@ map.on('load', function () {
             'sky-atmosphere-sun-intensity': 15
         }
     });
-}); 
-</script>
+});
