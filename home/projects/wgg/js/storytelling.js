@@ -1,3 +1,4 @@
+// Map Stuff
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -34,13 +35,20 @@ function setLayerOpacity(layer) {
         map.setPaintProperty(layer.layer, prop, layer.opacity, options);
     });
 }
+// ^^End Map stuff^^
 
+// initializing divs
 var story = document.getElementById('story');
 var features = document.createElement('div');
+var photob = document.createElement('div');
+var blankb = document.createElement('div');
+photob.setAttribute('id', 'photo')
+blankb.setAttribute('id', 'blankblock')
 features.setAttribute('id', 'features');
 
 var header = document.createElement('div');
 
+//title block
 if (config.title) {
     var titleText = document.createElement('h1');
     titleText.innerText = config.title;
@@ -65,6 +73,7 @@ if (header.innerText.length > 0) {
     story.appendChild(header);
 }
 
+// for each chapter block
 config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
@@ -186,6 +195,18 @@ map.on("load", function () {
             var chapter = config.chapters.find(chap => chap.id === response.element.id);
             response.element.classList.add('active');
             map[chapter.mapAnimation || 'flyTo'](chapter.location);
+            if (chapter.photoblock) {
+                document.getElementById("photo").style["background-image"] = chapter.photoblock;
+                document.getElementById("photo").style.opacity = "100";
+            } else {
+                document.getElementById("photo").style.opacity = "0";
+            }
+            if (chapter.blankblock) {
+                document.getElementById("blankblock").style["display"] = "block";
+            } else {
+                document.getElementById("blankblock").style.display = "none";
+            }
+            
             if (config.showMarkers) {
                 marker.setLngLat(chapter.location.center);
             }
