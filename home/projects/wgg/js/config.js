@@ -45,7 +45,7 @@ var config = {
         },
                 {
             id: 'ch2',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-82.jpg')",
             blankblock: false,
             alignment: 'center',
             hidden: false,
@@ -117,7 +117,7 @@ var config = {
             image: '',
             description: "Digging another channel, he is silhouetted by a mountain rising above him; 10 miles behind that mountain is the village of Dhey. About eight years ago the water in Dhey started disappearing. There had always been enough to grow food and run the mill for as long as his grandparents' memory could go back, but change was afoot. The water splashes into the trough around the tree in front of him and Sangbo moves on, channeling the water as he goes. He falls into a methodical rhythm, moving tree to tree, chasing the water he had come here to find.",
             location: {
-                center: [83.955235, 29.066818],
+                center: [84.01535178881745, 29.042585239631702],
                 zoom: 15.07,
                 pitch: 60.00,
                 bearing: 159.20
