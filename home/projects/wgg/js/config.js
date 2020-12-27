@@ -909,7 +909,7 @@ var config = {
         },
                 {
             id: 'ch29',
-            photoblock: "url('./images/ckrusenepal-102.jpg')",
+            photoblock: "url('./images/ckrusenepal-85.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -941,7 +941,7 @@ var config = {
         },
                 {
             id: 'ch30',
-            photoblock: "url('./images/ckrusenepal-57.jpg')",
+            photoblock: "url('./images/ckrusenepal-102.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1043,12 +1043,44 @@ var config = {
             hidden: false,
             title: 'Chapter 33',
             image: '',
-            description: 'When the community of Dhey decided to move towards the river and grow apples for a living, the concept was greeted with mixed reactions. Much of the community started to slowly relocate to the new riverside establishment of Chambale. They built new homes with traditional mud bricks, or cement brought in from surrounding villages while slowly hiking their possessions down from Dhey through a steep gorge. Around this time is when the community school was forced to shut down and all the school aged children started school an 8 day’s walk away in the village of Ghiling.',
+            description: 'When the community of Dhey decided to move towards the river and grow apples for a living, the concept was greeted with mixed reactions. Much of the community started to slowly relocate to the new riverside establishment of Chambale. They built new homes with traditional mud bricks, or cement brought in from surrounding villages while slowly hiking their possessions down from Dhey through a steep gorge.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [83.98330, 29.06562],
+                zoom: 13.61,
+                pitch: 70.20,
+                bearing: 143.36
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'ch33.5',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 33.5',
+            image: '',
+            description: 'Around this time is when the community school was forced to shut down and all the school aged children started school an 8 day’s walk away in the village of Ghiling.',
+            location: {
+                center: [83.89273, 29.01205],
+                zoom: 13.44,
+                pitch: 69.81,
+                bearing: 75.36
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1077,10 +1109,10 @@ var config = {
             image: '',
             description: "Some community members, however, didn't like the sound of the new plan and they chose to give up land that their family had owned for centuries and move to surrounding villages. These include Tange, Dhakmar, Syanboche, Chusang, and some even all the way to the city of Kathmandu. Many had to start from scratch picking up new skills and new occupations; others, simply moved in with distant relatives or friends.",
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [83.87185, 28.86674],
+                zoom: 10.02,
+                pitch: 47.04,
+                bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1109,10 +1141,10 @@ var config = {
             image: '',
             description: 'Still others decided that they wouldn’t leave Dhey and they would try to make things work with the dwindling water supply. Many of the older members of the community, Sangbo’s parents Dorjay and Tashi included, were in this group. However, as the water further dried up, even the most fervent holdouts were deciding to move to Chambale. At this point, there were only a few people still living in Dhey surviving off of a small reservoir feeding a fraction of the fields they once planted.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [84.01528, 29.04315],
+                zoom: 17.24,
+                pitch: 68.47,
+                bearing: -163.82
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1139,12 +1171,12 @@ var config = {
             hidden: false,
             title: 'Chapter 36',
             image: '',
-            description: 'Since the community of Dhey started their migration, they had acquired a tractor to help build up the new apple orchards. Recently they used this to build a shoddy road to help move things from one village to another. This road connecting to other villages is how Tenzing travelled to and from his new school in Ghiling.',
+            description: 'Since the community of Dhey started their migration, they had acquired a tractor to help build up the new apple orchards. Recently they used this to build a shoddy road to help move things from one village to another. This road was connected to rough roads leading to other villages, which is how Tenzing travelled to and from his new school in Ghiling.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [83.96946, 29.05090],
+                zoom: 13.62,
+                pitch: 63.97,
+                bearing: 153.78
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1173,10 +1205,10 @@ var config = {
             image: '',
             description: 'Other road building projects are also afoot in Mustang. The Chinese have been funding a road connecting the Kora pass at the Tibetan-Nepali border with Kathmandu and then on to India. Altogether this road will be the lowest altitude corridor from China to India and is hugely important to China’s Belt and Road Initiative. Although this road stands to change the culture of Mustang significantly, it has also brought needed infrastructure to the region.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [82.97685, 28.42077],
+                zoom: 7.68,
+                pitch: 0.00,
+                bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1197,7 +1229,7 @@ var config = {
         },
                 {
             id: 'ch38',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-38.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1229,7 +1261,7 @@ var config = {
         },
                 {
             id: 'ch39',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-11.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1261,7 +1293,7 @@ var config = {
         },
                 {
             id: 'ch40',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-37.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1293,7 +1325,7 @@ var config = {
         },
                 {
             id: 'ch41',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-103.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1325,7 +1357,7 @@ var config = {
         },
                 {
             id: 'ch42',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-126.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1365,10 +1397,10 @@ var config = {
             image: '',
             description: 'Once the village of Dhey decided to grow apples, it was only the beginning of their problem solving. The new location had water and flat space to grow large orchards, but the soil was not good enough to sustain the apples. If they managed to grow, they still had to get them somewhere where people bought apples. Without a road directly leading to Chambale, the logistics of getting them out was going to be a difficult problem to solve.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [83.95746, 29.06751],
+                zoom: 18.65,
+                pitch: 65.63,
+                bearing: 148.32
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1389,7 +1421,7 @@ var config = {
         },
         {
             id: 'ch44',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-29.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1421,7 +1453,7 @@ var config = {
         },
                 {
             id: 'ch45',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-64.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1461,10 +1493,10 @@ var config = {
             image: '',
             description: 'Their partner also owned a freight truck built for offroad conditions. Once a year, shortly after the fall harvest, the truck would make its way to the last city connected by road passable with such a big truck. From here the truck would drive it’s way up the riverbed as long as the water had subsided enough. The river gorge led straight to chambale which meant that as long as the water conditions allowed, the truck should be able to pick up the apples and deliver them once a year. This year the water was high, which meant the truck was significantly delayed.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [83.29257, 28.67126],
+                zoom: 9.02,
+                pitch: 51.78,
+                bearing: 26.68
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1485,7 +1517,7 @@ var config = {
         },
                 {
             id: 'ch47',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-60.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1517,7 +1549,7 @@ var config = {
         },
                 {
             id: 'ch48',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-32.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1549,7 +1581,7 @@ var config = {
         },
                 {
             id: 'ch49',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-56.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1581,7 +1613,7 @@ var config = {
         },
                 {
             id: 'ch50',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-77.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1613,7 +1645,7 @@ var config = {
         },
                 {
             id: 'ch51',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-109.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1645,7 +1677,7 @@ var config = {
         },
                 {
             id: 'ch52',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-92.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -1676,14 +1708,46 @@ var config = {
             ]
         },
         {
+            id: 'ch53',
+            photoblock: "url('./images/ckrusenepal-52.jpg')",
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 53',
+            image: '',
+            description: 'The sun hasn’t even risen behind the steep gorge of Dhey, but the Dorjay is already sitting next to the worn stone mill. His calloused hands rhythmically fill the grinding mortar with buckwheat. Tashi took the goats this morning and drained the small reservoir which got the mill started one more time.',
+            location: {
+                center: [83.955235, 29.066818],
+                zoom: 15.07,
+                pitch: 60.00,
+                bearing: 159.20
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
             id: 'lastch',
-            photoblock: false,
+            photoblock: "url('./images/ckrusenepal-55.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
             title: 'Last Chapter',
             image: '',
-            description: 'The sun hasn’t even risen behind the steep gorge of Dhey, but the Dorjay is already sitting next to the worn stone mill. His calloused hands rhythmically fill the grinding mortar with buckwheat. Tashi took the goats this morning and drained the small reservoir which got the mill started one more time. Listening to the water splash below, feels familiar but fleeting. Handful by handful, he quietly moves in time with the mill; each turn of the flat millstone like a clock ticking, each handful of buckwheat sucked through the churning stone like sand through an hourglass.',
+            description: 'Listening to the water splash below, feels familiar but fleeting. Handful by handful, he quietly moves in time with the mill; each turn of the flat millstone like a clock ticking, each handful of buckwheat sucked through the churning stone like sand through an hourglass.',
             location: {
                 center: [84.0183, 29.04401],
                 zoom: 8.5,
