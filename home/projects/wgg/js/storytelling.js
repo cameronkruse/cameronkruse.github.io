@@ -197,9 +197,12 @@ map.on("load", function () {
             map[chapter.mapAnimation || 'flyTo'](chapter.location);
             if (chapter.photoblock) {
                 document.getElementById("photo").style["background-image"] = chapter.photoblock;
+                document.getElementById("photo").style["background-position"] = chapter.photoposition;
                 document.getElementById("photo").style.opacity = "100";
+                document.getElementById("map").style.opacity = "0";
             } else {
                 document.getElementById("photo").style.opacity = "0";
+                document.getElementById("map").style.opacity = "100";
             }
             if (chapter.blankblock) {
                 document.getElementById("blankblock").style["display"] = "block";

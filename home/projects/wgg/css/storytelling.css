@@ -19,6 +19,7 @@ a:visited {
     width: 100vw;
     position: fixed;
     z-index: -5;
+    opacity: 0;
 }
 
 #header {
