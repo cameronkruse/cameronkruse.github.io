@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166312106-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-166312106-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166312106-1');
     </script>
-<!-- End Global site tag -->
+    <!-- End Global site tag -->
 
     <meta charset='utf-8' />
     <title>When Glaciers Go</title>
@@ -29,15 +33,30 @@
     <link href='./css/storytelling.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,400;1,900&display=swap" rel="stylesheet">
 </head>
-    
-<body>
 
-<div id="map"></div>
-<div id="photo"></div>
-<div id="blankblock"></div>
-<div id="story"></div>
-<script src="./js/config.js"></script>
-<script src="./js/storytelling.js"></script>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./videos/chtrimmedsmall.mov" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">When Glaciers Go</h1>
+                    <h2 class="lead mb-0">Climate refugees high in the Himalayas negotiate with our changing planet</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="map"></div>
+    <div id="photo"></div>
+    <div id="blankblock"></div>
+    <div id="story"></div>
+    <script src="./js/config.js"></script>
+    <script src="./js/storytelling.js"></script>
 
 </body>
+
 </html>

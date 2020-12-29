@@ -13,7 +13,7 @@ var config = {
     chapters: [
         {
             id: 'ch1',
-            photoblock: "url('./images/ckrusenepal-81.jpg')",
+            photoblock: "url('./images/ckrusenepal-21.jpg')",
             blankblock: false,
             alignment: 'left',
             hidden: false,
@@ -31,11 +31,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+//                 {
+//                     layer: 'layer-name',
+//                     opacity: 1,
+//                     duration: 5000
+//                 }
             ],
             onChapterExit: [
                 // {
