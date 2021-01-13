@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166312106-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166312106-1');
+
+    </script>
+    <meta charset="utf-8" />
+    <title>Chasing Condors</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            zoom: 9.53,
+            center: [-121.109499, 36.101919],
+            pitch: 70,
+            bearing: -9.62,
+            style: 'mapbox://styles/highestroad/ckjuq6wb906nx19qcd948751n'
+        });
+
+        map.on('load', function() {
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+            // add the DEM source as a terrain layer with exaggerated height
+            map.setTerrain({
+                'source': 'mapbox-dem',
+                'exaggeration': 1.5
+            });
+
+            // add a sky layer that will show when the map is highly pitched
+            map.addLayer({
+                'id': 'sky',
+                'type': 'sky',
+                'paint': {
+                    'sky-type': 'atmosphere',
+                    'sky-atmosphere-sun': [0.0, 0.0],
+                    'sky-atmosphere-sun-intensity': 15
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
