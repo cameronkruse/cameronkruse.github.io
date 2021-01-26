@@ -31,17 +31,72 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-//                 {
-//                     layer: 'layer-name',
-//                     opacity: 1,
-//                     duration: 5000
-//                 }
+                {
+                    layer: 'chambalenotation',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'newschool',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'glacierarea',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'generator',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'dheytrail',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'ghemiroad',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'oldschool',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'newhome',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'townhall',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'childhoodhome',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'dams3d',
+                    opacity: 0,
+                    duration: 0
+                 },
+                {
+                    layer: 'dheyroad',
+                    opacity: 0,
+                    duration: 0
+                 },
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+//                 {
+//                     layer: 'country-boundaries',
+//                     opacity: 0
+//                 }
             ]
         },
         {
@@ -196,11 +251,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'country-boundaries',
+                     opacity: 0.1,
+                     duration: 1000
+                 }
             ],
             onChapterExit: [
                 // {
@@ -229,11 +284,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+//                 {
+//                     layer: 'glacierarea',
+//                     opacity: 0,
+//                     duration: 1
+//                 }
             ],
             onChapterExit: [
                 // {
@@ -658,11 +713,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+//                {
+//                    layer: 'chambalenotation',
+//                    opacity: 0,
+//                    duration: 0
+//                 }
             ],
             onChapterExit: [
                 // {
