@@ -102,7 +102,7 @@ a:visited {
 
 #photo {
     top: 0;
-    background-image: url('../img-low/ckrusenepal-21.jpg');
+    background-image: url('../images/ckrusenepal-21.jpg');
     position: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('./img-low/ckrusenepal-1.jpg') black no-repeat center center scroll;
+        background: url('./images/ckrusenepal-1.jpg') black no-repeat center center scroll;
     }
 
     header video {
