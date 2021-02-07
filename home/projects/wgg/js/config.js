@@ -31,16 +31,6 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'tbd',
-                    opacity: 0,
-                    duration: 0
-                 },
-                {
-                    layer: 'tbd',
-                    opacity: 0,
-                    duration: 0
-                 }
             ],
             onChapterExit: [
                 {
@@ -177,11 +167,6 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
             ],
             onChapterExit: [
                 // {
@@ -210,11 +195,6 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
             ],
             onChapterExit: [
                 // {
@@ -403,27 +383,7 @@ var config = {
             callback: '',
             onChapterEnter: [
 //                {
-//                    layer: 'glaciers',
-//                    opacity: 1,
-//                    duration: 1000
-//                 },
-//                {
-//                    layer: 'glglow1',
-//                    opacity: 1,
-//                    duration: 1000
-//                 },
-//                {
-//                    layer: 'glglow2',
-//                    opacity: 1,
-//                    duration: 1000
-//                 },
-//                {
-//                    layer: 'glglow3',
-//                    opacity: 1,
-//                    duration: 1000
-//                 },
-//                {
-//                    layer: 'satbw',
+//                    layer: 'nepalonlyborder',
 //                    opacity: 1,
 //                    duration: 1000
 //                 }
@@ -507,6 +467,11 @@ var config = {
                     layer: 'glacierimpact',
                     opacity: 1,
                     duration: 2000
+                 },
+                {
+                    layer: 'nepalonlyborder',
+                    opacity: 1,
+                    duration: 0
                  }
             ],
             onChapterExit: [
@@ -532,6 +497,11 @@ var config = {
                  },
                 {
                     layer: 'glglow3',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'nepalonlyborder',
                     opacity: 0,
                     duration: 2000
                  }
@@ -576,6 +546,11 @@ var config = {
                     layer: 'glglow3',
                     opacity: 0,
                     duration: 1000
+                 },
+                {
+                    layer: 'satbw',
+                    opacity: 0,
+                    duration: 0
                  }
 
             ],
@@ -729,6 +704,21 @@ var config = {
                     layer: 'satbw',
                     opacity: 1,
                     duration: 5000
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow2',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 0,
+                    duration: 2000
                  }
             ],
             onChapterExit: [
@@ -759,6 +749,31 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: 'glaciers',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'satbw',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
                     layer: 'riverglow3',
                     opacity: 1,
                     duration: 2000
@@ -771,6 +786,11 @@ var config = {
                 {
                     layer: 'riverglow3',
                     opacity: 1,
+                    duration: 2000
+                 },
+                {
+                    layer: 'oceanmask1',
+                    opacity: 0,
                     duration: 2000
                  }
             ],
@@ -803,9 +823,49 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: 'glaciers',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'satbw',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'riverglow2',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
                     layer: 'oceanmask1',
                     opacity: 1,
-                    duration: 1000
+                    duration: 2000
                  }
             ],
 
@@ -837,16 +897,108 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: 'glaciers',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'satbw',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'riverglow2',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
+                    layer: 'oceanmask1',
+                    opacity: 1,
+                    duration: 0
+                 },
+                {
                     layer: 'glacierimpact',
                     opacity: 1,
-                    duration: 1000
+                    duration: 2000
                  }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }6.17/31.2/83.43/17.4/22
+                {
+                    layer: 'glacierimpact',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'oceanmask1',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow2',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'glaciers',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'satbw',
+                    opacity: 0,
+                    duration: 5000
+                 }
+
             ]
         },
         {
