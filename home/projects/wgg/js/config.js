@@ -1,6 +1,6 @@
 //Photo block syntax photoblock: "url('./images/ckrusenepal-82.jpg')",
 var config = {
-    style: 'mapbox://styles/highestroad/ckih49tuh052219oekjhr3jc8',
+    style: 'mapbox://styles/highestroad/ckku4xzz70lr217qdp2gdyzin',
     accessToken: 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2s3aGUwZ2JtMDlmbzNrcGEycnZ1Zm1jeSJ9.mdEVq4ccttmyLD9yPj39Uw',
     showMarkers: false,
     markerColor: '#F3F0E8',
@@ -32,71 +32,129 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'chambalenotation',
+                    layer: 'tbd',
                     opacity: 0,
                     duration: 0
+                 },
+                {
+                    layer: 'tbd',
+                    opacity: 0,
+                    duration: 0
+                 }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'satbw',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glaciers',
+                    opacity: 0
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 0
+                 },
+                {
+                    layer: 'riverglow2',
+                    opacity: 0
+                 },
+                {
+                    layer: 'riverglow1',
+                    opacity: 0
+                 },
+                {
+                    layer: 'walls',
+                    opacity: 0
+                 },
+                {
+                    layer: 'oceanmask1',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepalborderlab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'tibetborder',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepallab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ghemilab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'hotel',
+                    opacity: 0
                  },
                 {
                     layer: 'newschool',
-                    opacity: 0,
-                    duration: 0
-                 },
-                {
-                    layer: 'glacierarea',
-                    opacity: 0,
-                    duration: 0
-                 },
-                {
-                    layer: 'generator',
-                    opacity: 0,
-                    duration: 0
-                 },
-                {
-                    layer: 'dheytrail',
-                    opacity: 0,
-                    duration: 0
-                 },
-                {
-                    layer: 'ghemiroad',
-                    opacity: 0,
-                    duration: 0
+                    opacity: 0
                  },
                 {
                     layer: 'oldschool',
-                    opacity: 0,
-                    duration: 0
+                    opacity: 0
                  },
                 {
-                    layer: 'newhome',
-                    opacity: 0,
-                    duration: 0
+                    layer: 'oldfields',
+                    opacity: 0
+                 },
+                {
+                    layer: 'dheyhome',
+                    opacity: 0
                  },
                 {
                     layer: 'townhall',
-                    opacity: 0,
-                    duration: 0
+                    opacity: 0
                  },
                 {
-                    layer: 'childhoodhome',
-                    opacity: 0,
-                    duration: 0
+                    layer: 'sangbohome',
+                    opacity: 0
                  },
                 {
-                    layer: 'dams3d',
-                    opacity: 0,
-                    duration: 0
+                    layer: 'powergen',
+                    opacity: 0
                  },
                 {
-                    layer: 'dheyroad',
-                    opacity: 0,
-                    duration: 0
+                    layer: 'dheytrail',
+                    opacity: 0
                  },
-            ],
-            onChapterExit: [
-//                 {
-//                     layer: 'country-boundaries',
-//                     opacity: 0
-//                 }
+                {
+                    layer: 'nepalonlyborder',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ghemiroad',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ch-dhey-road',
+                    opacity: 0
+                 },
+                {
+                    layer: 'oldfields',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacierimpact',
+                    opacity: 0
+                 }
             ]
         },
         {
@@ -207,12 +265,67 @@ var config = {
             title: 'Chapter 5',
             image: '',
             photoposition: 'top center',
-            description: "Nestled between India and Chinese controlled Tibet, you find Nepal. If you were to be looking at a world map flat on a table, you may struggle to find it; turn that map into a mountain topography and all you see is Nepal. Eight of the world's ten tallest mountains call Nepal home. The Great Himalayan Range tears across Nepal’s northern border forming a natural wall between Nepal and the roof of the world - Chinese controlled Tibet.",
+            description: "Nestled between India and Chinese controlled Tibet, you find Nepal. If you were to be looking at a world map flat on a table, you may struggle to find it.",
             location: {
-                center: [84.00959, 29.08331],
-                zoom: 6.67,
-                pitch: 75.00,
-                bearing: 13.60
+                center: [83.92139, 28.19422],
+                zoom: 4.23,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'nepallab',
+                    opacity: 1,
+                    duration: 1000
+                 }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'admin-0-boundary-disputed',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-0-boundary',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-1-boundary',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-0-boundary-bg',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-1-boundary-bg',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepalonlyborder',
+                    opacity: 1,
+                    duration: 1000
+                 }
+
+            ]
+        },
+        {
+            id: 'ch5.1',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 5.1',
+            image: '',
+            photoposition: 'top center',
+            description: "turn that map into a mountain topography and all you see is Nepal. Eight of the world's ten tallest mountains call Nepal home.",
+            location: {
+                center: [83.57458, 28.49518],
+                zoom: 9.59,
+                pitch: 85.00,
+                bearing: 25.60
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -223,6 +336,44 @@ var config = {
                 //     opacity: 1,
                 //     duration: 5000
                 // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'ch5.2',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 5.2',
+            image: '',
+            photoposition: 'top center',
+            description: "The Great Himalayan Range tears across Nepal’s northern border forming a natural wall between Nepal and the roof of the world - Chinese controlled Tibet.",
+            location: {
+                center: [84.50268, 28.72692],
+                zoom: 13.11,
+                pitch: 76,
+                bearing: 98
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'nepalborderlab',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'tibetborder',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
                 // {
@@ -240,40 +391,7 @@ var config = {
             title: 'Chapter 6',
             image: '',
             photoposition: 'top center',
-            description: 'With these mountains comes, Ice and with Ice - water. The Himalayas are known as the water tower of the world. The ice in Himalayan glaciers account for _____ of the world’s fresh water supply and ______ of this water is in Nepal itself. As climate change has changed weather patterns, droughts have become more common and more severe which means that these water sources are more needed than ever.',
-            location: {
-                center: [81.76341, 32.31283],
-                zoom: 5.00,
-                pitch: 0.00,
-                bearing: 0.00
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                 {
-                     layer: 'country-boundaries',
-                     opacity: 0.1,
-                     duration: 1000
-                 }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
-        },
-        {
-            id: 'ch7',
-            photoblock: false,
-            blankblock: false,
-            alignment: 'left',
-            hidden: false,
-            title: 'Chapter 7',
-            image: '',
-            photoposition: 'top center',
-            description: 'Countries like India and Pakistan have even gone to war over who will control glaciers.',
+            description: "With these mountains comes, ice and with ice - water. Countries like India and Pakistan have even gone to war over who will control glaciers. India constantly has troops stationed here, at the infamous Siachen glacier, to protect its right to water on a disputed border",
             location: {
                 center: [76.854597, 35.4310507],
                 zoom: 10.07,
@@ -284,11 +402,79 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-//                 {
-//                     layer: 'glacierarea',
-//                     opacity: 0,
-//                     duration: 1
+//                {
+//                    layer: 'glaciers',
+//                    opacity: 1,
+//                    duration: 1000
+//                 },
+//                {
+//                    layer: 'glglow1',
+//                    opacity: 1,
+//                    duration: 1000
+//                 },
+//                {
+//                    layer: 'glglow2',
+//                    opacity: 1,
+//                    duration: 1000
+//                 },
+//                {
+//                    layer: 'glglow3',
+//                    opacity: 1,
+//                    duration: 1000
+//                 },
+//                {
+//                    layer: 'satbw',
+//                    opacity: 1,
+//                    duration: 1000
 //                 }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'ch6.1',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 6.1',
+            image: '',
+            photoposition: 'top center',
+            description: 'The Himalayas are known as the water tower of the world. More than 1.5 billion people are are connected to river systems that begin in the Himalaya; more than 129 million people are dependendent on the glacial melt itself. As climate change has changed weather patterns, droughts have become more common and more severe which means that these water sources are more needed than ever.',
+            location: {
+                center: [84.09665, 28.25742],
+                zoom: 4.50,
+                pitch: 2.00,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'glaciers',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
                 // {
@@ -306,40 +492,61 @@ var config = {
             title: 'Chapter 8',
             image: '',
             photoposition: 'top center',
-            description: 'Although glacial water sources are integral to the health and wellbeing of millions of people, they are melting faster than ever. Current estimates conclude that over a third of Himalayan glaciers will be melted before 2100. Many glaciers in the Himalayas are fractions of the size they were even 10 years ago.',
+            description: 'Although glacial water sources are integral to the health and wellbeing of millions of people, they are melting faster than ever. Current estimates conclude that over a third of Himalayan glaciers will be melted before 2100. Many glaciers in the Himalayas are fractions of the size they were even 10 years ago. It is clear that glacial melt will soon impact billions of people around the world downstream, but those that live within the Himalaya are already seeing dramatic water shortages that have proved to be a forcing function driving broad cultural changes.',
             location: {
-                center: [84.00959, 29.08331],
-                zoom: 6.67,
-                pitch: 75.00,
-                bearing: 13.60
+                center: [84.09665, 28.25742],
+                zoom: 4.50,
+                pitch: 2.00,
+                bearing: 0.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'glacierimpact',
+                    opacity: 1,
+                    duration: 2000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'glacierimpact',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'glaciers',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 0,
+                    duration: 2000
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 0,
+                    duration: 2000
+                 }
             ]
         },
         {
-            id: 'ch9',
+            id: 'ch9.1',
             photoblock: false,
             blankblock: false,
             alignment: 'left',
             hidden: false,
-            title: 'Chapter 9',
+            title: 'Chapter 9.1',
             image: '',
             photoposition: 'top center',
-            description: 'It is clear that glacial melt will soon impact billions of people around the world downstream, but those that live within the Himalaya are already seeing dramatic water shortages that have proved to be a forcing function driving broad cultural changes. One such community, the people from the village of Dhey, is where you find Sangbo and his wife Lhakpa.',
+            description: 'One such community, that is highly dependent on glacial water sources, are the people from the village of Dhey. This is where you find Sangbo and his wife Lhakpa.',
             location: {
                 center: [83.95364, 29.06829],
                 zoom: 16.23,
@@ -350,11 +557,27 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'glaciers',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 0,
+                    duration: 1000
+                 }
+
             ],
             onChapterExit: [
                 // {
@@ -407,10 +630,10 @@ var config = {
             photoposition: 'top center',
             description: 'Arriving home, she drops her basket in the kitchen looking around at the lightly furnished interior as if trying to will it into feeling familiar. Outside there’s a loud clattering, the sound of the community tractor negotiating with the large river stones moving through the rough landscape trouncing any of those unlucky enough to be aboard.',
             location: {
-                center: [84.26448, 28.91135],
-                zoom: 12.60,
-                pitch: 80.00,
-                bearing: -159.93
+                center: [87.467, 25.222],
+                zoom: 6.08,
+                pitch: 56,
+                bearing: -21.8
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -440,10 +663,10 @@ var config = {
             photoposition: 'top center',
             description: 'As the grumbling machine grows nearer, the engine cuts and you can hear a _____ year old boy’s voice: “ tashi delay! - Thank you goodbye.” She joyfully moves towards the door just in time to see a ______ year old half jump half bounce out of the tractor’s trailer. No sooner do his feet hit the ground he runs into the house full speed ahead greeting Lhakpa, his mother, declaring he’s arrived home from the months at school.',
             location: {
-                center: [84.26448, 28.91135],
-                zoom: 12.60,
-                pitch: 80.00,
-                bearing: -159.93
+                center: [87.467, 25.222],
+                zoom: 6.08,
+                pitch: 56,
+                bearing: -21.8
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -473,20 +696,40 @@ var config = {
             photoposition: 'top center',
             description: 'As glacial melt has increased, scientists have begun to measure the rate of melting. According to one study the melting of the Himalayan glaciers has more than doubled in the past 20 years when compared to the previous 20 years. On average a typical glacier loses more than a vertical foot and half of ice each year.',
             location: {
-                center: [84.26448, 28.91135],
-                zoom: 12.60,
-                pitch: 80.00,
-                bearing: -159.93
+                center: [87.467, 25.222],
+                zoom: 6.08,
+                pitch: 56,
+                bearing: -21.8
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'glaciers',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow1',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow2',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glglow3',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'satbw',
+                    opacity: 1,
+                    duration: 5000
+                 }
             ],
             onChapterExit: [
                 // {
@@ -504,23 +747,68 @@ var config = {
             title: 'Chapter 14',
             image: '',
             photoposition: 'top center',
-            description: 'As this ice melts the water trickles downstream joining into the streams that supply water to billions of people. For most of those downstream, glacial melt has not necessarily caused a noticeable difference in water supply. More water melting off of glaciers typically just means more water going into oceans and perhaps slight increases in water in seasons that may be dry. However, as you move upstream, this story begins to change.',
+            description: 'As this ice melts the water trickles downstream joining into the streams that supply water to billions of people. For most of those downstream, glacial melt has not necessarily caused a noticeable difference in water supply.',
             location: {
-                center: [83.955235, 29.066818],
-                zoom: 15.07,
-                pitch: 60.00,
-                bearing: 159.20
+                center: [87.467, 25.222],
+                zoom: 6.08,
+                pitch: 56,
+                bearing: -21.8
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
+                {
+                    layer: 'riverglow3',
+                    opacity: 1,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow2',
+                    opacity: 1,
+                    duration: 2000
+                 },
+                {
+                    layer: 'riverglow3',
+                    opacity: 1,
+                    duration: 2000
+                 }
+            ],
+
+            onChapterExit: [
                 // {
                 //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
+                //     opacity: 0
                 // }
+            ]
+        },
+        {
+            id: 'ch14.1',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 14.1',
+            image: '',
+            photoposition: 'top center',
+            description: 'More water melting off of glaciers typically just means more water going into oceans and perhaps slight increases in water in seasons that may be dry. However, as you move upstream, this story begins to change.',
+            location: {
+                center: [87.467, 25.222],
+                zoom: 6.08,
+                pitch: 56,
+                bearing: -21.8
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'oceanmask1',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
+
             onChapterExit: [
                 // {
                 //     layer: 'layer-name',
@@ -539,26 +827,26 @@ var config = {
             photoposition: 'top center',
             description: 'Those that live in close proximity to glaciers, the people of Dhey, and other communities in the Himalaya are often dependent on groundwater; springs fed by consistent glacial melt patterns. Historically villages have formed around such sources rather than the large river tributaries as ground water is clean, the village is not at risk from seasonal flooding, and the soil is typically much better for farming.',
             location: {
-                center: [84.52019, 26.99041],
-                zoom: 5.80,
-                pitch: 0.00,
-                bearing: 10.28
+                center: [83.43, 31.2],
+                zoom: 6.17,
+                pitch: 17.4,
+                bearing: 22
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'glacierimpact',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
                 // {
                 //     layer: 'layer-name',
                 //     opacity: 0
-                // }
+                // }6.17/31.2/83.43/17.4/22
             ]
         },
         {
@@ -572,10 +860,10 @@ var config = {
             photoposition: 'top center',
             description: 'Unfortunately, as glacial melt patterns have changed, the groundwater distribution has also changed. In many areas groundwater fed springs are no longer consistently producing the water needed to support the agricultural practices of a village. The closer a village is to it’s glacial water source, the more at risk it is of losing its water source. As glacial melt patterns have quickly changed, many villages have no other choice but to pack up and leave; leaving behind their homes and ancient way of life like ghosts littered about the himalayan tundra.',
             location: {
-                center: [83.92827, 29.03289],
-                zoom: 18.51,
-                pitch: 80.00,
-                bearing: 35.08
+                center: [84.01935, 29.04347],
+                zoom: 14.28,
+                pitch: 78.00,
+                bearing: 142.40
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -768,7 +1056,7 @@ var config = {
             title: 'Chapter 22',
             image: '',
             photoposition: 'top center',
-            description: "Dhey is located in a valley roughly _______ miles from it’s glacial water source. The water coming off of the glaciers flow through two different serpentine routes into the Kali Gandaki river which in turn flows through the Deep Gandaki gorge snaking its way around fourteen of this planet's tallest peaks. Eventually the Gandaki finds its way out of Nepal meeting the Ganges in Bihar, India and eventually dumping out into the Bay of Bengal.",
+            description: "Dhey is located in a valley roughly _______ miles from it’s glacial water source. The water coming off of the glaciers flow through two different serpentine routes into the Kali Gandaki river which in turn flows through the Deep Gandaki gorge snaking its way around fourteen of this planet's tallest peaks.",
             location: {
                 center: [84.05006, 29.02826],
                 zoom: 13.65,

@@ -209,7 +209,7 @@ map.on("load", function () {
             } else {
                 document.getElementById("blankblock").style.display = "none";
             }
-            
+
             if (config.showMarkers) {
                 marker.setLngLat(chapter.location.center);
             }
