@@ -1144,10 +1144,10 @@ var config = {
             photoposition: 'top center',
             description: 'As he steps over a pile of Yak dung he looks at the large puddle in front of him. This is the daily water supply for the village. It was supposed to be Dorjay’s neighbor’s turn to irrigate their field with the water, but unfortunately for the neighbor there just wasn’t enough to run the mill and irrigate a field today; the field would have to wait. He swings his trowel, opening up a small channel for water to pass into the divot running towards the mill. Methodically Dorjay pushes earth around opening the channel wider. As water rushes into the new channel to greet his trowel and rush downhill, he follows making his way back down towards the mill.',
             location: {
-                center: [84.05006, 29.02826],
-                zoom: 13.65,
+                center: [84.01528, 29.04278],
+                zoom: 16.58,
                 pitch: 85.00,
-                bearing: 134.40
+                bearing: -172.80
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1177,10 +1177,10 @@ var config = {
             photoposition: 'top center',
             description: 'Nearing the mud hut surrounding the mill, you can hear the fruits of his labor - the low grumble of the millstone sliding along the stone ground driven by the water he released from above. As he pokes his head in the door you can see Tashi methodically adding small handfuls of buckwheat to the center of the churning stone. Handful after handful, turn after turn. It’s hard not to wonder whether this might be the last time they’ll run this mill.',
             location: {
-                center: [84.05006, 29.02826],
-                zoom: 13.65,
+                center: [84.01528, 29.04278],
+                zoom: 16.58,
                 pitch: 85.00,
-                bearing: 134.40
+                bearing: -172.80
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1210,10 +1210,10 @@ var config = {
             photoposition: 'top center',
             description: "Dhey is located in a valley roughly _______ miles from it’s glacial water source. The water coming off of the glaciers flow through two different serpentine routes into the Kali Gandaki river which in turn flows through the Deep Gandaki gorge snaking its way around fourteen of this planet's tallest peaks.",
             location: {
-                center: [84.05006, 29.02826],
-                zoom: 13.65,
+                center: [84.01528, 29.04278],
+                zoom: 16.58,
                 pitch: 85.00,
-                bearing: 134.40
+                bearing: -172.80
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1243,10 +1243,10 @@ var config = {
             photoposition: 'top center',
             description: 'As glacial melt flows from the glacier into the Kali Gandaki, some amount is absorbed as groundwater. This groundwater, filtered by the earth and emerging as freshwater springs is what the people of Dhey have depended on for their livelihood. As the glaciers above Dhey have receded and glacial melt has accelerated, it has caused the groundwater stores for the village of Dhey to greatly diminish to the point that it can no longer sustain their village.',
             location: {
-                center: [84.01398, 29.04137],
-                zoom: 17.29,
-                pitch: 70.00,
-                bearing: 160.44
+                center: [84.08725, 28.97743],
+                zoom: 11.83,
+                pitch: 73,
+                bearing: 144.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
