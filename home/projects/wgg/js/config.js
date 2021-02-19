@@ -142,6 +142,34 @@ var config = {
                     opacity: 0
                  },
                 {
+                    layer: 'glacblur1',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacblur2',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacblur3',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacdry',
+                    opacity: 0
+                 },
+                {
+                    layer: 'dheyglac80',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepalmask',
+                    opacity: 0
+                 },
+                {
+                    layer: 'oceanmask',
+                    opacity: 0
+                 },
+                {
                     layer: 'glacierimpact',
                     opacity: 0
                  }
@@ -1219,29 +1247,30 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'dheylab',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+//                 {
+//                     layer: 'dheylab',
+//                     opacity: 0,
+//                     duration: 1000
+//                 }
             ]
         },
         {
-            id: 'ch23',
+            id: 'ch23.1',
             photoblock: false,
             blankblock: false,
             alignment: 'left',
             hidden: false,
-            title: 'Chapter 23',
+            title: 'Chapter 23.1',
             image: '',
             photoposition: 'top center',
-            description: 'As glacial melt flows from the glacier into the Kali Gandaki, some amount is absorbed as groundwater. This groundwater, filtered by the earth and emerging as freshwater springs is what the people of Dhey have depended on for their livelihood. As the glaciers above Dhey have receded and glacial melt has accelerated, it has caused the groundwater stores for the village of Dhey to greatly diminish to the point that it can no longer sustain their village.',
+            description: 'As glacial melt flows from the glacier into the Kali Gandaki, some amount is absorbed as groundwater. This groundwater, filtered by the earth and emerging as freshwater springs, is what the people of Dhey have depended on for their livelihood.',
             location: {
                 center: [84.08725, 28.97743],
                 zoom: 11.83,
@@ -1252,17 +1281,82 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'glacblur1',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glacblur2',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'glacblur3',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'dheyglac80',
+                    opacity: 1,
+                    duration: 1000
+                 },
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+//                {
+//                    layer: 'dheylab',
+//                    opacity: 0,
+//                    duration: 1000
+//                 }
+            ]
+        },
+        {
+            id: 'ch23.2',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 23.2',
+            image: '',
+            photoposition: 'top center',
+            description: 'As the glaciers above Dhey have receded and glacial melt has accelerated, it has caused the groundwater stores for the village of Dhey to greatly diminish to the point that it can no longer sustain their village.',
+            location: {
+                center: [84.08725, 28.97743],
+                zoom: 11.83,
+                pitch: 73,
+                bearing: 144.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'glacblur1',
+                    opacity: 0,
+                    duration: 3000
+                 },
+                {
+                    layer: 'glacblur2',
+                    opacity: 0,
+                    duration: 6000
+                 },
+                {
+                    layer: 'glacblur3',
+                    opacity: 0,
+                    duration: 9000
+                 },
+                {
+                    layer: 'glacdry',
+                    opacity: 1,
+                    duration: 10000
+                 },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'glacdry',
+                    opacity: 0,
+                    duration: 1000
+                 }
             ]
         },
         {
@@ -1285,17 +1379,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'dheytrail',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'dheytrail',
+                    opacity: 0,
+                    duration: 1000
+                 }
             ]
         },
         {
@@ -1307,7 +1402,7 @@ var config = {
             title: 'Chapter 25',
             image: '',
             photoposition: 'top center',
-            description: 'It seemed crazy to many in the village at first, but as the village assessed their options it seemed to be the most logical solution. They would have to move their home and stake their livelihoods on growing apples near the river.',
+            description: 'It seemed crazy to many in the village at first, but as the village assessed their options it seemed to be the most logical solution. They would have to move their home and stake their livelihoods on growing apples near the river. They named their new village Chambale.',
             location: {
                 center: [83.95821, 29.06722],
                 zoom: 16.39,
@@ -1391,10 +1486,10 @@ var config = {
                 // }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'dheylab',
+                    opacity: 0
+                 }
             ]
         },
         {
@@ -1573,26 +1668,27 @@ var config = {
             photoposition: 'top center',
             description: 'When the community of Dhey decided to move towards the river and grow apples for a living, the concept was greeted with mixed reactions. Much of the community started to slowly relocate to the new riverside establishment of Chambale. They built new homes with traditional mud bricks, or cement brought in from surrounding villages while slowly hiking their possessions down from Dhey through a steep gorge.',
             location: {
-                center: [83.98330, 29.06562],
-                zoom: 13.61,
-                pitch: 70.20,
-                bearing: 143.36
+                center: [84.01595, 29.04186],
+                zoom: 18.06,
+                pitch: 14.50,
+                bearing: 172.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'dheyhome',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'dheyhome',
+                    opacity: 0,
+                    duration: 1000
+                 }
             ]
         },
         {
@@ -1604,28 +1700,39 @@ var config = {
             title: 'Chapter 33.5',
             image: '',
             photoposition: 'top center',
-            description: 'Around this time is when the community school was forced to shut down and all the school aged children started school an 8 day’s walk away in the village of Ghiling.',
+            description: 'Around this time is when the community school was forced to shut down and all the school aged children started school an 3 day’s walk away in the village of Ghiling.',
             location: {
-                center: [83.89273, 29.01205],
-                zoom: 13.44,
-                pitch: 69.81,
-                bearing: 75.36
+                center: [83.94322, 29.07452],
+                zoom: 12.01,
+                pitch: 26.00,
+                bearing: 90.40
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'ghemiroad',
+                    opacity: 1,
+                    duration: 2000
+                 },
+                {
+                    layer: 'ch-dhey-road',
+                    opacity: 1,
+                    duration: 2000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'ghemiroad',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'ch-dhey-road',
+                    opacity: 0,
+                    duration: 1000
+                 }
             ]
         },
         {
@@ -1648,17 +1755,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+//                 {
+//                     layer: 'ghemiroad',
+//                     opacity: 1,
+//                     duration: 2000
+//                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+//                 {
+//                     layer: 'ghemiroad',
+//                     opacity: 0,
+//                     duration: 1000
+//                 }
             ]
         },
         {
@@ -1672,10 +1780,54 @@ var config = {
             photoposition: 'top center',
             description: 'Still others decided that they wouldn’t leave Dhey and they would try to make things work with the dwindling water supply. Many of the older members of the community, Sangbo’s parents Dorjay and Tashi included, were in this group. However, as the water further dried up, even the most fervent holdouts were deciding to move to Chambale. At this point, there were only a few people still living in Dhey surviving off of a small reservoir feeding a fraction of the fields they once planted.',
             location: {
-                center: [84.01528, 29.04315],
-                zoom: 17.24,
-                pitch: 68.47,
-                bearing: -163.82
+                center: [84.01488, 29.04071],
+                zoom: 15.88,
+                pitch: 14.50,
+                bearing: 172.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'reservoir',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'oldfields',
+                    opacity: 1,
+                    duration: 1000
+                 }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'reservoir',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'oldfields',
+                    opacity: 0,
+                    duration: 1000
+                 }
+            ]
+        },
+        {
+            id: 'ch36',
+            photoblock: false,
+            blankblock: false,
+            alignment: 'left',
+            hidden: false,
+            title: 'Chapter 36',
+            image: '',
+            photoposition: 'top center',
+            description: 'Since the community of Dhey started their migration, they had acquired a tractor to help build up the new apple orchards.',
+            location: {
+                center: [83.95647, 29.06840],
+                zoom: 16.12,
+                pitch: 43.50,
+                bearing: 96.00
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1695,36 +1847,37 @@ var config = {
             ]
         },
         {
-            id: 'ch36',
+            id: 'ch36.2',
             photoblock: false,
             blankblock: false,
             alignment: 'left',
             hidden: false,
-            title: 'Chapter 36',
+            title: 'Chapter 36.2',
             image: '',
             photoposition: 'top center',
-            description: 'Since the community of Dhey started their migration, they had acquired a tractor to help build up the new apple orchards. Recently they used this to build a shoddy road to help move things from one village to another. This road was connected to rough roads leading to other villages, which is how Tenzing travelled to and from his new school in Ghiling.',
+            description: 'Recently they used this to build a shoddy road to help move things from one village to another. This road was connected to rough roads leading to other villages, which is how Tenzing travelled to and from his new school in Ghiling.',
             location: {
-                center: [83.96946, 29.05090],
-                zoom: 13.62,
-                pitch: 63.97,
-                bearing: 153.78
+                center: [83.98163, 29.06371],
+                zoom: 13.26,
+                pitch: 44.94,
+                bearing: 110.36
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                {
+                    layer: 'ch-dhey-road',
+                    opacity: 1,
+                    duration: 1000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'ch-dhey-road',
+                    opacity: 0,
+                    duration: 1000
+                 }
             ]
         },
         {
