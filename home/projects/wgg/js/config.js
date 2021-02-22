@@ -34,11 +34,111 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'satbw',
+                    layer: 'viltext',
                     opacity: 0
                  },
                 {
-                    layer: 'glglow1',
+                    layer: 'dheytrail',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ovline',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nvline',
+                    opacity: 0
+                 },
+                {
+                    layer: 'oldvil',
+                    opacity: 0
+                 },
+                {
+                    layer: 'newvil',
+                    opacity: 0
+                 },
+                {
+                    layer: 'pointlab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'orchlab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepalborderlab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'tibetborder',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepallab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ghemilabs',
+                    opacity: 0
+                 },
+                {
+                    layer: 'chamblabs',
+                    opacity: 0
+                 },
+                {
+                    layer: 'dheylab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'chambalelab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ghemilab',
+                    opacity: 0
+                 },
+                {
+                    layer: 'truckroute',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepalonlyborder',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ghemiroad',
+                    opacity: 0
+                 },
+                {
+                    layer: 'ch-dhey-road',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacierimpact',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacblur3',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacblur2',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacblur1',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glacdry',
+                    opacity: 0
+                 },
+                {
+                    layer: 'oceanmask1',
+                    opacity: 0
+                 },
+                {
+                    layer: 'glglow3',
                     opacity: 0
                  },
                 {
@@ -46,7 +146,7 @@ var config = {
                     opacity: 0
                  },
                 {
-                    layer: 'glglow3',
+                    layer: 'glglow1',
                     opacity: 0
                  },
                 {
@@ -66,27 +166,11 @@ var config = {
                     opacity: 0
                  },
                 {
-                    layer: 'walls',
+                    layer: 'reservoirlab',
                     opacity: 0
                  },
                 {
-                    layer: 'oceanmask1',
-                    opacity: 0
-                 },
-                {
-                    layer: 'nepalborderlab',
-                    opacity: 0
-                 },
-                {
-                    layer: 'tibetborder',
-                    opacity: 0
-                 },
-                {
-                    layer: 'nepallab',
-                    opacity: 0
-                 },
-                {
-                    layer: 'ghemilab',
+                    layer: 'reservoir',
                     opacity: 0
                  },
                 {
@@ -102,15 +186,23 @@ var config = {
                     opacity: 0
                  },
                 {
+                    layer: 'oldfieldslab',
+                    opacity: 0
+                 },
+                {
                     layer: 'oldfields',
                     opacity: 0
                  },
                 {
-                    layer: 'dheyhome',
+                    layer: 'chambhome',
+                    opacity: 0
+                 },
+                                {
+                    layer: 'townhall',
                     opacity: 0
                  },
                 {
-                    layer: 'townhall',
+                    layer: 'sangbohomelab',
                     opacity: 0
                  },
                 {
@@ -122,55 +214,11 @@ var config = {
                     opacity: 0
                  },
                 {
-                    layer: 'dheytrail',
+                    layer: 'walls',
                     opacity: 0
                  },
                 {
-                    layer: 'nepalonlyborder',
-                    opacity: 0
-                 },
-                {
-                    layer: 'ghemiroad',
-                    opacity: 0
-                 },
-                {
-                    layer: 'ch-dhey-road',
-                    opacity: 0
-                 },
-                {
-                    layer: 'oldfields',
-                    opacity: 0
-                 },
-                {
-                    layer: 'glacblur1',
-                    opacity: 0
-                 },
-                {
-                    layer: 'glacblur2',
-                    opacity: 0
-                 },
-                {
-                    layer: 'glacblur3',
-                    opacity: 0
-                 },
-                {
-                    layer: 'glacdry',
-                    opacity: 0
-                 },
-                {
-                    layer: 'dheyglac80',
-                    opacity: 0
-                 },
-                {
-                    layer: 'nepalmask',
-                    opacity: 0
-                 },
-                {
-                    layer: 'oceanmask',
-                    opacity: 0
-                 },
-                {
-                    layer: 'glacierimpact',
+                    layer: 'satbw',
                     opacity: 0
                  }
             ]
@@ -1297,7 +1345,7 @@ var config = {
                     duration: 1000
                  },
                 {
-                    layer: 'dheyglac80',
+                    layer: 'glaciers',
                     opacity: 1,
                     duration: 1000
                  },
@@ -1346,10 +1394,15 @@ var config = {
                     duration: 9000
                  },
                 {
+                    layer: 'glaciers',
+                    opacity: 0,
+                    duration: 8000
+                 },
+                {
                     layer: 'glacdry',
                     opacity: 1,
-                    duration: 10000
-                 },
+                    duration: 9000
+                 }
             ],
             onChapterExit: [
                 {
@@ -1370,10 +1423,10 @@ var config = {
             photoposition: 'top center',
             description: 'Around five years ago the village came together and decided that the only thing they could do was move. The problem is that they did not have a consistent water supply other than the river anywhere nearby. They began to consider moving to the river, but found that the banks could not sustain traditional agriculture. As they fought to survive on an ever dwindling water supply, some members of the community that spent time in Kathmandu came across the idea of growing apples. Apples, are one of the few fruits that can survive elements.',
             location: {
-                center: [84.00305, 29.04639],
-                zoom: 13.98,
-                pitch: 46.22,
-                bearing: -105.93
+                center: [83.98447, 29.05120],
+                zoom: 13.11,
+                pitch: 51.61,
+                bearing: -166.49
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -1383,6 +1436,31 @@ var config = {
                     layer: 'dheytrail',
                     opacity: 1,
                     duration: 1000
+                 },
+                {
+                    layer: 'viltext',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'ovline',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'nvline',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'oldvil',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'newvil',
+                    opacity: 1,
+                    duration: 1000
                  }
             ],
             onChapterExit: [
@@ -1390,6 +1468,31 @@ var config = {
                     layer: 'dheytrail',
                     opacity: 0,
                     duration: 1000
+                 },
+                {
+                    layer: 'viltext',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'ovline',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'nvline',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'oldvil',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'newvil',
+                    opacity: 0,
+                    duration: 3000
                  }
             ]
         },
@@ -1420,10 +1523,10 @@ var config = {
                 // }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                 {
+                     layer: 'chambalelab',
+                     opacity: 0
+                 }
             ]
         },
         {
@@ -1678,14 +1781,24 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'dheyhome',
+                    layer: 'sangbohome',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'sangbohomelab',
                     opacity: 1,
                     duration: 1000
                  }
             ],
             onChapterExit: [
                 {
-                    layer: 'dheyhome',
+                    layer: 'sangbohome',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                                {
+                    layer: 'sangbohomelab',
                     opacity: 0,
                     duration: 1000
                  }
@@ -1720,6 +1833,11 @@ var config = {
                     layer: 'ch-dhey-road',
                     opacity: 1,
                     duration: 2000
+                 },
+                {
+                    layer: 'ghemilabs',
+                    opacity: 1,
+                    duration: 2000
                  }
             ],
             onChapterExit: [
@@ -1730,6 +1848,11 @@ var config = {
                  },
                 {
                     layer: 'ch-dhey-road',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'ghemilabs',
                     opacity: 0,
                     duration: 1000
                  }
@@ -1744,29 +1867,29 @@ var config = {
             title: 'Chapter 34',
             image: '',
             photoposition: 'top center',
-            description: "Some community members, however, didn't like the sound of the new plan and they chose to give up land that their family had owned for centuries and move to surrounding villages. These include Tange, Dhakmar, Syanboche, Chusang, and some even all the way to the city of Kathmandu. Many had to start from scratch picking up new skills and new occupations; others, simply moved in with distant relatives or friends.",
+            description: "Some community members, however, didn't like the sound of the new plan and they chose to give up land that their family had owned for centuries and move to surrounding villages. These include Tange, Dhakmar, Syanboche, Chhusang, and some even all the way to the city of Kathmandu. Many had to start from scratch picking up new skills and new occupations; others, simply moved in with distant relatives or friends.",
             location: {
-                center: [83.87185, 28.86674],
-                zoom: 10.02,
-                pitch: 47.04,
-                bearing: 0.00
+                center: [83.90418, 29.01836],
+                zoom: 12.13,
+                pitch: 40.0,
+                bearing: 24.8
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-//                 {
-//                     layer: 'ghemiroad',
-//                     opacity: 1,
-//                     duration: 2000
-//                 }
+                 {
+                     layer: 'pointlab',
+                     opacity: 1,
+                     duration: 2000
+                 }
             ],
             onChapterExit: [
-//                 {
-//                     layer: 'ghemiroad',
-//                     opacity: 0,
-//                     duration: 1000
-//                 }
+                 {
+                     layer: 'pointlab',
+                     opacity: 0,
+                     duration: 2000
+                 }
             ]
         },
         {
@@ -1798,16 +1921,31 @@ var config = {
                     layer: 'oldfields',
                     opacity: 1,
                     duration: 1000
+                 },
+                {
+                    layer: 'oldfieldslab',
+                    opacity: 1,
+                    duration: 1000
+                 },
+                {
+                    layer: 'reservoirlab',
+                    opacity: 1,
+                    duration: 1000
                  }
             ],
             onChapterExit: [
                 {
-                    layer: 'reservoir',
+                    layer: 'oldfields',
                     opacity: 0,
                     duration: 1000
                  },
                 {
-                    layer: 'oldfields',
+                    layer: 'oldfieldslab',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'reservoirlab',
                     opacity: 0,
                     duration: 1000
                  }
@@ -1878,39 +2016,6 @@ var config = {
                     opacity: 0,
                     duration: 1000
                  }
-            ]
-        },
-        {
-            id: 'ch37',
-            photoblock: false,
-            blankblock: false,
-            alignment: 'left',
-            hidden: false,
-            title: 'Chapter 37',
-            image: '',
-            photoposition: 'top center',
-            description: 'Other road building projects are also afoot in Mustang. The Chinese have been funding a road connecting the Kora pass at the Tibetan-Nepali border with Kathmandu and then on to India. Altogether this road will be the lowest altitude corridor from China to India and is hugely important to China’s Belt and Road Initiative. Although this road stands to change the culture of Mustang significantly, it has also brought needed infrastructure to the region.',
-            location: {
-                center: [82.97685, 28.42077],
-                zoom: 7.68,
-                pitch: 0.00,
-                bearing: 0.00
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
             ]
         },
         {
@@ -2098,17 +2203,38 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'chambhome',
+                     opacity: 1,
+                     duration: 1000
+                 },
+                 {
+                     layer: 'chambhomelab',
+                     opacity: 1,
+                     duration: 1000
+                 },
+                 {
+                     layer: 'orchlab',
+                     opacity: 1,
+                     duration: 1000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                 {
+                     layer: 'chambhome',
+                     opacity: 0,
+                     duration: 1000
+                 },
+                 {
+                     layer: 'chambhomelab',
+                     opacity: 0,
+                     duration: 1000
+                 },
+                {
+                     layer: 'orchlab',
+                     opacity: 0,
+                     duration: 1000
+                 }
             ]
         },
         {
@@ -2188,26 +2314,27 @@ var config = {
             photoposition: 'top center',
             description: 'Their partner also owned a freight truck built for offroad conditions. Once a year, shortly after the fall harvest, the truck would make its way to the last city connected by road passable with such a big truck. From here the truck would drive it’s way up the riverbed as long as the water had subsided enough. The river gorge led straight to chambale which meant that as long as the water conditions allowed, the truck should be able to pick up the apples and deliver them once a year. This year the water was high, which meant the truck was significantly delayed.',
             location: {
-                center: [83.29257, 28.67126],
-                zoom: 9.02,
-                pitch: 51.78,
-                bearing: 26.68
+                center: [83.8259, 28.9234],
+                zoom: 11.63,
+                pitch: 62,
+                bearing: 26.4
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'truckroute',
+                     opacity: 1,
+                     duration: 2000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                 {
+                     layer: 'truckroute',
+                     opacity: 0,
+                     duration: 2000
+                 }
             ]
         },
         {
