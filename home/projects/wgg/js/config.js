@@ -1348,7 +1348,7 @@ var config = {
                     layer: 'glaciers',
                     opacity: 1,
                     duration: 1000
-                 },
+                 }
             ],
             onChapterExit: [
 //                {
