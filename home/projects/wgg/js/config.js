@@ -360,6 +360,10 @@ var config = {
                     opacity: 0
                  },
                 {
+                    layer: 'nepallab',
+                    opacity: 0
+                 },
+                {
                     layer: 'nepalonlyborder',
                     opacity: 1,
                     duration: 1000
@@ -627,8 +631,12 @@ var config = {
                     layer: 'satbw',
                     opacity: 0,
                     duration: 0
+                 },
+                {
+                    layer: 'chambalelab',
+                    opacity: 1,
+                    duration: 0
                  }
-
             ],
             onChapterExit: [
                 // {
@@ -1097,17 +1105,17 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'dheylab',
+                     opacity: 1,
+                     duration: 1000
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                 {
+                     layer: 'dheylab',
+                     opacity: 0
+                 }
             ]
         },
         {
@@ -1348,6 +1356,11 @@ var config = {
                     layer: 'glaciers',
                     opacity: 1,
                     duration: 1000
+                 },
+                {
+                    layer: 'viltext',
+                    opacity: 1,
+                    duration: 1000
                  }
             ],
             onChapterExit: [
@@ -1438,11 +1451,6 @@ var config = {
                     duration: 1000
                  },
                 {
-                    layer: 'viltext',
-                    opacity: 1,
-                    duration: 1000
-                 },
-                {
                     layer: 'ovline',
                     opacity: 1,
                     duration: 1000
@@ -1516,11 +1524,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'chambalelab',
+                     opacity: 1,
+                     duration: 1000
+                 }
             ],
             onChapterExit: [
                  {
@@ -1838,6 +1846,11 @@ var config = {
                     layer: 'ghemilabs',
                     opacity: 1,
                     duration: 2000
+                 },
+                {
+                     layer: 'dheylab',
+                     opacity: 1,
+                     duration: 1000
                  }
             ],
             onChapterExit: [
@@ -1971,11 +1984,16 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'chamblabs',
+                     opacity: 1,
+                     duration: 1000
+                 },
+                 {
+                     layer: 'dheylab',
+                     opacity: 1,
+                     duration: 1000
+                 }
             ],
             onChapterExit: [
                 // {
@@ -1996,7 +2014,7 @@ var config = {
             description: 'Recently they used this to build a shoddy road to help move things from one village to another. This road was connected to rough roads leading to other villages, which is how Tenzing travelled to and from his new school in Ghiling.',
             location: {
                 center: [83.98163, 29.06371],
-                zoom: 13.26,
+                zoom: 12.7,
                 pitch: 44.94,
                 bearing: 110.36
             },
@@ -2015,6 +2033,16 @@ var config = {
                     layer: 'ch-dhey-road',
                     opacity: 0,
                     duration: 1000
+                 },
+                {
+                     layer: 'chamblabs',
+                     opacity: 0,
+                     duration: 1000
+                 },
+                 {
+                     layer: 'dheylab',
+                     opacity: 0,
+                     duration: 1000
                  }
             ]
         },
@@ -2195,7 +2223,7 @@ var config = {
             description: 'Once the village of Dhey decided to grow apples, it was only the beginning of their problem solving. The new location had water and flat space to grow large orchards, but the soil was not good enough to sustain the apples. If they managed to grow, they still had to get them somewhere where people bought apples. Without a road directly leading to Chambale, the logistics of getting them out was going to be a difficult problem to solve.',
             location: {
                 center: [83.95746, 29.06751],
-                zoom: 18.65,
+                zoom: 17.88,
                 pitch: 65.63,
                 bearing: 148.32
             },
