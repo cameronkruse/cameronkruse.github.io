@@ -462,17 +462,53 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-//                {
-//                    layer: 'nepalonlyborder',
-//                    opacity: 1,
-//                    duration: 1000
-//                 }
+                {
+                    layer: 'admin-0-boundary-disputed',
+                    opacity: 1
+                 },
+                {
+                    layer: 'admin-0-boundary',
+                    opacity: 1
+                 },
+                {
+                    layer: 'admin-1-boundary',
+                    opacity: 1
+                 },
+                {
+                    layer: 'admin-0-boundary-bg',
+                    opacity: 1
+                 },
+                {
+                    layer: 'admin-1-boundary-bg',
+                    opacity: 1
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'admin-0-boundary-disputed',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-0-boundary',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-1-boundary',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-0-boundary-bg',
+                    opacity: 0
+                 },
+                {
+                    layer: 'admin-1-boundary-bg',
+                    opacity: 0
+                 },
+                {
+                    layer: 'nepallab',
+                    opacity: 1,
+                    duration: 0
+                 }
             ]
         },
         {
@@ -550,8 +586,13 @@ var config = {
                  },
                 {
                     layer: 'nepalonlyborder',
-                    opacity: 1,
-                    duration: 0
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'nepallab',
+                    opacity: 0,
+                    duration: 1000
                  }
             ],
             onChapterExit: [
@@ -639,10 +680,11 @@ var config = {
                  }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                {
+                    layer: 'chambalelab',
+                    opacity: 0,
+                    duration: 0
+                 }
             ]
         },
         {
@@ -1485,22 +1527,22 @@ var config = {
                 {
                     layer: 'ovline',
                     opacity: 0,
-                    duration: 1000
+                    duration: 500
                  },
                 {
                     layer: 'nvline',
                     opacity: 0,
-                    duration: 1000
+                    duration: 500
                  },
                 {
                     layer: 'oldvil',
                     opacity: 0,
-                    duration: 1000
+                    duration: 500
                  },
                 {
                     layer: 'newvil',
                     opacity: 0,
-                    duration: 3000
+                    duration: 500
                  }
             ]
         },
@@ -1843,12 +1885,12 @@ var config = {
                     duration: 2000
                  },
                 {
-                    layer: 'ghemilabs',
+                    layer: 'newschool',
                     opacity: 1,
                     duration: 2000
                  },
                 {
-                     layer: 'dheylab',
+                     layer: 'oldschool',
                      opacity: 1,
                      duration: 1000
                  }
@@ -1865,7 +1907,12 @@ var config = {
                     duration: 1000
                  },
                 {
-                    layer: 'ghemilabs',
+                    layer: 'oldschool',
+                    opacity: 0,
+                    duration: 1000
+                 },
+                {
+                    layer: 'newschool',
                     opacity: 0,
                     duration: 1000
                  }
