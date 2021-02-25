@@ -640,7 +640,7 @@ var config = {
             description: 'One such community, that is highly dependent on glacial water sources, are the people from the village of Dhey. This is where you find Sangbo and his wife Lhakpa.',
             location: {
                 center: [83.95364, 29.06829],
-                zoom: 16.23,
+                zoom: 15.9,
                 pitch: 50.00,
                 bearing: 149.60
             },
@@ -699,7 +699,7 @@ var config = {
             description: 'Lhakpa cleanly pulls an apple from the tree in front of her and gently drops it into the basket lying on the ground. She can vaguely see her husband Sangbo in the distance irrigating. Snap, another apple off the tree into the basket. The harvest is not as good this year as it was last year. Even if it was, there is no news whether the truck will be able to make it to their village this year. Regardless, she shoulders her basket and stumbles through the expanse of river rock towards her home in Chambale.',
             location: {
                 center: [83.95364, 29.06829],
-                zoom: 16.23,
+                zoom: 15.9,
                 pitch: 50.00,
                 bearing: 149.60
             },
@@ -1352,11 +1352,11 @@ var config = {
                  }
             ],
             onChapterExit: [
-//                 {
-//                     layer: 'dheylab',
-//                     opacity: 0,
-//                     duration: 1000
-//                 }
+                {
+                    layer: 'dheylab',
+                    opacity: 0,
+                    duration: 1000
+                 }
             ]
         },
         {
@@ -1558,7 +1558,7 @@ var config = {
             description: 'It seemed crazy to many in the village at first, but as the village assessed their options it seemed to be the most logical solution. They would have to move their home and stake their livelihoods on growing apples near the river. They named their new village Chambale.',
             location: {
                 center: [83.95821, 29.06722],
-                zoom: 16.39,
+                zoom: 15.9,
                 pitch: 75.50,
                 bearing: 127.20
             },
