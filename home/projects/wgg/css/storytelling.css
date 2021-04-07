@@ -19,6 +19,7 @@ a:visited {
     width: 100vw;
     position: fixed;
     z-index: -5;
+    opacity: 0;
 }
 
 #header {
@@ -101,7 +102,7 @@ a:visited {
 
 #photo {
     top: 0;
-    background-image: url('../images/ckrusenepal-68.jpg');
+    background-image: url('../images/ckrusenepal-21.jpg');
     position: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -110,7 +111,7 @@ a:visited {
     width: 100vw;
     z-index: -4;
 /*    display: none;*/
-    opacity: 0;
+    opacity: 100;
     /* Hidden by default block turns it on */
     transition: width 0.0s, height 0.0s, opacity 1.0s;
 }

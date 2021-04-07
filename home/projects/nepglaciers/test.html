@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166312106-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166312106-1');
+    </script>
+    <!-- End Global site tag -->
+    <meta charset="utf-8" />
+    <title>Glaciers of Nepal Over Time</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link href="../runthestairs/css/creative.css" rel="stylesheet">
+    <link href="../runthestairs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Cameron Kruse</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../highestroad">The Highest Road</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartesianproduct">Cartesian Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        #menu {
+            background: #fff;
+            position: absolute;
+            z-index: 1;
+            top: 70px;
+            right: 10px;
+            border-radius: 3px;
+            width: 120px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #menu a {
+            font-size: 13px;
+            color: #404040;
+            display: block;
+            margin: 0;
+            padding: 0;
+            padding: 10px;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        #menu a:last-child {
+            border: none;
+        }
+
+        #menu a:hover {
+            background-color: #f8f8f8;
+            color: #404040;
+        }
+
+        #menu a.active {
+            background-color: #4595AB;
+            color: #ffffff;
+        }
+
+        #menu a.active:hover {
+            background: #6eb1c4;
+        }
+    </style>
+
+    <nav id="menu"></nav>
+    <div id="map"></div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/highestroad/ckl8nxso1025317mk84uv1rgi',
+            zoom: 11,
+            center: [81.4462, 29.7789]
+        });
+
+        map.on('load', function() {
+            toggleLayer(['2000 Volume', '1990 Volume', '1980 Volume', '2010 Outline', '2000 Outline', '1990 Outline'], '1');
+            toggleLayer(['2010 Volume', '1980 Outline'], '2');
+
+            function toggleLayer(ids, name) {
+                var link = document.createElement('a');
+                link.href = '#';
+                // Get the visibility for all layers in the ids argument.
+                var visibility = ids.map(function(id) {
+                    return map.getLayoutProperty(id, 'visibility');
+                });
+                // Get the unique values.
+                var visUnique = visibility.filter(uniques);
+                // Default to not visible.
+                var visCssClass = '';
+                // If all layers are visible, use the 'active' class so the toggle is "on".
+                if (visUnique.length === 1 && visUnique[0] === 'visible') {
+                    visCssClass = 'active';
+                }
+                link.className = visCssClass;
+                link.textContent = name;
+
+                link.onclick = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    for (layers in ids) {
+                        var visibility = map.getLayoutProperty(ids[layers], 'visibility');
+
+                        if (visibility === 'visible') {
+                            map.setLayoutProperty(ids[layers], 'visibility', 'none');
+                            this.className = '';
+                        } else {
+                            this.className = 'active';
+                            map.setLayoutProperty(ids[layers], 'visibility', 'visible');
+                        }
+                    }
+
+                };
+
+                var layers = document.getElementById('menu');
+                layers.appendChild(link);
+            }
+
+            // http://stackoverflow.com/a/14438954/1934
+            function uniques(value, index, self) {
+                return self.indexOf(value) === index;
+            }
+
+        })
+    </script>
+
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/tether/tether.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/creative.js"></script>
+
+</html>
