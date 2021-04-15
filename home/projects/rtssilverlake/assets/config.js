@@ -801,7 +801,7 @@ var config = {
             id: 'stair27',
             title: 'Staircase 27',
             image: './assets/images/rts-34.jpg',
-            description: 'Sunsets while running are always bitter sweet. On one hand it\'s incredible to be outside when it\'s so beautiful and the right temperature. On the other hand, it also get\'s dark right after sunset.',
+            description: 'Sunsets while running are always bitter sweet. On one hand it\'s incredible to be outside when it\'s so beautiful and the right temperature. On the other hand, it also gets dark right after sunset.',
             location: {
               center: [-118.26879, 34.08782],
               zoom: 17.77,
