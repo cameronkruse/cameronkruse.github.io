@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166312106-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166312106-1');
+    </script>
+    <!-- End Global site tag -->
+    <meta charset="utf-8" />
+    <title>Glaciers of Nepal Over Time</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link href="../runthestairs/css/creative.css" rel="stylesheet">
+    <link href="../runthestairs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Cameron Kruse</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../highestroad">The Highest Road</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartesianproduct">Cartesian Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        <style>
+            <style>.square {
+                height: 50px;
+                width: 50px;
+                background-color: #555;
+            }
+        </style>
+        <style>
+            .square {
+                height: 50px;
+                width: 50px;
+                background-color: #555;
+            }
+
+            body {
+                overflow: hidden;
+            }
+
+            body * {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .map {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css">
+        <div id="comparison-container">
+            <div id="before" class="map"></div>
+            <div id="after" class="map"></div>
+        </div>
+        <div class="square">
+        
+        </div>
+        <h2 style="position:absolute; left: 1em; top:2em;color:white">1980</h2>
+        <h2 style="position:absolute; right:1em; top:2em;color:white">2010</h2>
+        <p style="position:absolute; left:.5em; top:6.1em; color:green">most thick</p>
+        <p style="position:absolute; left:.5em; top:7.4em; color:red">least thick</p>
+        <p style="position:absolute; left:.5em; top:8.9em; color:white">3d height also represents ice thickness</p>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiaGlnaGVzdHJvYWQiLCJhIjoiY2lzNjlpa3c3MGQ3cDJ6cDFzMXZpZTNmMCJ9.M1X4AOcuj4n3VT01ze0x5Q';
+            var beforeMap = new mapboxgl.Map({
+                container: 'before',
+                style: 'mapbox://styles/highestroad/cklipqfjw060m17p6hmdjjvoj',
+                center: [0, 0],
+                zoom: 0
+            });
+
+            var afterMap = new mapboxgl.Map({
+                container: 'after',
+                style: 'mapbox://styles/highestroad/cklipsdq8062f17qj6srdz1mp',
+                center: [0, 0],
+                zoom: 0
+            });
+
+            // A selector or reference to HTML element
+            var container = '#comparison-container';
+
+            var map = new mapboxgl.Compare(beforeMap, afterMap, container, {
+                // Set this to enable comparing two maps by mouse movement:
+                // mousemove: true
+            });
+        </script>
+
+    </body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+</html>
