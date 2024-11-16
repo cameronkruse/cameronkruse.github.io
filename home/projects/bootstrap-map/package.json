@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "mapbox-gl": "^2.11.0",
-    "serve": "^13.0.4"
+    "serve": "^14.2.4"
   }
 }
