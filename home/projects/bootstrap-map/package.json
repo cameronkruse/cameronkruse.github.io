@@ -1,0 +1,16 @@
+{
+  "name": "starter",
+  "description": "Include Bootstrap CSS and JS via the jsDelivr CDN.",
+  "version": "0.0.0",
+  "private": true,
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "scripts": {
+    "start": "serve --listen 3000"
+  },
+  "dependencies": {
+    "mapbox-gl": "^2.11.0",
+    "serve": "^13.0.4"
+  }
+}

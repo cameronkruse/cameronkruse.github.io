@@ -49,30 +49,6 @@ map.on("load", () => {
             "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0, 10, 1, 22, 1]
         }
     });
-    
-    map.addLayer({
-        id: "fill-shadow",
-        type: "fill",
-        source: "region-data",
-        layout: {},
-        paint: {
-            "fill-outline-color": "hsla(0, 0%, 0%, 0)",
-            "fill-color": [
-                "case",
-                ["boolean", ["feature-state", "hover"], false],
-                "#050505",
-                "white"
-            ],
-            //               what's happening below is the boolean value true is what's listed first, the line below is what boolean false is.
-            "fill-opacity": [
-                "case",
-                ["boolean", ["feature-state", "hover"], false],
-                0.2,
-                0
-            ],
-            "fill-translate": [6, 6]
-        }
-    });
     map.addLayer({
         id: "region-fill",
         type: "fill",
@@ -95,60 +71,6 @@ map.on("load", () => {
             ]
         }
     });
-    // When the user moves their mouse over the state-fill layer, we'll update the
-    // feature state for the feature under the mouse.
-    map.on("mousemove", "region-fill", (e) => {
-        map.getCanvasContainer().style.cursor = 'pointer';
-        if (e.features.length > 0) {
-            if (hoveredStateId !== null) {
-                map.setFeatureState(
-                    {
-                        source: "region-data",
-                        id: hoveredStateId
-                    },
-                    { hover: false }
-                );
-            }
-            hoveredStateId = e.features[0].id;
-            map.setFeatureState(
-                {
-                    source: "region-data",
-                    id: hoveredStateId
-                },
-                { hover: true }
-            );
-        }
-    });
-    map.on("mousedown", "region-fill", (e) => {
-        map.setPaintProperty('fill-shadow', 'fill-opacity', 0);
-    });
-    map.on("mouseup", "region-fill", (e) => {
-        map.setPaintProperty('fill-shadow', 'fill-opacity', [
-            "case",
-            ["boolean", ["feature-state", "hover"], false],
-            0.2,
-            0
-        ]);
-        map.setPaintProperty('region-fill', 'fill-color', [
-            "case",
-            ["boolean", ["feature-state", "hover"], false],
-            '#' + (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6),
-            "white"
-        ])
-    });
-
-    // When the mouse leaves the state-fill layer, update the feature state of the
-    // previously hovered feature.
-    map.on("mouseleave", "region-fill", () => {
-        if (hoveredStateId !== null) {
-            map.setFeatureState(
-                {
-                    source: "region-data",
-                    id: hoveredStateId
-                },
-                { hover: false }
-            );
-        }
-        hoveredStateId = null;
-    });
+    console.log(map.getLayer("region-fill").source)
+    shadowButton("country-mask1", 6);
 });
